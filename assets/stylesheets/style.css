@@ -15,7 +15,11 @@
     bottom: 0;
 }
 .hero-pic {
-    height: 500px;
-    background: rgba(0, 0, 0, 0.484) url('/assets/static/images/hero.jpg') no-repeat center/cover;
+    background-image: url('/assets/static/images/paperwork.jpg');
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     background-blend-mode: overlay;
+    background-color:rgba(0, 0, 0, 0.479); 
 }
