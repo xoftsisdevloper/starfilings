@@ -1,25 +1,62 @@
+:root {
+    --main-bg-color :#267868;
+    --link-text-color : #267868;
+    --content-color : #000;
+    --white-content: #fff;
+    --transpercy-color : rgba(0, 0, 0, 0.566);
+    --transpercy-color1 : rgba(0, 0, 0, 0.829);
+    --section-bg : rgb(190, 190, 190);
+    --main-content-font-family: 'Nunito Sans', sans-serif;
+    --second-main-content-font-family: 'Oswald', sans-serif;
+    --header-font-family: 'Roboto Condensed', sans-serif;
+    --second-header-font-family: 'Work Sans', sans-serif;
+    --header-weight: 600;
+    --content-weight: 400;
+    --content-size: 16px;    
+}
+
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;    
 }
 
-
-.navbar,.bg-primary {
-    background-color: #1D918C !important;
+p {
+    color: var(--content-color);
+    font-size: var(--content-size);
 }
+
+.fa{
+   color: var(--link-text-color);
+}
+
+h1,h2,h3,h4,h5{
+  font-family: var(--header-font-family) !important;
+  color: var(--main-bg-color) !important;
+  font-weight: var(--header-weight) !important;
+}
+
+.navbar,.btn,.footer{
+    background-color: var(--main-bg-color) !important;
+    color: var(--white-content);
+}
+
 .hero-text {
     top:0;
     left:0;
     right:0;
     bottom: 0;
 }
+
 .hero-pic {
-    background-image: url('../static/images/paperwork.jpg');
-    height: 550px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    height: 450px;
+    background: var(--transpercy-color) url('../static/images/paperwork.jpg') no-repeat center/cover;
     background-blend-mode: overlay;
-    background-color:rgba(0, 0, 0, 0.479); 
+    margin-top: 4.5rem !important;
 }
+
+.contact_form {
+    background: var(--transpercy-color1) url('../static/images/contact_bg.jpg') no-repeat center/cover;
+    background-blend-mode: overlay;
+}
+
