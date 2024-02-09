@@ -11,6 +11,6 @@
 
 .hero-pic {
     height: 500px;
-    background: rgba(255, 255, 255, 0.616) url('/assets/static/images/hero.jpg') no-repeat center/cover;
+    background: rgba(255, 255, 255, 0.683) url('/assets/static/images/hero.jpg') no-repeat center/cover;
     background-blend-mode: overlay;
 }
