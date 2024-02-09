@@ -14,8 +14,6 @@
     <meta property="og:url" content="/">
     <!-- Title of the page -->
     <title>GST Registrations & Filings | Starfilings</title>
-    <!-- Custom Css -->
-    <link rel="stylesheet" href="/assets/stylesheets/style.css">
 
     <!--  Bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -23,6 +21,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+        
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="/assets/stylesheets/style.css">
 
     <!-- Font Awesome Icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -31,6 +32,156 @@
 </head>
 
 <body>
+    <!--header-->
+    <section class="header">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-primary text-light fixed-top p-3">
+                <div class="container">
+                  <a class="navbar-brand text-light fs-4" href="#">Starfilings</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav  ms-auto">
+                      <li class="nav-item">
+                        <a class="nav-link text-light active" aria-current="page" href="#">Home</a>
+                      </li>
+                      
+                      <li class="nav-item dropdown">
+                        <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Startup
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Proprietorship</a></li>
+                          <li><a class="dropdown-item" href="#">Partnership</a></li>
+                          <li><a class="dropdown-item" href="#">One Person Company (OPC)</a></li>
+                          <li><a class="dropdown-item" href="#">Limited Liabilities Partnership</a></li>
+                          <li><a class="dropdown-item" href="#">Private Limited Company</a></li>
+                          <li><a class="dropdown-item" href="#">Public Company</a></li>                          
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          GST
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">GST Registration</a></li>
+                            <li><a class="dropdown-item" href="#">GST Amendments</a></li>
+                            <li><a class="dropdown-item" href="#">GST Return Filing</a></li>
+                            <li><a class="dropdown-item" href="#">GST LUT Filings</a></li>
+                            <li><a class="dropdown-item" href="#">GST Revocation</a></li>
+                            <li><a class="dropdown-item" href="#">GST Surrender</a></li>
+                            <li><a class="dropdown-item" href="#">GST Final Return</a></li>
+                            <li><a class="dropdown-item" href="#">GST Annual Returns (GSTR 9 & GSTR 9C)</a></li>
+                            <li><a class="dropdown-item" href="#">GST Audit</a></li>
+                            <li><a class="dropdown-item" href="#">GST Notice Response & Appeals</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                         Income Tax
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">TDS Refunds</a></li>
+                            <li><a class="dropdown-item" href="#">ITR-1 Return Filing</a></li>
+                            <li><a class="dropdown-item" href="#">ITR-2 Return Filing</a></li>
+                            <li><a class="dropdown-item" href="#">ITR-3 Return Filing</a></li>
+                            <li><a class="dropdown-item" href="#">ITR-4 Return Filing</a></li>
+                            <li><a class="dropdown-item" href="#">ITR-5 Return Filing</a></li>
+                            <li><a class="dropdown-item" href="#">ITR-6 Return Filing</a></li>
+                            <li><a class="dropdown-item" href="#">ITR-7 Return Filing</a></li>
+                            <li><a class="dropdown-item" href="#">ITR-8 Return Filing</a></li>
+                            <li><a class="dropdown-item" href="#">TDS-Return Filing & Form 16</a></li>
+                            <li><a class="dropdown-item" href="#">Income Tax Notice Response & Appeals</a></li>
+                            <li><a class="dropdown-item" href="#">Tax Audit</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                         Registration & Filings
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">GST Registration</a></li>
+                            <li><a class="dropdown-item" href="#">PF & ESI Registration</a></li>
+                            <li><a class="dropdown-item" href="#">MSME & Udyam Registration</a></li>
+                            <li><a class="dropdown-item" href="#">FSSAI Registrations</a></li>
+                            <li><a class="dropdown-item" href="#">Import & Export Code</a></li>
+                            <li><a class="dropdown-item" href="#">Digital Signature</a></li>
+                            <li><a class="dropdown-item" href="#">ISO Registration</a></li>
+                            <li><a class="dropdown-item" href="#">Trademark & Copyright Registration</a></li>
+                            <li><a class="dropdown-item" href="#">Trust Registration</a></li>
+                            <li><a class="dropdown-item" href="#">NGO Registration</a></li>
+                            <li><a class="dropdown-item" href="#">Society Registration</a></li>
+                            <li><a class="dropdown-item" href="#">80G Registration</a></li>
+                            <li><a class="dropdown-item" href="#">Professional Tax Registration</a></li>
+                            <li><a class="dropdown-item" href="#">Shop & Establishment</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                         Accounting & Compliance
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Annual compliance of PVT LTD</a></li>
+                            <li><a class="dropdown-item" href="#">Annual compliance of LLP</a></li>
+                            <li><a class="dropdown-item" href="#">MCA Compliance for PVT & LLP</a></li>
+                            <li><a class="dropdown-item" href="#">Audit Compliance for PVT & LLP</a></li>
+                            <li><a class="dropdown-item" href="#">Winding up Companies</a></li>
+                            <li><a class="dropdown-item" href="#">Company Accountant </a></li>
+                            <li><a class="dropdown-item" href="#">Payroll & Book Keeping</a></li>
+                            <li><a class="dropdown-item" href="#">Business Projects</a></li>
+                            <li><a class="dropdown-item" href="#">Net worth Certificate Preparations</a></li>
+                            <li><a class="dropdown-item" href="#">Turnover Certificate Preparation</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                         Funding
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Personal Loans</a></li>
+                            <li><a class="dropdown-item" href="#">Mudra Loan (Pradhan Mantri MUDRA Yojana)</a></li>
+                            <li><a class="dropdown-item" href="#">MSME Loans & Subsidy Claiming</a></li>
+                            <li><a class="dropdown-item" href="#">Business Loans</a></li>
+                            <li><a class="dropdown-item" href="#">Home Loans</a></li>
+                            <li><a class="dropdown-item" href="#">Mortgage Loan</a></li>
+                            <li><a class="dropdown-item" href="#">Vehicle Loans</a></li>
+                            <li><a class="dropdown-item" href="#">Consult with Loan Experts</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-light" href="#">About Us</a>
+                      </li>                      
+                      <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Contact Us</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </header>
+    </section>
+
+    <!-- Main content starts -->
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="position-relative w-100 hero-pic">
+        <div class="position-absolute text-white d-flex flex-column align-items-start justify-content-center" style="top: 0; right: 0; bottom: 0; left: 0; background-color: rgba(0,0,0,.7);">
+          <div class="container">
+            <div class="col-md-10 col-lg-6 col-12 pt-5">
+              <span class="text-uppercase text-light">Starfilings</span>
+              <!-- on small screens remove display-4 -->
+              <h1 class="mb-4 mt-2 display-4 font-weight-bold"><span>Seamless GST Registration and Filing Solutions</span></h1>
+              <p  style="color: #bbb;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem eos ea, cum quae facilis optio impedit tempora aliquam at eveniet?</p>
+              <div class="mt-4">
+                <a href="#" class="btn px-5 py-3 text-white mt-2 mt-sm-0 btn btn-primary bg-primary border border-0" >Get Started</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Main content ends -->
+<!--footer-->
 
 </body>
 
