@@ -15,7 +15,7 @@
     bottom: 0;
 }
 .hero-pic {
-    background-image: url('/assets/static/images/paperwork.jpg');
+    background-image: url('../static/images/paperwork.jpg');
     height: 550px;
     background-repeat: no-repeat;
     background-size: cover;
