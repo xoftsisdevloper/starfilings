@@ -36,7 +36,7 @@ h1,h2,h3,h4,h5{
   font-weight: var(--header-weight) !important;
 }
 
-.navbar,.btn,.footer{
+.navbar, .btn, .footer{
     background-color: var(--main-bg-color) !important;
     color: var(--white-content);
 }
@@ -59,4 +59,3 @@ h1,h2,h3,h4,h5{
     background: var(--transpercy-color1) url('../static/images/contact_bg.jpg') no-repeat center/cover;
     background-blend-mode: overlay;
 }
-
