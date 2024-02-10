@@ -48,13 +48,15 @@ h1,h2,h3,h4,h5{
     bottom: 0;
 }
 
-.hero-pic {
+.hero-pic, .startup {
     height: 450px;
     background: var(--transpercy-color) url('../static/images/paperwork.jpg') no-repeat center/cover;
     background-blend-mode: overlay;
     margin-top: 4.5rem !important;
 }
-
+.startup {
+    background: var(--transpercy-color) url('../static/images/startup.jpg') no-repeat center/cover;
+}
 .contact_form {
     background: var(--transpercy-color1) url('../static/images/contact_bg.jpg') no-repeat center/cover;
     background-blend-mode: overlay;
