@@ -15,12 +15,15 @@
   <!-- Title of the page -->
   <title>GST Registrations & Filings | Starfilings</title>
 
-  <!--  Bootstrap css -->
+  <!--  Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
   <!-- Custom Css -->
   <link rel="stylesheet" href="./assets/stylesheets/style.css">
@@ -55,12 +58,12 @@
             <ul class="navbar-nav  ms-auto">
 
               <li class="nav-item dropdown">
-                <a class="nav-link text-light dropdown-toggle" href="" id="navbarDropdown" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link text-light dropdown-toggle" href="/startup.html" id="navbarDropdown" role="button"
+                   aria-expanded="false">
                   Startup
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="/startup.html#proprietorship">Proprietorship</a></li>
+                  <li><a class="dropdown-item" href="./startup.html#proprietorship">Proprietorship</a></li>
                   <li><a class="dropdown-item" href="#">Partnership</a></li>
                   <li><a class="dropdown-item" href="#">One Person Company (OPC)</a></li>
                   <li><a class="dropdown-item" href="#">Limited Liabilities Partnership</a></li>
@@ -69,8 +72,8 @@
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link text-light dropdown-toggle" href="/gst_registrations.html" id="navbarDropdown" role="button"
+                   aria-expanded="false">
                   GST
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -87,8 +90,8 @@
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link text-light dropdown-toggle" href="/income_tax.html" id="navbarDropdown" role="button"
+                   aria-expanded="false">
                   Income Tax
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -107,8 +110,8 @@
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link text-light dropdown-toggle" href="/registration.html" id="navbarDropdown" role="button"
+                   aria-expanded="false">
                   Registration & Filings
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -129,8 +132,8 @@
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link text-light dropdown-toggle" href="/accounting_compliance.html" id="navbarDropdown" role="button"
+                   aria-expanded="false">
                   Accounting & Compliance
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -147,8 +150,8 @@
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link text-light dropdown-toggle" href="/funding.html" id="navbarDropdown" role="button"
+                   aria-expanded="false">
                   Funding
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -324,26 +327,30 @@
           </p>
         </div>
       </div>
-      <div class="col-lg-6 col-md-6 py-2 mx-auto">
-        <form>
-          <div class="mb-3">
-            <label for="name" class="form-label text-light">Name</label>
-            <input type="text" class="form-control w-75" id="text" aria-describedby="text">            
-          </div>
-          <div class="mb-3">
-            <label for="phone" class="form-label text-light">Phone</label>
-            <input type="phone" class="form-control w-75" id="phone" aria-describedby="phone">            
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label text-light">Email address</label>
-            <input type="email" class="form-control w-75" id="Email1" aria-describedby="email">            
-          </div>
-          <div class="mb-3">
-            <label for="message" class="form-label text-light">Message</label>
-            <textarea name="message" id="" cols="30" rows="5" class=" form-control w-75"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+      <div class="col-lg-6 col-md-6 py-2">
+        <div class="form-group mx-auto">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label text-light">Name</label>
+              <input type="text" class="form-control w-75" id="text" aria-describedby="text">            
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label text-light">Phone</label>
+              <input type="phone" class="form-control w-75" id="phone" aria-describedby="phone">            
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label text-light">Email address</label>
+              <input type="email" class="form-control w-75" id="Email1" aria-describedby="email">            
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label text-light">Message</label>
+              <textarea name="message" id="" cols="30" rows="5" class=" form-control w-75"></textarea>
+            </div>
+            <div class="mb-3">
+              <button type="submit" class="btn btn-primary w-75 p-2">Submit</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
