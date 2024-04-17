@@ -22,8 +22,8 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
 
-    <!-- jquery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
   <!-- Custom Css -->
   <link rel="stylesheet" href="./assets/stylesheets/style.css">
@@ -43,37 +43,25 @@
 </head>
 
 <body>
+
   <!--header-->
   <section class="header">
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light text-light p-3 shadow fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-light text-light p-2  fixed-top" id='header'>
         <div class="container">
-          <a class="navbar-brand text-light fs-4" href="/">Star Filings</a>
+          <a class="navbar-brand text-light fs-2 text-left" href="/"><img src="./assets/static/images/logo.png"
+              alt="logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon text-white"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav  ms-auto">
+            <ul class="navbar-nav  text-right ms-auto">
 
               <li class="nav-item dropdown">
-                <a class="nav-link text-light dropdown-toggle" href="/startup.html" id="navbarDropdown" role="button"
-                   aria-expanded="false">
-                  Startup
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="./startup.html#proprietorship">Proprietorship</a></li>
-                  <li><a class="dropdown-item" href="#">Partnership</a></li>
-                  <li><a class="dropdown-item" href="#">One Person Company (OPC)</a></li>
-                  <li><a class="dropdown-item" href="#">Limited Liabilities Partnership</a></li>
-                  <li><a class="dropdown-item" href="#">Private Limited Company</a></li>
-                  <li><a class="dropdown-item" href="#">Public Company</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link text-light dropdown-toggle" href="/gst_registrations.html" id="navbarDropdown" role="button"
-                   aria-expanded="false">
+                <a class="nav-link  dropdown-toggle" href="/gst_registrations.html" id="navbarDropdown" role="button"
+                  aria-expanded="false">
                   GST
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -90,8 +78,8 @@
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link text-light dropdown-toggle" href="/income_tax.html" id="navbarDropdown" role="button"
-                   aria-expanded="false">
+                <a class="nav-link  dropdown-toggle" href="/income_tax.html" id="navbarDropdown" role="button"
+                  aria-expanded="false">
                   Income Tax
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -110,8 +98,8 @@
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link text-light dropdown-toggle" href="/registration.html" id="navbarDropdown" role="button"
-                   aria-expanded="false">
+                <a class="nav-link  dropdown-toggle" href="/registration.html" id="navbarDropdown" role="button"
+                  aria-expanded="false">
                   Registration & Filings
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -131,40 +119,6 @@
                   <li><a class="dropdown-item" href="#">Shop & Establishment</a></li>
                 </ul>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link text-light dropdown-toggle" href="/accounting_compliance.html" id="navbarDropdown" role="button"
-                   aria-expanded="false">
-                  Accounting & Compliance
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Annual compliance of PVT LTD</a></li>
-                  <li><a class="dropdown-item" href="#">Annual compliance of LLP</a></li>
-                  <li><a class="dropdown-item" href="#">MCA Compliance for PVT & LLP</a></li>
-                  <li><a class="dropdown-item" href="#">Audit Compliance for PVT & LLP</a></li>
-                  <li><a class="dropdown-item" href="#">Winding up Companies</a></li>
-                  <li><a class="dropdown-item" href="#">Company Accountant </a></li>
-                  <li><a class="dropdown-item" href="#">Payroll & Book Keeping</a></li>
-                  <li><a class="dropdown-item" href="#">Business Projects</a></li>
-                  <li><a class="dropdown-item" href="#">Net worth Certificate Preparations</a></li>
-                  <li><a class="dropdown-item" href="#">Turnover Certificate Preparation</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link text-light dropdown-toggle" href="/funding.html" id="navbarDropdown" role="button"
-                   aria-expanded="false">
-                  Funding
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Personal Loans</a></li>
-                  <li><a class="dropdown-item" href="#">Mudra Loan (Pradhan Mantri MUDRA Yojana)</a></li>
-                  <li><a class="dropdown-item" href="#">MSME Loans & Subsidy Claiming</a></li>
-                  <li><a class="dropdown-item" href="#">Business Loans</a></li>
-                  <li><a class="dropdown-item" href="#">Home Loans</a></li>
-                  <li><a class="dropdown-item" href="#">Mortgage Loan</a></li>
-                  <li><a class="dropdown-item" href="#">Vehicle Loans</a></li>
-                  <li><a class="dropdown-item" href="#">Consult with Loan Experts</a></li>
-                </ul>
-              </li>
             </ul>
           </div>
         </div>
@@ -173,22 +127,24 @@
   </section>
 
   <!-- Main content starts -->
+
   <!-- Hero Section -->
   <section class="hero mt-5">
     <div class="position-relative w-100 hero-pic mt-5">
       <div class="position-absolute text-white d-flex flex-column align-items-start justify-content-center hero-text">
         <div class="container">
-          <div class="col-md-10 col-lg-6 col-12 pt-3">
-            <span class="text-uppercase text-light">Starfilings</span>
-            <h1 class="mb-4 mt-2 display-4 font-weight-bold fs-1"><span>Seamless GST Registration and Filing
-                Solutions</span>
-            </h1>
-            <p class="text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem eos ea, cum quae
-              facilis optio
-              impedit tempora aliquam at eveniet?</p>
-            <div class="mt-4">
-              <a href="#" class="btn px-5 py-3 text-white mt-2 mt-sm-0 btn btn-primary bg-primary border border-0">Get
-                Started</a>
+          <div class="row">
+            <div class="col-md-12 col-lg-12 col-12 pt-3 align-self-center w-75 mx-auto">
+              <span class="text-uppercase text-light fs-3">Star filings</span>
+              <h1 class="mb-4 mt-2 display-4 font-weight-bold"><span>Seamless GST Registration and Filing
+                  Solutions</span>
+              </h1>
+              <p class="text-light text-center">Trust our expert GST Registration and Filing Solutions to navigate
+                complex regulations seamlessly, providing businesses with confidence and peace of mind.</p>
+              <div class="mt-4">
+                <a href="#" class="btn px-5 py-3 text-white mt-2 mt-sm-0 btn btn-primary bg-primary border border-0">Get
+                  Started</a>
+              </div>
             </div>
           </div>
         </div>
@@ -197,260 +153,317 @@
   </section>
 
   <!-- Service Section -->
-  <section class="service  my-2 py-3">
-    <div class="container mt-4">
+  <section class="service py-4">
+    <div class="container ">
       <div class="row">
         <div class="col-12">
           <h2 class="fs-1 text-center">Services</h2>
         </div>
       </div>
     </div>
-    <div class="container mt-3">
+    <div class="container mb-3">
       <div class="row">
-        <div class="col-sm-4 mt-2">
+        <div class="col-sm-12 mt-2 align-self-center">
           <div class="card shadow-lg rounded">
             <div class="card-body">
-              <h5 class="card-title">Startup</h5>
-              <p class="card-text text-justify"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores
-                aperiam quia ea delectus assumenda, ratione quae animi nulla illum sit earum aliquid fugiat voluptatum
-                exercitationem et provident vel harum quidem!</p>
-              <a href="#" class="btn btn-primary">Read More</a>
+
+              <a href="#" class="">
+                <h3 class="card-title text-center">Registration & Filings</h3>
+                <p class="card-text text-justify"> Registration and filings are pivotal for legal compliance, ensuring
+                  businesses operate within regulatory frameworks. Proper registration establishes legal recognition,
+                  safeguarding intellectual property and assets. Essential filings encompass tax, financial, and
+                  regulatory documents, guaranteeing transparency and accountability to stakeholders. Timely submissions
+                  prevent penalties and maintain good standing with authorities. Compliance reduces legal risks,
+                  fostering investor confidence and facilitating access to funding. Moreover, accurate filings enhance
+                  credibility, supporting business growth and sustainability. Overall, meticulous attention to
+                  registration and filings is indispensable for navigating the complex landscape of business regulations
+                  and fostering long-term success.</p>
+              </a>
             </div>
           </div>
         </div>
-        <div class="col-sm-4 mt-2">
+        <div class="col-sm-6 mt-2 align-self-center">
+          <div class="card shadow my-2 bg-primary">
+            <div class="card-body">
+              <div class="card-text">
+                <h3 class="card-title text-light text-center">GST</h3>
+              </div>
+            </div>
+          </div>
           <div class="card shadow-lg rounded">
             <div class="card-body">
-              <h5 class="card-title">GST</h5>
-              <p class="card-text text-justify"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores
-                aperiam quia ea delectus assumenda, ratione quae animi nulla illum sit earum aliquid fugiat voluptatum
-                exercitationem et provident vel harum quidem!</p>
-              <a href="#" class="btn btn-primary">Read More</a>
+
+              <a href="#" class=" d-flex gap-3 justify-content-between">
+                <img src="./assets/static/images/GST.jpg" width="50%" height="250">
+
+                <p class="card-text text-justify">
+                  GST, or Goods and Services Tax, is a consumption-based tax levied on goods and services at each stage
+                  of
+                  the supply chain. Unlike Income Tax, which is based on individual earnings, GST is applied to
+                  transactions. It simplifies taxation by replacing multiple indirect taxes. Additionally, GST
+                  registration and filing are crucial for businesses to comply with tax regulations and ensure seamless
+                  operations.
+                </p>
+              </a>
             </div>
           </div>
         </div>
-        <div class="col-sm-4 mt-2">
+        <div class="col-sm-6 mt-2 align-self-center">
+          <div class="card shadow my-2 bg-primary">
+            <div class="card-body">
+              <div class="card-text">
+                <h3 class="card-title text-light text-center">INCOME TAX</h3>
+              </div>
+            </div>
+          </div>
           <div class="card shadow-lg rounded">
             <div class="card-body">
-              <h5 class="card-title">Income Tax</h5>
-              <p class="card-text text-justify"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores
-                aperiam quia ea delectus assumenda, ratione quae animi nulla illum sit earum aliquid fugiat voluptatum
-                exercitationem et provident vel harum quidem!</p>
-              <a href="#" class="btn btn-primary">Read More</a>
+
+              <a href="#" class="d-flex gap-3 justify-content-between">
+                <p class="card-text text-justify"> Income Tax is a direct tax levied on individuals and entities by the
+                  government based on their earnings. It plays a vital role in funding public services and
+                  infrastructure.
+                  Understanding and fulfilling income tax obligations ensures financial compliance and contributes to
+                  the
+                  nation's development.</p>
+                <img src="./assets/static/images/INCOME_TAX.png" width="50%" height="250">
+              </a>
             </div>
           </div>
         </div>
+
       </div>
-      <div class="row mt-2">
-        <div class="col-sm-4 mt-2">
-          <div class="card shadow-lg rounded">
-            <div class="card-body">
-              <h5 class="card-title">Registration & Filings</h5>
-              <p class="card-text text-justify"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores
-                aperiam quia ea delectus assumenda, ratione quae animi nulla illum sit earum aliquid fugiat voluptatum
-                exercitationem et provident vel harum quidem!</p>
-              <a href="#" class="btn btn-primary">Read More</a>
+
+    </div>
+  </section>
+
+  <!-- Why choose Us -->
+
+  <section class="choose_us py-4   bg-primary text-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="choose_us-header">
+            <h2 class="fs-2 text-center pb-3">Why You Choose Us?</h2>
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-12">
+                <p class="ch-icon mx-auto"><i class="fa-solid fa-headset"></i></p>
+                <h3 class="fs-4 text-center">24x7 Tax Audit Services</h3>
+                <p class="text-justify">In the dynamic landscape of financial regulations and tax compliance, the demand
+                  for timely and efficient tax audit services has never been higher. Recognizing this need, firms are
+                  embracing the concept of 24x7 tax audit services to offer round-the-clock support to their clients.
+                  This article explores the benefits and strategies of implementing such services in the tax audit
+                  field.
+                </p>
+              </div>
+              <div class="col-lg-4 col-md-4 col-12">
+                <p class="ch-icon mx-auto"><i class="fa-solid fa-handshake"></i></p>
+                <h3 class="fs-4 text-center">Direct Relationships</h3>
+                <p class="text-justify">Direct relationships foster trust and transparency between auditors and clients,
+                  laying the foundation for open communication and mutual respect. Clients feel confident sharing
+                  sensitive financial information, knowing it will be handled with integrity and discretion.
+                </p>
+              </div>
+              <div class="col-lg-4 col-md-4 col-12">
+                <p class="ch-icon mx-auto"><i class="fa-solid fa-user-shield"></i></p>
+                <h3 class="fs-4 text-center">Confidentiality and Security</h3>
+                <p class="text-justify">Clients share confidential financial data during tax audits, expecting auditors
+                  to handle it with utmost discretion and security. Trustworthy auditors prioritize data privacy and
+                  implement robust security measures to safeguard sensitive information from unauthorized access or
+                  breaches.
+                </p>
+              </div>
+
             </div>
-          </div>
-        </div>
-        <div class="col-sm-4 mt-2">
-          <div class="card shadow-lg rounded">
-            <div class="card-body">
-              <h5 class="card-title">Accounting & Compliance</h5>
-              <p class="card-text text-justify"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores
-                aperiam quia ea delectus assumenda, ratione quae animi nulla illum sit earum aliquid fugiat voluptatum
-                exercitationem et provident vel harum quidem!</p>
-              <a href="#" class="btn btn-primary">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 mt-2">
-          <div class="card shadow-lg rounded">
-            <div class="card-body">
-              <h5 class="card-title">FUNDING</h5>
-              <p class="card-text text-justify"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores
-                aperiam quia ea delectus assumenda, ratione quae animi nulla illum sit earum aliquid fugiat voluptatum
-                exercitationem et provident vel harum quidem!</p>
-              <a href="#" class="btn btn-primary">Read More</a>
-            </div>
+
           </div>
         </div>
       </div>
     </div>
   </section>
+  <!-- Package Section -->
+  <section class="packages pt-4 pb-5 overflow-hidden h-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-12">
+          <h2 class="fs-2 text-center pb-3">Our Packages</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row">
+          <div class="col-md-4 col-sm-6">
+              <div class="pricing-table">
+                  <div class="pricing-header ">
+                      <h3>basic</h3>
+                  </div>
 
-<!-- Why choose Us -->
-
-<section class="choose_us my-3 py-4">
-  <div class="container">
-     <div class="row">
-       <div class="col-12">
-          <div class="choose_us-header">
-             <h2 class="fs-2 text-center pb-3">Why You Choose Us</h2>
-             <h3 class="fs-4">Support1</h3>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam adipisci itaque officia eligendi repudiandae asperiores nulla nam, blanditiis quod mollitia soluta deleniti voluptas quae commodi libero aliquam ea, sint inventore.
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores molestias nisi saepe. Reprehenderit pariatur est recusandae qui, ipsam quis beatae ullam, veniam magnam atque quam. Repellat fugiat ut hic accusamus?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis ullam voluptatem sint nemo, qui exercitationem neque officiis expedita beatae at reprehenderit laudantium! Impedit consequuntur officia, reiciendis reprehenderit doloribus voluptatum ad.
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit tenetur, voluptas sit obcaecati accusantium odit, recusandae maxime impedit cumque, laborum eaque quidem dolores. Animi voluptatibus aut sapiente cum esse quos!
-             </p>
-             <h3 class="fs-4">Support2</h3>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam adipisci itaque officia eligendi repudiandae asperiores nulla nam, blanditiis quod mollitia soluta deleniti voluptas quae commodi libero aliquam ea, sint inventore.
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores molestias nisi saepe. Reprehenderit pariatur est recusandae qui, ipsam quis beatae ullam, veniam magnam atque quam. Repellat fugiat ut hic accusamus?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis ullam voluptatem sint nemo, qui exercitationem neque officiis expedita beatae at reprehenderit laudantium! Impedit consequuntur officia, reiciendis reprehenderit doloribus voluptatum ad.
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit tenetur, voluptas sit obcaecati accusantium odit, recusandae maxime impedit cumque, laborum eaque quidem dolores. Animi voluptatibus aut sapiente cum esse quos!
-             </p>
+                  <div class="pricingContent">
+                      <div class="price-value">
+                          <span class="amount">18,999</span>
+                          <span class="time">/ year</span>
+                      </div>
+                      <ul>
+                          <li>GSTR-1 Filing</li>
+                          <li>GSTR-3B Filing</li>
+                          <li>GST, IT Notice handling</li>
+                          <li>Monthly Face-to-Face Meetings</li>
+                      </ul>
+                      <div class="pricingTable-Sign-Up">
+                          <a href="">Buy Plan</a>
+                      </div>
+                  </div>
+              </div>
           </div>
-       </div>
-     </div>
-  </div>
-</section>
-<!-- Contact form section -->
-<section class="contact_form py-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <h2 class="fs-1 text-center">Contact Us</h2>
-      </div>
-    </div>
-    <div class="row my-3">
-      <div class="col-lg-6 col-md-6 py-2">
-        <div class="contact_details">
-          <p class="text-light">
-            <i class="fa fa-location-dot"></i> Address Line goes here
-          </p>
-          <p class="text-light">
-            <i class="fa fa-location-dot"></i> 0987654312
-          </p>
-          <p class="text-light">
-            <i class="fa fa-location-dot"></i> example@gmail.com 
-          </p>
-          <p class="text-light">
-            <i class="fa fa-location-dot"></i> www.starfilings.com
-          </p>
+          <div class="col-md-4 col-sm-6">
+            <div class="pricing-table">
+                <div class="pricing-header ">
+                    <h3>Standard</h3>
+                </div>
+
+                <div class="pricingContent">
+                    <div class="price-value">
+                        <span class="amount">56,099</span>
+                        <span class="time">/ year</span>
+                    </div>
+                    <ul>
+                      <li>GSTR-1 Filing</li>
+                      <li>GSTR-3B Filing</li>
+                      <li>TDS Return</li>
+                      <li>Tally Accounting</li>
+                      <li>Regulatory Notice Management <br>(GST, IT, TDS)</li>
+                      <li>Monthly Face-to-Face Meetings</li>
+                    </ul>
+                    <div class="pricingTable-Sign-Up">
+                        <a href="">Buy Plan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+          <div class="col-md-4 col-sm-6">
+              <div class="pricing-table blue">
+                  <div class="pricing-header">
+                      <h3>Premium</h3>
+                  </div>
+
+                  <div class="pricingContent">
+                      <div class="price-value">
+                          <span class="amount">1,05,399</span>
+                          <span class="time">/ year</span>
+                      </div>
+                      <ul>
+                        <li>GSTR-1 Filing</li>
+                        <li>GSTR-3B Filing</li>
+                        <li>EPF & ESI Filings</li>
+                        <li>TDS Return Filings</li>
+                        <li>GSTR-9 & GSTR-9C Filings</li>
+                        <li>Tally Accounting</li>
+                        <li>Virtual Accounting Consultant</li>
+                        <li>Regulatory Notice Management <br>(GST, IT, TDS, EPF & ESI)</li>
+                        <li>On-site Consultations for Needs</li>
+                      </ul>
+                      <div class="pricingTable-Sign-Up">
+                          <a href="">Buy Plan</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
         </div>
       </div>
-      <div class="col-lg-6 col-md-6 py-2">
-        <div class="form-group mx-auto">
-          <form>
-            <div class="mb-3">
-              <label for="name" class="form-label text-light">Name</label>
-              <input type="text" class="form-control w-75" id="text" aria-describedby="text">            
-            </div>
-            <div class="mb-3">
-              <label for="phone" class="form-label text-light">Phone</label>
-              <input type="phone" class="form-control w-75" id="phone" aria-describedby="phone">            
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label text-light">Email address</label>
-              <input type="email" class="form-control w-75" id="Email1" aria-describedby="email">            
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label text-light">Message</label>
-              <textarea name="message" id="" cols="30" rows="5" class=" form-control w-75"></textarea>
-            </div>
-            <div class="mb-3">
-              <button type="submit" class="btn btn-primary w-75 p-2">Submit</button>
-            </div>
-          </form>
+    </div>
+  </section>
+  <!-- Contact form section -->
+  <section class="contact_form py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="fs-1 text-center">Contact Us</h2>
+        </div>
+      </div>
+      <div class="row my-3">
+        <div class="col-lg-6 col-md-6 py-2">
+          <div class="contact_details">
+            <p class="text-light">
+              <i class="fa fa-location-dot"></i> Address Line goes here
+            </p>
+            <p class="text-light">
+              <i class="fa fa-location-dot"></i> 0987654312
+            </p>
+            <p class="text-light">
+              <i class="fa fa-location-dot"></i> example@gmail.com
+            </p>
+            <p class="text-light">
+              <i class="fa fa-location-dot"></i> www.starfilings.com
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 py-2">
+          <div class="form-group mx-auto">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label text-light">Name</label>
+                <input type="text" class="form-control w-75" id="text" aria-describedby="text">
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label text-light">Phone</label>
+                <input type="phone" class="form-control w-75" id="phone" aria-describedby="phone">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label text-light">Email address</label>
+                <input type="email" class="form-control w-75" id="Email1" aria-describedby="email">
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label text-light">Message</label>
+                <textarea name="message" id="" cols="30" rows="5" class=" form-control w-75"></textarea>
+              </div>
+              <div class="mb-3">
+                <button type="submit" class="btn btn-primary w-75 p-2">Submit</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
   <!-- Main content ends -->
 
-<!-- footer -->
-<section class="footer py-3">
-  <footer>
-    <div class="container pt-3">
-      <div class="row">
-        <div class="col-lg-2 col-md-2">
-          <h2 class="text-white fs-5">
-            Startup
-          </h2>
-          <p>
-            Proprietorship
-            Partnership
-            One Person Company (OPC) 
-            Limited Liabilities Partnership
-            Private Limited Company
-            Public Company
-          </p>
-          
-        </div>
-        <div class="col-lg-2 col-md-2">
-          <h2 class="text-white fs-5">
-            Startup
-          </h2>
-          <p>
-            Proprietorship
-            Partnership
-            One Person Company (OPC) 
-            Limited Liabilities Partnership
-            Private Limited Company
-            Public Company
-          </p>
-        </div>
-        <div class="col-lg-2 col-md-2">
-          <h2 class="text-white fs-5">
-            Startup
-          </h2>
-          <p>
-            Proprietorship
-            Partnership
-            One Person Company (OPC) 
-            Limited Liabilities Partnership
-            Private Limited Company
-            Public Company
-          </p>
-        </div>
-        <div class="col-lg-2 col-md-2">
-          <h2 class="text-white fs-5">
-            Startup
-          </h2>
-          <p>
-            Proprietorship
-            Partnership
-            One Person Company (OPC) 
-            Limited Liabilities Partnership
-            Private Limited Company
-            Public Company
-          </p>
-        </div>
-        <div class="col-lg-2 col-md-2">
-          <h2 class="text-white fs-5">
-            Startup
-          </h2>
-          <p>
-            Proprietorship
-            Partnership
-            One Person Company (OPC) 
-            Limited Liabilities Partnership
-            Private Limited Company
-            Public Company
-          </p>
-        </div>
-        <div class="col-lg-2 col-md-2">
-          <h2 class="text-white fs-5">
-            Startup
-          </h2>
-          <p>
-            Proprietorship
-            Partnership
-            One Person Company (OPC) 
-            Limited Liabilities Partnership
-            Private Limited Company
-            Public Company
+  <!-- footer -->
+  <section class="footer py-3">
+    <footer>
+      <div class="container pt-3">
+        <div class="col-12">
+          <p class="text-light text-center">
+            Copyright @2024 <span class="fw-bold">Star Filings </span>All rights reserved
           </p>
         </div>
       </div>
-      <div class="col-12">
-        <p class="text-light text-center">
-           All rights reserved Copyright @2024 Star Filings 
-        </p>
-      </div>
-    </div>
-  </footer>
-</section>
+    </footer>
+  </section>
+  <script>
+    window.onload = function () {
+      var loader = document.getElementById("loader");
+      // Show the loader by removing the hidden attribute
+      loader.removeAttribute("hidden");
 
+      // Hide the loader after 3 seconds (adjust as needed)
+      setTimeout(function () {
+        // Hide the loader by adding the hidden attribute
+        loader.setAttribute("hidden", true);
+      }, 3000); // 3000 milliseconds = 3 seconds
+    };
+
+  </script>
+  <script>
+    window.addEventListener('scroll', function () {
+      var header = document.getElementById('header');
+      if (window.scrollY > 50) { // Adjust 50 as needed to determine scroll threshold
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  </script>
 
 </body>
 
