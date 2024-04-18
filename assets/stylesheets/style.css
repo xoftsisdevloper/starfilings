@@ -27,6 +27,7 @@ table td,
 table th,
 table tr {
     border: 1px solid var(--link-text-color) !important;
+    color: var(--content-color);
 }
 
 .text-justify,
@@ -48,6 +49,9 @@ button {
     background-color: var(--main-bg-color) !important;
 }
 
+.bg-secondary {
+    background-color: var(--btn-hover) !important;
+}
 .btn-primary {
     width: 200px;
 }
@@ -62,7 +66,7 @@ button {
     transition: 0.3s ease-in-out;
 }
 
-.nav-item a {
+.nav-item a , ul li {
     color: #024F7C !important;
 }
 
@@ -103,7 +107,7 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5 ,.price-elg-table th{
     font-family: var(--header-font-family) !important;
     color: var(--btn-hover) !important;
     font-weight: var(--header-weight) !important;
@@ -329,6 +333,16 @@ p {
 }
 .pricing-header h3 {
     color: #fff !important;
+}
+
+.serv-no {
+    background-color: #55893F;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 @media screen and (max-width:990px){
     .pricing-table{
