@@ -18,8 +18,14 @@
   <!--  Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
 
   <!-- jquery -->
@@ -65,8 +71,8 @@
             <ul class="navbar-nav  text-right ms-auto">
 
               <li class="nav-item dropdown">
-                <a class="nav-link  dropdown-toggle" href="./starfilings/gst_registrations.html" id="navbarDropdown" role="button"
-                  aria-expanded="false">
+                <a class="nav-link  dropdown-toggle" href="./starfilings/gst_registrations.html" id="navbarDropdown"
+                  role="button" aria-expanded="false">
                   GST
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -136,19 +142,73 @@
   <!-- Hero Section -->
   <section class="hero mt-5">
     <div class="position-relative w-100 hero-pic mt-5">
-      <div class="position-absolute text-white d-flex flex-column align-items-start justify-content-center hero-text">
+      <div class="position-absolute text-white d-flex flex-column align-items-start justify-content-center hero-text ">
         <div class="container">
           <div class="row">
-            <div class="col-md-12 col-lg-12 col-12 pt-3 align-self-center w-75 mx-auto">
-              <span class="text-uppercase text-light fs-3">Star filings</span>
-              <h1 class="mb-4 mt-2 display-4 font-weight-bold"><span>Seamless GST Registration and Filing
+            <div class="col-md-12 col-lg-12 col-12 pt-3  mx-auto">
+              <h1 class="mb-4 mt-2 display-4 font-weight-bold text-center"><span>Seamless GST Registration and Filing
                   Solutions</span>
               </h1>
-              <p class="text-light text-center">Trust our expert GST Registration and Filing Solutions to navigate
-                complex regulations seamlessly, providing businesses with confidence and peace of mind.</p>
-              <div class="mt-4">
-                <a href="#" class="btn px-5 py-3 text-white mt-2 mt-sm-0 btn btn-primary bg-primary border border-0">Get
-                  Started</a>
+            </div>
+            <div class="col-lg-12 col-md-12 col-12 pt-3  mx-auto">
+              <div class="card-group d-flex justify-content-around">
+                <div class="card  bg-transparent  border-0 home-price element-hover ">
+                  <div class="card-body rounded element-hover">
+                    <p class="text-center fs-3 py-3 text-light bg-secondary">GST REGISTRATION <br>
+                      <span class="price fs-2 text-center">₹ 599</span>
+                    </p>
+
+                    <div class=" text-left justify-content-start my-2" id="src-ftr">
+                      <ol class="text-left">
+                        <li>GST Registration</li>
+                        <li>MSME Registration</li>
+                        <li>Bank Account Opening</li>
+                        <li>100% Obtaining GST No</li>
+                        <li>Doorstep Consulting</li>
+                        <li>Expert Support 24/7</li>
+                      </ol>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="card  bg-transparent  border-0 home-price element-hover ">
+                  <div class="card-body rounded element-hover">
+                    <p class="text-center fs-3 py-3 text-light bg-secondary">GST FILINGS <br>
+                      <span class="price fs-2 text-center">₹ 499</span>
+                    </p>
+                    <div class="text-left my-2" id="src-ftr1">
+                      <ol class="text-left">
+                        <li>GSTR-1 Filings</li>
+                        <li>GSTR-3B Filings</li>
+                        <li>100% On Time Filings</li>
+                        <li>GST Notice Management</li>
+                        <li>Doorstep Consulting</li>
+                        <li>Expert Support 24/7</li>
+                      </ol>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="card  bg-transparent  border-0 home-price element-hover ">
+                  <div class="card-body rounded element-hover">
+                    <p class="text-center fs-3 py-3 text-light bg-secondary">INCORPORATION OF PVT/LLP <br>
+                      <span class="price fs-2 text-center">₹ 11,999</span>
+                    </p>
+                    <div class=" text-left justify-content-start my-2" id="src-ftr2">
+                      <ol class="text-left">
+                        <li>Digital Sign Certificate - 2 Nos</li>
+                        <li>DIN - 2 Nos</li>
+                        <li>Name Approval of Company</li>
+                        <li>Incorporation of Private Limited</li>
+                        <li>Incorporation & Share Certificate</li>
+                        <li>PAN & TAN Registration</li>
+                        <li>MSME & GST Registration</li>
+                        <li>Bank Account Opening</li>
+                        <li>Doorstep Consulting</li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -290,89 +350,71 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 col-md-12 col-12">
-          <h2 class="fs-2 text-center pb-3">Our Packages</h2>
+          <h2 class="fs-2 text-center pb-3">Yearly Packages</h2>
         </div>
       </div>
       <div class="row">
-        <div class="row">
-          <div class="col-md-4 col-sm-6">
-              <div class="pricing-table">
-                  <div class="pricing-header ">
-                      <h3>basic</h3>
-                  </div>
+        <div class="col-lg-12 col-md-12 col-12 pt-3  mx-auto">
+          <div class="card-group d-flex justify-content-around">
+            <div class="card shadow border-0 home-price element-hover-1 ">
+              <div class="card-body rounded ">
+                <p class="text-center fs-3 py-3 text-light bg-secondary">Basic <br>
+                  <span class="price fs-1 text-center">₹ 18,999
+                  </span>
+                </p>
 
-                  <div class="pricingContent">
-                      <div class="price-value">
-                          <span class="amount">18,999</span>
-                          <span class="time">/ year</span>
-                      </div>
-                      <ul>
-                          <li>GSTR-1 Filing</li>
-                          <li>GSTR-3B Filing</li>
-                          <li>GST, IT Notice handling</li>
-                          <li>Monthly Face-to-Face Meetings</li>
-                      </ul>
-                      <div class="pricingTable-Sign-Up">
-                          <a href="">Buy Plan</a>
-                      </div>
-                  </div>
+                <div class=" text-left justify-content-start my-2" id="src-ftr">
+                  <ul class="text-left">
+                    <li>GSTR-1 Filing</li>
+                    <li>GSTR-3B Filing</li>
+                    <li>GST, IT Notice Handling</li>
+                    <li>Monthly Office Visits</li>
+                  </ul>
+                </div>
               </div>
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <div class="pricing-table">
-                <div class="pricing-header ">
-                    <h3>Standard</h3>
-                </div>
 
-                <div class="pricingContent">
-                    <div class="price-value">
-                        <span class="amount">56,099</span>
-                        <span class="time">/ year</span>
-                    </div>
-                    <ul>
-                      <li>GSTR-1 Filing</li>
-                      <li>GSTR-3B Filing</li>
-                      <li>TDS Return</li>
-                      <li>Tally Accounting</li>
-                      <li>Regulatory Notice Management <br>(GST, IT, TDS)</li>
-                      <li>Monthly Face-to-Face Meetings</li>
-                    </ul>
-                    <div class="pricingTable-Sign-Up">
-                        <a href="">Buy Plan</a>
-                    </div>
-                </div>
             </div>
-        </div>
-
-          <div class="col-md-4 col-sm-6">
-              <div class="pricing-table blue">
-                  <div class="pricing-header">
-                      <h3>Premium</h3>
-                  </div>
-
-                  <div class="pricingContent">
-                      <div class="price-value">
-                          <span class="amount">1,05,399</span>
-                          <span class="time">/ year</span>
-                      </div>
-                      <ul>
-                        <li>GSTR-1 Filing</li>
-                        <li>GSTR-3B Filing</li>
-                        <li>EPF & ESI Filings</li>
-                        <li>TDS Return Filings</li>
-                        <li>GSTR-9 & GSTR-9C Filings</li>
-                        <li>Tally Accounting</li>
-                        <li>Virtual Accounting Consultant</li>
-                        <li>Regulatory Notice Management <br>(GST, IT, TDS, EPF & ESI)</li>
-                        <li>On-site Consultations for Needs</li>
-                      </ul>
-                      <div class="pricingTable-Sign-Up">
-                          <a href="">Buy Plan</a>
-                      </div>
-                  </div>
+            <div class="card shadow border-0 home-price element-hover-1 ">
+              <div class="card-body rounded ">
+                <p class="text-center fs-3 py-3 text-light bg-secondary">Standard
+                  <br>
+                  <span class="price fs-1 text-center">₹ 56,099 </span>
+                </p>
+                <div class="text-left my-2" id="src-ftr1">
+                  <ul class="text-left">
+                    <li>GSTR-1 Filing</li>
+                    <li>GSTR-3B Filing</li>
+                    <li>TDS Return</li>
+                    <li>Tally Accounting</li>
+                    <li>GST, IT, TDS Notice handling</li>
+                    <li>Monthly Office Visits</li>
+                  </ul>
+                </div>
               </div>
-          </div>
 
+            </div>
+            <div class="card shadow border-0 home-price element-hover-1 ">
+              <div class="card-body rounded ">
+                <p class="text-center fs-3 py-3 text-light bg-secondary">Premium
+                  <br>
+                  <span class="price fs-1 text-center">₹ 1,05,399 </span>
+                </p>
+                <div class=" text-left justify-content-start my-2" id="src-ftr2">
+                  <ul class="text-left">
+                    <li>GSTR-1 Filing</li>
+                    <li>GSTR-3B Filing</li>
+                    <li>EPF & ESI Filings</li>
+                    <li>TDS Return Filings</li>
+                    <li>GSTR-9 & GSTR-9C Filings</li>
+                    <li>Tally Accounting</li>
+                    <li>Independent Accountant-Online</li>
+                    <li>GST, IT, TDS, EPF & ESI Notice Handling</li>
+                    <li>Office Visits for Requirements</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -454,7 +496,7 @@
       setTimeout(function () {
         // Hide the loader by adding the hidden attribute
         loader.setAttribute("hidden", true);
-      }, 3000); // 3000 milliseconds = 3 seconds
+      }, 2000); // 3000 milliseconds = 3 seconds
     };
 
   </script>
