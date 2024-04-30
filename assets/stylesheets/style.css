@@ -1,5 +1,5 @@
 :root {
-    --body-color: #EDF4F2;
+    --body-color: #e2e2e2;
     --main-bg-color: #024F7C;
     --link-text-color: #024F7C;
     --content-color: #024F7C;
@@ -15,6 +15,9 @@
     --header-weight: 600;
     --content-weight: 400;
     --content-size: 18px;
+}
+body {
+    background-color: var(--body-color);
 }
 
 * {
@@ -43,6 +46,13 @@ button {
     box-shadow: none !important;
     text-decoration: none;
 }
+.text-secondary {
+  color: var(--btn-hover) !important;
+}
+
+.text-info {
+    color: var(--content-color) !important;
+}
 
 .bg-primary {
     background-color: var(--main-bg-color) !important;
@@ -65,7 +75,7 @@ button {
     transition: 0.3s ease-in-out;
 }
 
-.nav-item a , ul li {
+.nav-item a , ul li , .packages ol li{
     color: #024F7C !important;
 }
 
@@ -238,6 +248,10 @@ p {
 .element-hover {
     transform: scale(0.9);
     transition: 0.3s;
+    
+}
+.bg-blue-transperent {
+    background-color: #024f7c77 !important;
 }
 .element-hover:hover {
  border: 1px solid #fff;
@@ -249,14 +263,14 @@ p {
     transition: 0.3s cubic-bezier(1, 0, 0, 1);
     transform: scale(0.9);
 }
-.element-hover-1:hover {
+.element-hover-1:hover, .standard {
     transform: scale(1);
    }
    
 .home-price {
     margin-inline: 10px;
 }
-.home-price .card-body p, .home-price .card-body .price {
+.home-price .card-body p {
     text-shadow: 1px 1px 5px #0303039b;
     text-align: center !important;
 }
@@ -271,6 +285,36 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.providing-gst p {
+    border: 2px solid; 
+    list-style: none;
+    margin-block: 10px;
+    padding: 10px;
+    border-radius: 30px;
+    text-align: center !important;
+    color: #024F7C;
+    transition: 0.3s ease-in-out;
+}
+.providing-gst p:hover {
+    background-color: var(--content-color);
+    color: var(--white-content);
+    box-shadow: 2px 2px 10px #0303039b;
+    border:2px solid var(--white-content);
+
+}
+
+.provided-gst li span {
+    background-color: #024F7C;
+    padding: 10px;
+}
+
+.document div{
+    border:  1px solid var(--content-color);
+}
+.document .position{
+    border-right: none;
 }
 @media screen and (max-width:990px){
     .pricing-table{
