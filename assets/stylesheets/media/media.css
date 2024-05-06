@@ -1,5 +1,7 @@
 @media screen and (max-width:990px){
-    
+    body {
+        overflow-x: hidden;
+    }
     .pricing-table{
         margin-bottom: 30px;
     }
@@ -32,6 +34,9 @@
     }
 }
 @media screen and (max-width:768px) {
+    .home-price .card-body, .yearly-pkg .card .card-body {
+        height: max-content !important;
+    }
     .mob-center {
         text-align: center !important;
     }
@@ -40,11 +45,12 @@
     }
     .space-0{
         padding-inline: 0px !important;
-        margin-block: 15px;
+        margin-block-end: 3%;
+        margin-inline: auto;
     }
     .space-1{
         padding: 0px !important;
-        margin-block: 5px;
+        margin-block-end: 1%;
     }
     .flip-box{
         margin: 0 auto !important;
