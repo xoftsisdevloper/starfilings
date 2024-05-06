@@ -34,6 +34,9 @@
     }
 }
 @media screen and (max-width:768px) {
+    body {
+        overflow-x: hidden;
+    }
     .home-price .card-body, .yearly-pkg .card .card-body {
         height: max-content !important;
     }
