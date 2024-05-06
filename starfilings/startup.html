@@ -16,21 +16,17 @@
   <title>GST Registrations & Filings | Starfilings</title>
 
   <!--  Bootstrap -->
- 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 
   <!-- jquery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
   <!-- Custom Css -->
-  <link rel="stylesheet" href="./assets/stylesheets/style.css">
-  <link rel="stylesheet" href="/assets/stylesheets/price-list.css">
-  <link rel="stylesheet" href="./assets/stylesheets/media/media.css">
-  
-   <!-- fav icon link  -->
-   <link rel="shortcut icon" href="./assets/static/images/star_logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="../assets/stylesheets/style.css">
 
   <!-- Font Awesome Icons-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -40,20 +36,17 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-  <!-- Bootsrap cdns -->
   <link
     href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet" />
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
   <div class="loader-wrapper" id="loader">
     <div class="loader"></div>
     <div class="sub-loader">
-      <img src="./assets/static/images/star_logo.png" alt="">
+      <img src="../assets/static/images/star_logo.png" alt="">
     </div>
   </div>
   <!--header-->
@@ -71,7 +64,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  text-right ms-auto">
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="./starfilings/startup.html" id="navbarDropdown" role="button" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="./startup.html" id="navbarDropdown" role="button" aria-expanded="false">
                   Startup
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -85,7 +78,7 @@
               </li>
               
               <li class="nav-item dropdown">
-                <a class="nav-link  dropdown-toggle" href="./starfilings/gst_registrations.html" id="navbarDropdown"
+                <a class="nav-link  dropdown-toggle" href="gst_registrations.html" id="navbarDropdown"
                   role="button" aria-expanded="false">
                   GST
                 </a>
@@ -197,107 +190,22 @@
   <!-- Hero Section -->
   <section class="hero mt-5">
     <div class="position-relative w-100 hero-pic mt-5">
-      <div class=" text-white py-5 hero-text ">
+      <div class="position-absolute text-white d-flex flex-column align-items-start justify-content-center hero-text">
         <div class="container">
           <div class="row">
-            <div class="col-lg-8 col-md-12  col-12 pt-3 align-self-center">
-              <h1 class="mb-1 mt-2 display-4 font-weight-bold text-center"><span>Seamless <br> GST Registration and Filings</span>
+            <div class="col-md-12 col-lg-12 col-12 pt-3 align-self-center w-75 mx-auto text-center">
+              <span class="text-uppercase text-light fs-3 text-center">Star filings</span>
+              <h1 class="mb-4 mt-2 display-4 font-weight-bold"><span>GST Services</span>
               </h1>
-            </div>
-            <div class="col-lg-4 col-md-12 col-12 pt-3 justify-content-center">
-              <h2 class="mb-4 mt-2 fs-2 hero-form font-weight-bold ">Email Us</h2>
-              <div class="form-group mx-auto contact-form">
-                <form>
-                  <div class="form-group ">
-                    <div class="row ">
-                      <div class="col-lg-8 col-md-6">
-                        <div class="mb-3 mx-auto">
-                          <label for="email" class="form-label text-light">Email address</label>
-                          <input type="email" class="form-control  bg-none" id="Email1" aria-describedby="email">
-                        </div>
-                      </div>
-                      <div class="col-lg-4 col-md-4 align-self-end">
-                        <div class="mb-3 mx-auto ">
-                          <button type="submit" class="btn btn-primary w-auto px-3 p-2 ">Submit</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>            
-          </div>
-          <div class="row ">
-            <div class="col-lg-12 col-md-12 col-12 pt-0">
-              <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6 col-12 mx-0 home-price-column">
-                  <div class="card  bg-transparent  border-0 home-price element-hover mx-0">
-                    <div class="card-body rounded element-hover bg-blue-transperent p-0">
-                      <p class="text-center fs-3 py-1 bg-secondary text-light "><span class="">GST REGISTRATION </span>
-                      </p>
-                      <p class="price fs-2 text-center text-light  px-1 py-0 lh-1">₹ 599 <span class=" fs-5"><s class="mx-1 text-secondary">₹799</s><br>(include GST)</span></p>
-                      <p class="src text-white px-3 mx-auto py-0">Services</p>
-                      <div class=" text-left mx-auto " id="src-ftr">
-                        <ol class="text-left">
-                          <li>GST Registration</li>
-                          <li>MSME Registration</li>
-                          <li>Bank Account Opening</li>
-                          <li>100% Obtaining GST No</li>
-                          <li>Doorstep Consulting</li>
-                          <li>Expert Support 24/7</li>
-                        </ol>
-                      </div>
-                    </div>
-  
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mx-0 home-price-column col-12">
-                  <div class="card  bg-transparent  border-0 home-price element-hover ">
-                    <div class="card-body rounded element-hover bg-blue-transperent p-0">
-                      <p class="text-center fs-3 py-1 text-light bg-secondary ">GST FILINGS 
-                      </p>
-                        <p class="price fs-2 text-center text-light lh-1">₹ 499 <span class=" fs-5"><s class="mx-1 text-secondary">₹669</s><br>(include GST)</span></p>
-                        <p class="src text-white px-3 mx-auto py-0">Services</p>
-                      <div class="text-left my-2 mx-auto " id="src-ftr1">
-                        <ol class="text-left">
-                          <li>GSTR-1 Filings</li>
-                          <li>GSTR-3B Filings</li>
-                          <li>100% On Time Filings</li>
-                          <li>GST Notice Management</li>
-                          <li>Doorstep Consulting</li>
-                          <li>Expert Support 24/7</li>
-                        </ol>
-                      </div>
-                    </div>
-  
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-8 mx-0 home-price-column col-12">
-                  <div class="card  bg-transparent  border-0 home-price element-hover ">
-                    <div class="card-body rounded element-hover bg-blue-transperent p-0">
-                      <p class="text-center fs-3 py-2 text-light bg-secondary">INCORPORATION OF PVT/LLP</p>
-                      <p class="price fs-2 text-center text-light lh-1">₹ 11,999 <span class=" fs-5"><s class="mx-1 text-secondary">₹1599</s><br>(include GST)</span></p>
-                      <p class="src text-white px-3 mx-auto py-0">Services</p>
-                      <div class=" text-left mx-auto " id="src-ftr2">
-                        <ol class="text-left">
-                          <li>Digital Sign Certificate - 2 Nos</li>
-                          <li>DIN - 2 Nos</li>
-                          <li>Name Approval of Company</li>
-                          <li>Incorporation of Private Limited</li>
-                          <li>Incorporation & Share Certificate</li>
-                          <li>PAN & TAN Registration</li>
-                          <li>MSME & GST Registration</li>
-                          <li>Bank Account Opening</li>
-                          <li>Doorstep Consulting</li>
-                        </ol>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <p class="text-light text-center">Trust our expert GST Registration and Filing Solutions to navigate
+                complex regulations seamlessly, providing businesses with confidence and peace of mind.</p>
+              <div class="mt-4">
+                <a href="#"
+                  class="btn px-5 py-3 text-white mt-2 mt-sm-0 btn btn-primary bg-primary border border-0">Contact
+                  Us</a>
               </div>
             </div>
           </div>
-          
         </div>
       </div>
     </div>
@@ -308,173 +216,187 @@
     <div class="container ">
       <div class="row">
         <div class="col-12">
-          <h2 class="fs-1 text-center">Services</h2>
+          <h2 class="fs-1 text-center">Our Services</h2>
         </div>
       </div>
     </div>
     <div class="container mb-3">
-      <div class="row">
-        <div class="col-sm-12 mt-2 align-self-center">
-          <div class="card shadow-lg rounded">
-            <div class="card-body">
-              <a href="#" class="">
-                <h3 class="card-title text-center">Registration & Filings</h3>
-                <p class="card-text text-justify"> Registration and filings are pivotal for legal compliance, ensuring
-                  businesses operate within regulatory frameworks. Proper registration establishes legal recognition,
-                  safeguarding intellectual property and assets. Essential filings encompass tax, financial, and
-                  regulatory documents, guaranteeing transparency and accountability to stakeholders. Timely submissions
-                  prevent penalties and maintain good standing with authorities. Compliance reduces legal risks,
-                  fostering investor confidence and facilitating access to funding. Moreover, accurate filings enhance
-                  credibility, supporting business growth and sustainability. Overall, meticulous attention to
-                  registration and filings is indispensable for navigating the complex landscape of business regulations
-                  and fostering long-term success.</p>
-              </a>
+      
+      <div class="row ">
+        <div class="col-lg-12">
+          <h4 class="fs-4">Providing GST Services</h4>
+          <div class="row">
+            <div class="col-lg-4 col-md-3 col-6 providing-gst">
+              <p>GSTR 1 Monthly</p>
+            </div>
+            <div class="col-lg-4 col-md-3 col-6 providing-gst">
+              <p>GSTR 3B Filings Monthly</p>
+            </div>
+            <div class="col-lg-4 col-md-3 col-6 providing-gst">
+              <p>EPF Monthly</p>
+            </div>
+            <div class="col-lg-4 col-md-3 col-6 providing-gst">
+              <p>ESI Filings Monthly</p>
+            </div>
+            <div class="col-lg-4 col-md-3 col-6 providing-gst">
+              <p>TDS Filings</p>
+            </div>
+            <div class="col-lg-4 col-md-3 col-6 providing-gst">
+              <p>All Accounts Maintain & verify in Tally</p>
+            </div>
+            <div class="col-lg-4 col-md-3 col-6 providing-gst">
+              <p>GST, IT, TDS, EPF & ESI Notice Handling</p>
+            </div>
+            <div class="col-lg-4 col-md-3 col-6 providing-gst">
+              <p>Weekly & Monthly Office Visits</p>
             </div>
           </div>
+           <h4 class="fs-4 mt-4"> Documents Needed for GST Registration</h4>
+          <div class="row my-3 document px-3 mx-auto">
+            <div class="col-lg-3 col-md-3 col-12 position bg-primary text-white d-flex justify-content-center align-items-center ">
+             <p class="text-center text-white fs-3">Proprietor</p>
+            </div>
+            <div class="col-lg-9 col-md-9 col-12 py-3">
+              <h4>Required:</h4>
+              <ol>
+                <li>PAN Card</li>
+                <li>AADHAR  Card</li>
+                <li>Passport Size Photo</li>
+                <li>Name & Address Proof</li>
+                <li>Rental Or Lease Agreement of Business Place</li>
+                <li>Latest EB Bills of Business Place</li>
+                <li>Property Tax of Business Place</li>
+                <li>Name & Address Board of Business Place.</li>
+              </ol>
+            </div>
+          </div>
+          <div class="row my-3 document px-3 mx-auto">
+            <div class="col-lg-9 col-md-9 col-12 position  py-3">
+              <h4>Required:</h4>
+              <ol>                
+                <li>Partnership Deed</li>
+                <li>Partnership PAN Card</li>
+                <li>Rental or Lease Agreement of Business Place</li>
+                <li>Name & Address Board of Business Place</li>
+                <li>PAN Card of each Partner</li>
+                <li>Aadhar Card of each Partner</li>
+                <li>Passport Size Photo of each Partner</li>
+                <li>Name & Address Proof of each Partner</li>
+                <li>Appointment Letter of Authorized Partner</li>
+              </ol>
+            </div>
+            <div class="col-lg-3 col-md-3 col-12 bg-secondary d-flex justify-content-center align-items-center">
+              <p class="text-center fs-3 text-white">Partnership Firm</p>
+            </div>
+          </div>
+          <div class="row my-3 document px-3 mx-auto">
+            <div class="col-lg-3 col-md-3 col-12 position  d-flex justify-content-center align-items-center ">
+             <p class="text-center  fs-3">Private Limited /LLP</p>
+            </div>
+            <div class="col-lg-9 col-md-9 col-12 py-3 bg-primary text-white">
+              <h4>Required:</h4>
+              <ol>
+                <li>Certificate of Company Incorporation</li>
+                <li>PAN Card of Company</li>
+                <li>Memorandum of Association & Articles of Association</li>
+                <li>Digital Signature Certificate</li>
+                <li>Rental or Lease Agreement of Business Place</li>
+                <li>Name & Address Board of Business Place</li>
+                <li>PAN Card of each Director</li>
+                <li>Aadhar Card of each Director</li>
+                <li>Passport Size Photo of each Director</li>
+                <li>Name & Address Proof of each Director</li>
+                <li>Appointment Letter of Authorized Signatory</li>
+              </ol>
+            </div>
+          </div>
+          <table class="table price-elg-table">
+            <thead>
+              <tr>
+                <th scope="col">Eligibility</th>
+                <th scope="col">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Our services cater to individuals and businesses with turnovers of up to Rs.20,00,000.</td>
+                <td>Rs.1000</td>
+              </tr>
+              <tr>
+
+                <td>We provide solutions tailored to the needs of entities with turnovers of up to Rs.50,00,000.</td>
+                <td>Rs.1500</td>
+              </tr>
+              <tr>
+
+                <td>Our expertise extends to businesses with turnovers of up to Rs.1,00,00,000.</td>
+                <td>Rs.2000</td>
+              </tr>
+              <tr>
+
+                <td>We offer comprehensive services for entities with turnovers of up to Rs.2,00,00,000.</td>
+                <td>Rs.3000</td>
+              </tr>
+              <tr>
+
+                <td>Our solutions are designed to support businesses with turnovers of up to Rs.3,00,00,000.</td>
+                <td>Rs.5000</td>
+              </tr>
+              <tr>
+
+                <td>We also cater to larger enterprises with turnovers exceeding Rs.5,00,00,000.</td>
+                <td>Rs.7000</td>
+              </tr>
+            </tbody>
+          </table>
+          <h4 class="fs-4 mt-4"> GST Return & Book Keeping In Tally</h4>
+          <table class="table price-elg-table">
+            <thead>
+              <tr>
+                <th scope="col">Eligibility</th>
+                <th scope="col">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Our services cater to individuals and businesses with turnovers of up to Rs.20,00,000.</td>
+                <td>Rs.1000</td>
+              </tr>
+              <tr>
+
+                <td>We provide solutions tailored to the needs of entities with turnovers of up to Rs.50,00,000.</td>
+                <td>Rs.1500</td>
+              </tr>
+              <tr>
+
+                <td>Our expertise extends to businesses with turnovers of up to Rs.1,00,00,000.</td>
+                <td>Rs.2000</td>
+              </tr>
+              <tr>
+
+                <td>We offer comprehensive services for entities with turnovers of up to Rs.2,00,00,000.</td>
+                <td>Rs.3000</td>
+              </tr>
+              <tr>
+
+                <td>Our solutions are designed to support businesses with turnovers of up to Rs.3,00,00,000.</td>
+                <td>Rs.5000</td>
+              </tr>
+              <tr>
+
+                <td>We also cater to larger enterprises with turnovers exceeding Rs.5,00,00,000.</td>
+                <td>Rs.7000</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <div class="col-sm-6 mt-2 align-self-center">
-          <div class="card shadow my-2 bg-primary">
-            <div class="card-body">
-              <div class="card-text">
-                <h3 class="card-title text-light text-center">GST</h3>
-              </div>
-            </div>
-          </div>
-          <div class="card shadow-lg rounded">
-            <div class="card-body">
-
-              <a href="#" class=" d-flex gap-3 justify-content-between">
-                <img src="./assets/static/images/GST.jpg" width="50%" height="250">
-
-                <p class="card-text text-justify">
-                  GST, or Goods and Services Tax, is a consumption-based tax levied on goods and services at each stage
-                  of
-                  the supply chain. Unlike Income Tax, which is based on individual earnings, GST is applied to
-                  transactions. It simplifies taxation by replacing multiple indirect taxes. Additionally, GST
-                  registration and filing are crucial for businesses to comply with tax regulations and ensure seamless
-                  operations.
-                </p>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 mt-2 align-self-center">
-          <div class="card shadow my-2 bg-primary">
-            <div class="card-body">
-              <div class="card-text">
-                <h3 class="card-title text-light text-center">INCOME TAX</h3>
-              </div>
-            </div>
-          </div>
-          <div class="card shadow-lg rounded">
-            <div class="card-body">
-
-              <a href="#" class="d-flex gap-3 justify-content-between">
-                <p class="card-text text-justify"> Income Tax is a direct tax levied on individuals and entities by the
-                  government based on their earnings. It plays a vital role in funding public services and
-                  infrastructure.
-                  Understanding and fulfilling income tax obligations ensures financial compliance and contributes to
-                  the
-                  nation's development.</p>
-                <img src="./assets/static/images/INCOME_TAX.png" width="50%" height="250">
-              </a>
-            </div>
-          </div>
-        </div>
-
       </div>
-
-    </div>
   </section>
- <!-- Package Section -->
- <section class="packages pt-4 pb-5 overflow-hidden h-100">
-  <div class="container">
-    <div class="row ">
-      <div class="col-lg-12 col-md-12 col-12">
-        <h2 class="fs-2 text-center pb-2">Yearly Packages</h2>
-      </div>
-    </div>
-    <div class="row ">
-      <div class="col-lg-12 col-md-12 col-12 pt-1  mx-auto yearly-pkg">
-        <div class="row justify-content-center">
-          <div class="col-lg-4 col-md-6 col-12">
-            <div class="card shadow border-0 home-price element-hover-1">
-              <div class="card-body rounded p-0 lh-1">
-                <p class="text-center fs-3 py-3 text-light bg-secondary">
-                  <i class="fa-solid fa-certificate fs-1"></i><br>
-                  Basic 
-                </p>
-                  <p class="price fs-1 text-center">₹ 18,999
-                  </p>
-                  <p class="src text-secondary px-3 mx-auto py-0">Services</p>
-                <div class=" text-left justify-content-start my-2" id="src-ftr">
-                  <ol class="text-left lh-lg">
-                    <li>GSTR-1 Filing</li>
-                    <li>GSTR-3B Filing</li>
-                    <li>GST, IT Notice Handling</li>
-                    <li>Monthly Office Visits</li>
-                  </ol>
-                </div>
-              </div>
 
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-12 yearly-pkg">
-            <div class="card shadow border-0 home-price element-hover-1 standard ">
-              <div class="card-body rounded p-0 lh-1">
-                <p class="text-center fs-3 py-3 text-light bg-secondary">
-                  <i class="fa-solid fa-ranking-star fs-1"></i><br>
-                  Standard
-                </p>
-                <p class="price fs-1 text-center">₹ 56,099 </p>
-                <p class="src text-secondary px-3 mx-auto py-0">Services</p>
-                <div class="text-left my-2" id="src-ftr1">
-                  <ol class="text-left lh-lg">
-                    <li>GSTR-1 Filing</li>
-                    <li>GSTR-3B Filing</li>
-                    <li>TDS Return</li>
-                    <li>Tally Accounting</li>
-                    <li>GST, IT, TDS Notice handling</li>
-                    <li>Monthly Office Visits</li>
-                  </ol>
-                </div>
-              </div>
-
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-8 col-12 yearly-pkg">
-            <div class="card shadow border-0 home-price element-hover-1 ">
-              <div class="card-body rounded p-0 lh-1">
-                <p class="text-center fs-3 py-3 text-light bg-secondary">
-                  <i class="fa-regular fa-gem fs-1"></i><br>Premium
-                </p>
-                <p class="price fs-1 text-center">₹ 1,05,399 </p>
-                <p class="src text-secondary px-3 mx-auto py-0">Services</p>
-                <div class=" text-left justify-content-start my-2" id="src-ftr2">
-                  <ol class="text-left lh-lg">
-                    <li>GSTR-1 Filing</li>
-                    <li>GSTR-3B Filing</li>
-                    <li>EPF & ESI Filings</li>
-                    <li>TDS Return Filings</li>
-                    <li>GSTR-9 & GSTR-9C Filings</li>
-                    <li>Tally Accounting</li>
-                    <li>Independent Accountant-Online</li>
-                    <li>GST, IT, TDS, EPF & ESI Notice Handling</li>
-                    <li>Office Visits for Requirements</li>
-                  </ol>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>	
-  </div>
-</section>
   <!-- Why choose Us -->
 
-  <section class="choose_us py-4   bg-primary text-light">
+  <section class="choose_us py-4   bg-primary text-light
+  ">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -516,7 +438,6 @@
       </div>
     </div>
   </section>
- 
   <!-- Contact form section -->
   <section class="contact_form py-5">
     <div class="container">
@@ -529,16 +450,16 @@
         <div class="col-lg-6 col-md-6 py-2">
           <div class="contact_details">
             <p class="text-light">
-              <i class="fa fa-location-dot text-secondary contact-icon"></i> Address Line goes here
+              <i class="fa fa-location-dot"></i> Address Line goes here
             </p>
             <p class="text-light">
-              <i class="fa fa-phone text-secondary contact-icon"></i> 0987654312
+              <i class="fa fa-location-dot"></i> 0987654312
             </p>
             <p class="text-light">
-              <i class="fa fa-envelope text-secondary contact-icon"></i> example@gmail.com
+              <i class="fa fa-location-dot"></i> example@gmail.com
             </p>
             <p class="text-light">
-              <i class="fa fa-globe text-secondary contact-icon"></i> www.starfilings.com
+              <i class="fa fa-location-dot"></i> www.starfilings.com
             </p>
           </div>
         </div>
@@ -594,7 +515,7 @@
       setTimeout(function () {
         // Hide the loader by adding the hidden attribute
         loader.setAttribute("hidden", true);
-      }, 1000); // 3000 milliseconds = 3 seconds
+      }, 3000); // 3000 milliseconds = 3 seconds
     };
 
   </script>
@@ -608,15 +529,7 @@
       }
     });
   </script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-  crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-  crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-  crossorigin="anonymous"></script>
+
 </body>
 
 </html>
