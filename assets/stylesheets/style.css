@@ -66,6 +66,8 @@ button {
 }
 .btn-primary {
     width: 200px;
+    padding: 10px;
+    margin:  0 auto !important;
 }
 
 .btn-primary:hover {
@@ -431,7 +433,6 @@ p {
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-    
     display: flex;
     justify-content: center;
     align-items: center;
