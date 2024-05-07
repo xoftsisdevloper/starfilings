@@ -585,7 +585,27 @@
       </div>
     </footer>
   </section>
+  <script>
+    function handleScroll() {
+      const sections = document.querySelectorAll('.ch-icon');
+  
+      sections.forEach(section => {
+          if (isInViewport(section)) {
+              section.classList.add('active');
+          } else {
+              section.classList.remove('active');
+          }
+      });
+  }
+  // Add event listener for scroll event
+window.addEventListener('scroll', handleScroll);
+window.addEventListener('resize', handleScroll);
+
+// Initial check on page load
+handleScroll();
+  </script>
 <script src="./assets/javascripts/script.js"></script>
+
 </body>
 
 </html>

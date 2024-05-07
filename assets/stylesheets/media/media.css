@@ -1,7 +1,8 @@
-@media screen and (max-width:990px){
+@media screen and (min-width: 980px) and (max-width:1280px){
     body {
         overflow-x: hidden;
     }
+    
     .pricing-table{
         margin-bottom: 30px;
     }
@@ -37,6 +38,12 @@
     body {
         overflow-x: hidden;
     }
+    .src {
+        width: 60%;
+    }
+    .standard {
+        transform: scale(0.9) !important;
+    }
     .home-price .card-body, .yearly-pkg .card .card-body {
         height: max-content !important;
     }
@@ -64,7 +71,7 @@
     } 
     h1,.display-4 {
         font-size: 35px !important;
-        line-height: 2rem !important;
+        line-height: 3rem !important;
     }
     h2 {
         font-size: 30px !important;
