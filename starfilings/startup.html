@@ -9,7 +9,8 @@
   <meta name="author" content="Author Name">
   <meta name="robots" content="index, follow">
   <meta property="og:title" content="GST Registrations & Filings | Starfilings">
-  <meta property="og:description" content="Seamless GST registration and filings services ensure hassle-free compliance for businesses. Our expert team manages the entire process, from registration to regular filings, easing your tax obligations. We streamline document submission and keep you updated on deadlines, ensuring smooth operations. Focus on your business while we handle GST compliance efficiently. Benefit from accurate filings and avoid penalties with our comprehensive GST services">
+  <meta property="og:description"
+    content="Seamless GST registration and filings services ensure hassle-free compliance for businesses. Our expert team manages the entire process, from registration to regular filings, easing your tax obligations. We streamline document submission and keep you updated on deadlines, ensuring smooth operations. Focus on your business while we handle GST compliance efficiently. Benefit from accurate filings and avoid penalties with our comprehensive GST services">
   <meta property="og:image" content="./assets/static/images/logo.png">
   <meta property="og:url" content="/">
   <!-- Title of the page -->
@@ -27,6 +28,8 @@
 
   <!-- Custom Css -->
   <link rel="stylesheet" href="../assets/stylesheets/style.css">
+  <link rel="stylesheet" href="../assets/stylesheets/media/animation.css">
+  <link rel="stylesheet" href="../assets/stylesheets/media/media.css">
 
   <!-- Font Awesome Icons-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -54,8 +57,8 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-light text-light p-2  fixed-top" id='header'>
         <div class="container">
-          <a class="navbar-brand text-light fs-2 text-left" href="/"><img src="./assets/static/images/logo1.png"
-              alt="logo"></a>
+          <a class="navbar-brand text-light fs-2 text-left" href="/"><img
+              src="../assets/static/images/STAR_FILING-LOGO.png" alt="logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -64,7 +67,8 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  text-right ms-auto">
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="./startup.html" id="navbarDropdown" role="button" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="/starfilings/startup.html" id="navbarDropdown" role="button"
+                  aria-expanded="false">
                   Startup
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -76,28 +80,32 @@
                   <li><a class="dropdown-item" href="#">Public Company</a></li>
                 </ul>
               </li>
-              
+
               <li class="nav-item dropdown">
-                <a class="nav-link  dropdown-toggle" href="gst_registrations.html" id="navbarDropdown"
+                <a class="nav-link  dropdown-toggle" href="./starfilings/gst_registrations.html" id="navbarDropdown"
                   role="button" aria-expanded="false">
                   GST
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">GST Registration</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="scrollToSection('gst-register-sec')">GST
+                      Registration</a></li>
                   <li><a class="dropdown-item" href="#">GST Amendments</a></li>
-                  <li><a class="dropdown-item" href="#">GST Return Filing</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="scrollToSection('gst-return')">GST Return Filing</a>
+                  </li>
                   <li><a class="dropdown-item" href="#">GST LUT Filings</a></li>
                   <li><a class="dropdown-item" href="#">GST Revocation</a></li>
                   <li><a class="dropdown-item" href="#">GST Surrender</a></li>
-                  <li><a class="dropdown-item" href="#">GST Final Return</a></li>
-                  <li><a class="dropdown-item" href="#">GST Annual Returns (GSTR 9 & GSTR 9C)</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="scrollToSection('gst-return')">GST Final Return</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#" onclick="scrollToSection('gst-return')">GST Annual Returns (GSTR
+                      9 & GSTR 9C)</a></li>
                   <li><a class="dropdown-item" href="#">GST Audit</a></li>
                   <li><a class="dropdown-item" href="#">GST Notice Response & Appeals</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link  dropdown-toggle" href="/income_tax.html" id="navbarDropdown" role="button"
-                  aria-expanded="false">
+                <a class="nav-link  dropdown-toggle" href="../starfilings/income-tax.html" id="navbarDropdown"
+                  role="button" aria-expanded="false">
                   Income Tax
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -151,7 +159,7 @@
                   <li><a class="dropdown-item" href="#">Payroll & Book Keeping</a></li>
                 </ul>
               </li>
-              
+
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" aria-expanded="false">
                   Certfication Preparations
@@ -161,7 +169,7 @@
                   <li><a class="dropdown-item" href="#">Turnover Certificate </a></li>
                 </ul>
               </li>
-              
+
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" aria-expanded="false">
                   Loan Assistance
@@ -177,7 +185,7 @@
                   <li><a class="dropdown-item" href="#">Consult with Loan Experts</a></li>
                 </ul>
               </li>
-              
+
             </ul>
           </div>
         </div>
@@ -189,19 +197,18 @@
 
   <!-- Hero Section -->
   <section class="hero mt-5">
-    <div class="position-relative w-100 hero-pic mt-5">
-      <div class="position-absolute text-white d-flex flex-column align-items-start justify-content-center hero-text">
+    <div class="position-relative w-100 hero-pic h-100 mt-5 py-5">
+      <div class="text-white  hero-text">
         <div class="container">
           <div class="row">
             <div class="col-md-12 col-lg-12 col-12 pt-3 align-self-center w-75 mx-auto text-center">
               <span class="text-uppercase text-light fs-3 text-center">Star filings</span>
-              <h1 class="mb-4 mt-2 display-4 font-weight-bold"><span>GST Services</span>
+              <h1 class="mb-4 mt-2 display-4 font-weight-bold"><span>Company Registrations</span>
               </h1>
               <p class="text-light text-center">Trust our expert GST Registration and Filing Solutions to navigate
                 complex regulations seamlessly, providing businesses with confidence and peace of mind.</p>
               <div class="mt-4">
-                <a href="#"
-                  class="btn px-5 py-3 text-white mt-2 mt-sm-0 btn btn-primary bg-primary border border-0">Contact
+                <a href="#" class="btn text-white mt-2 mt-sm-0 btn btn-primary bg-primary border border-0">Contact
                   Us</a>
               </div>
             </div>
@@ -212,232 +219,279 @@
   </section>
 
   <!-- Service Section -->
-  <section class="service py-4">
-    <div class="container ">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="fs-1 text-center">Our Services</h2>
+  <section class="service py-4 space-1">
+    <div class="container space-1">
+      <div class="row space-1">
+        <div class="col-12 space-1">
+          <h2 class="fs-1 text-center space-1">Our Services</h2>
         </div>
       </div>
     </div>
     <div class="container mb-3">
-      
+
       <div class="row ">
         <div class="col-lg-12">
-          <h4 class="fs-4">Providing GST Services</h4>
+          <h4 class="fs-4 mob-center text-center my-3">For Startups</h4>
           <div class="row">
-            <div class="col-lg-4 col-md-3 col-6 providing-gst">
-              <p>GSTR 1 Monthly</p>
+            <div class="col-lg-2 col-md-6 col-12 lh-2 providing-gst">
+              <div class="badge-area-show-1">
+                <div class="bagde-flag-wrap-1">
+                  <a href="#" class="bagde-flag-1 "> 1 </a>
+                </div>
+              </div>
+              <a href="#" onclick="scrollToSection('proprietorship')">
+                <p>Proprietorship</p>
+              </a>
+
             </div>
-            <div class="col-lg-4 col-md-3 col-6 providing-gst">
-              <p>GSTR 3B Filings Monthly</p>
+            <div class="col-lg-2 col-md-6 col-12 lh-2 providing-gst">
+              <div class="badge-area-show-1">
+                <div class="bagde-flag-wrap-1">
+                  <a href="#" class="bagde-flag-1 "> 2 </a>
+                </div>
+              </div>
+              <a href="#" onclick="scrollToSection('partnership')">
+                <p>Partnership</p>
+              </a>
             </div>
-            <div class="col-lg-4 col-md-3 col-6 providing-gst">
-              <p>EPF Monthly</p>
+            <div class="col-lg-2 col-md-6 col-12 lh-2 providing-gst">
+              <div class="badge-area-show-1">
+                <div class="bagde-flag-wrap-1">
+                  <a href="#" class="bagde-flag-1 "> 3 </a>
+                </div>
+              </div>
+              <a href="#" onclick="scrollToSection('llp')">
+                <p>Limited Liability Partnership</p>
+              </a>
+              
             </div>
-            <div class="col-lg-4 col-md-3 col-6 providing-gst">
-              <p>ESI Filings Monthly</p>
+            <div class="col-lg-2 col-md-6 col-12 lh-2 providing-gst">
+              <div class="badge-area-show-1">
+                <div class="bagde-flag-wrap-1">
+                  <a href="#" class="bagde-flag-1 "> 4 </a>
+                </div>
+              </div>
+              <a href="#" onclick="scrollToSection('plc')">
+                <p>Private Limited Company</p></a>
             </div>
-            <div class="col-lg-4 col-md-3 col-6 providing-gst">
-              <p>TDS Filings</p>
-            </div>
-            <div class="col-lg-4 col-md-3 col-6 providing-gst">
-              <p>All Accounts Maintain & verify in Tally</p>
-            </div>
-            <div class="col-lg-4 col-md-3 col-6 providing-gst">
-              <p>GST, IT, TDS, EPF & ESI Notice Handling</p>
-            </div>
-            <div class="col-lg-4 col-md-3 col-6 providing-gst">
-              <p>Weekly & Monthly Office Visits</p>
+            <div class="col-lg-2 col-md-6 col-12 lh-2 providing-gst">
+              <div class="badge-area-show-1">
+                <div class="bagde-flag-wrap-1">
+                  <a href="#" class="bagde-flag-1 "> 5 </a>
+                </div>
+              </div>
+              <a href="#" onclick="scrollToSection('pc')">
+                <p>Public Company</p>
+              </a>
             </div>
           </div>
-           <h4 class="fs-4 mt-4"> Documents Needed for GST Registration</h4>
-          <div class="row my-3 document px-3 mx-auto">
-            <div class="col-lg-3 col-md-3 col-12 position bg-primary text-white d-flex justify-content-center align-items-center ">
-             <p class="text-center text-white fs-3">Proprietor</p>
-            </div>
-            <div class="col-lg-9 col-md-9 col-12 py-3">
-              <h4>Required:</h4>
-              <ol>
-                <li>PAN Card</li>
-                <li>AADHAR  Card</li>
-                <li>Passport Size Photo</li>
-                <li>Name & Address Proof</li>
-                <li>Rental Or Lease Agreement of Business Place</li>
-                <li>Latest EB Bills of Business Place</li>
-                <li>Property Tax of Business Place</li>
-                <li>Name & Address Board of Business Place.</li>
-              </ol>
-            </div>
-          </div>
-          <div class="row my-3 document px-3 mx-auto">
-            <div class="col-lg-9 col-md-9 col-12 position  py-3">
-              <h4>Required:</h4>
-              <ol>                
-                <li>Partnership Deed</li>
-                <li>Partnership PAN Card</li>
-                <li>Rental or Lease Agreement of Business Place</li>
-                <li>Name & Address Board of Business Place</li>
-                <li>PAN Card of each Partner</li>
-                <li>Aadhar Card of each Partner</li>
-                <li>Passport Size Photo of each Partner</li>
-                <li>Name & Address Proof of each Partner</li>
-                <li>Appointment Letter of Authorized Partner</li>
-              </ol>
-            </div>
-            <div class="col-lg-3 col-md-3 col-12 bg-secondary d-flex justify-content-center align-items-center">
-              <p class="text-center fs-3 text-white">Partnership Firm</p>
-            </div>
-          </div>
-          <div class="row my-3 document px-3 mx-auto">
-            <div class="col-lg-3 col-md-3 col-12 position  d-flex justify-content-center align-items-center ">
-             <p class="text-center  fs-3">Private Limited /LLP</p>
-            </div>
-            <div class="col-lg-9 col-md-9 col-12 py-3 bg-primary text-white">
-              <h4>Required:</h4>
-              <ol>
-                <li>Certificate of Company Incorporation</li>
-                <li>PAN Card of Company</li>
-                <li>Memorandum of Association & Articles of Association</li>
-                <li>Digital Signature Certificate</li>
-                <li>Rental or Lease Agreement of Business Place</li>
-                <li>Name & Address Board of Business Place</li>
-                <li>PAN Card of each Director</li>
-                <li>Aadhar Card of each Director</li>
-                <li>Passport Size Photo of each Director</li>
-                <li>Name & Address Proof of each Director</li>
-                <li>Appointment Letter of Authorized Signatory</li>
-              </ol>
-            </div>
-          </div>
-          <table class="table price-elg-table">
-            <thead>
-              <tr>
-                <th scope="col">Eligibility</th>
-                <th scope="col">Price</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Our services cater to individuals and businesses with turnovers of up to Rs.20,00,000.</td>
-                <td>Rs.1000</td>
-              </tr>
-              <tr>
-
-                <td>We provide solutions tailored to the needs of entities with turnovers of up to Rs.50,00,000.</td>
-                <td>Rs.1500</td>
-              </tr>
-              <tr>
-
-                <td>Our expertise extends to businesses with turnovers of up to Rs.1,00,00,000.</td>
-                <td>Rs.2000</td>
-              </tr>
-              <tr>
-
-                <td>We offer comprehensive services for entities with turnovers of up to Rs.2,00,00,000.</td>
-                <td>Rs.3000</td>
-              </tr>
-              <tr>
-
-                <td>Our solutions are designed to support businesses with turnovers of up to Rs.3,00,00,000.</td>
-                <td>Rs.5000</td>
-              </tr>
-              <tr>
-
-                <td>We also cater to larger enterprises with turnovers exceeding Rs.5,00,00,000.</td>
-                <td>Rs.7000</td>
-              </tr>
-            </tbody>
-          </table>
-          <h4 class="fs-4 mt-4"> GST Return & Book Keeping In Tally</h4>
-          <table class="table price-elg-table">
-            <thead>
-              <tr>
-                <th scope="col">Eligibility</th>
-                <th scope="col">Price</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Our services cater to individuals and businesses with turnovers of up to Rs.20,00,000.</td>
-                <td>Rs.1000</td>
-              </tr>
-              <tr>
-
-                <td>We provide solutions tailored to the needs of entities with turnovers of up to Rs.50,00,000.</td>
-                <td>Rs.1500</td>
-              </tr>
-              <tr>
-
-                <td>Our expertise extends to businesses with turnovers of up to Rs.1,00,00,000.</td>
-                <td>Rs.2000</td>
-              </tr>
-              <tr>
-
-                <td>We offer comprehensive services for entities with turnovers of up to Rs.2,00,00,000.</td>
-                <td>Rs.3000</td>
-              </tr>
-              <tr>
-
-                <td>Our solutions are designed to support businesses with turnovers of up to Rs.3,00,00,000.</td>
-                <td>Rs.5000</td>
-              </tr>
-              <tr>
-
-                <td>We also cater to larger enterprises with turnovers exceeding Rs.5,00,00,000.</td>
-                <td>Rs.7000</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
+          
   </section>
 
-  <!-- Why choose Us -->
-
-  <section class="choose_us py-4   bg-primary text-light
-  ">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="choose_us-header">
-            <h2 class="fs-2 text-center pb-3">Why You Choose Us?</h2>
-            <div class="row">
-              <div class="col-lg-4 col-md-4 col-12">
-                <p class="ch-icon mx-auto"><i class="fa-solid fa-headset"></i></p>
-                <h3 class="fs-4 text-center">24x7 Tax Audit Services</h3>
-                <p class="text-justify">In the dynamic landscape of financial regulations and tax compliance, the demand
-                  for timely and efficient tax audit services has never been higher. Recognizing this need, firms are
-                  embracing the concept of 24x7 tax audit services to offer round-the-clock support to their clients.
-                  This article explores the benefits and strategies of implementing such services in the tax audit
-                  field.
-                </p>
-              </div>
-              <div class="col-lg-4 col-md-4 col-12">
-                <p class="ch-icon mx-auto"><i class="fa-solid fa-handshake"></i></p>
-                <h3 class="fs-4 text-center">Direct Relationships</h3>
-                <p class="text-justify">Direct relationships foster trust and transparency between auditors and clients,
-                  laying the foundation for open communication and mutual respect. Clients feel confident sharing
-                  sensitive financial information, knowing it will be handled with integrity and discretion.
-                </p>
-              </div>
-              <div class="col-lg-4 col-md-4 col-12">
-                <p class="ch-icon mx-auto"><i class="fa-solid fa-user-shield"></i></p>
-                <h3 class="fs-4 text-center">Confidentiality and Security</h3>
-                <p class="text-justify">Clients share confidential financial data during tax audits, expecting auditors
-                  to handle it with utmost discretion and security. Trustworthy auditors prioritize data privacy and
-                  implement robust security measures to safeguard sensitive information from unauthorized access or
-                  breaches.
-                </p>
-              </div>
-
-            </div>
-
+<section class="properatorship py-3">
+  <h2 class=" py-3 space-1 mob-center text-center">Requirements</h2>
+  <div class="container"> 
+    <div class="row d-flex justify-content-between px-0">
+      <div class="col-lg-12 col-md-12 col-12">
+        <div class="row my-4" id="proprietorship">
+      <div class="col-lg-6 col-md-12 col-12 doc-col space-0  ">
+        <div class="shadow bg-light h-100">
+          <p class="text-center text-white fs-2 bg-primary py-3 lh-1">₹ 999
+            <span class=" fs-6 text-light"><s class="mx-1 text-light">₹1,299 </s><br>(Exclude GST)</span></p>
+          <div class=" req px-3 pb-3 ">
+            <h3>Proprietorship</h3>
+            <p>A proprietorship is a type of business owned and operated by one individual. It's the simplest
+              form of business structure, where the owner has full control and responsibility. Profits and
+              losses are personal, and the business is not separate from the owner for legal or tax purposes.
+            </p>
           </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12 col-12 px-3 doc-col  space-0">
+        <div class="shadow bg-light h-100">
+          <p class="text-center  bg-primary  text-white fs-3 py-1">Documents Needed</p>
+          <div class="req px-4">
+            <ol class="my-3 p-3 pt-0 ">
+              <li>PAN Card.</li>
+              <li>Aadhar card and Voter ID / Passport / Driving License.</li>
+              <li>Telephone Bill / Electricity Bill / Bank Account Statement.</li>
+              <li>Passport size photograph.</li>
+              <li>Business Address Proofs.</li>
+              <li>NOC or No Objection Certificate.</li>
+              <li>Rental Agreement.</li>
+              <li>Foreign nationals or NRIs must apostille or notarize director documentation.</li>
+            </ol>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-lg-12 col-md-12 col-12">
+        
+        <div class="getsrc-btn mt-5 d-flex justify-content-center">
+          <a href="#" class="btn btn-primary ">Get Service </a>
         </div>
       </div>
     </div>
-  </section>
+    <div class="row my-4" id="partnership">
+      <div class="col-lg-6 col-md-12 col-12 doc-col space-0  ">
+        <div class="shadow bg-light h-100">
+          <p class="text-center text-white fs-2 bg-primary py-3 lh-1">₹ 999
+            <span class=" fs-6 text-light"><s class="mx-1 text-light">₹1,299 </s><br>(Exclude GST)</span></p>
+          <div class=" req px-3 pb-3 ">
+            <h3 class="text-info">Proprietorship</h3>
+            <p>A proprietorship is a type of business owned and operated by one individual. It's the simplest
+              form of business structure, where the owner has full control and responsibility. Profits and
+              losses are personal, and the business is not separate from the owner for legal or tax purposes.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12 col-12 px-3 doc-col  space-0">
+        <div class="shadow bg-light h-100">
+          <p class="text-center  bg-primary  text-white fs-3 py-1">Documents Needed</p>
+          <div class="req px-4">
+            <ol class="my-3 p-3 pt-0 ">
+              <li>PAN Card.</li>
+              <li>Aadhar card and Voter ID / Passport / Driving License.</li>
+              <li>Telephone Bill / Electricity Bill / Bank Account Statement.</li>
+              <li>Passport size photograph.</li>
+              <li>Business Address Proofs.</li>
+              <li>NOC or No Objection Certificate.</li>
+              <li>Rental Agreement.</li>
+              <li>Foreign nationals or NRIs must apostille or notarize director documentation.</li>
+            </ol>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-lg-12 col-md-12 col-12">
+        
+        <div class="getsrc-btn mt-5 d-flex justify-content-center">
+          <a href="#" class="btn btn-primary">Get Service </a>
+        </div>
+      </div>
+    </div>
+    <div class="row my-4" id="llp">
+      <div class="col-lg-6 col-md-12 col-12 doc-col space-0  ">
+        <div class="shadow bg-light h-100">
+          <p class="text-center text-white fs-2 bg-primary py-3 lh-1">₹ 999
+            <span class=" fs-6 text-light"><s class="mx-1 text-light">₹1,299 </s><br>(Exclude GST)</span></p>
+          <div class=" req px-3 pb-3 ">
+            <h3 class="text-info">Proprietorship</h3>
+            <p>A proprietorship is a type of business owned and operated by one individual. It's the simplest
+              form of business structure, where the owner has full control and responsibility. Profits and
+              losses are personal, and the business is not separate from the owner for legal or tax purposes.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12 col-12 px-3 doc-col  space-0">
+        <div class="shadow bg-light h-100">
+          <p class="text-center  bg-primary  text-white fs-3 py-1">Documents Needed</p>
+          <div class="req px-4">
+            <ol class="my-3 p-3 pt-0 ">
+              <li>PAN Card.</li>
+              <li>Aadhar card and Voter ID / Passport / Driving License.</li>
+              <li>Telephone Bill / Electricity Bill / Bank Account Statement.</li>
+              <li>Passport size photograph.</li>
+              <li>Business Address Proofs.</li>
+              <li>NOC or No Objection Certificate.</li>
+              <li>Rental Agreement.</li>
+              <li>Foreign nationals or NRIs must apostille or notarize director documentation.</li>
+            </ol>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-lg-12 col-md-12 col-12">
+        
+        <div class="getsrc-btn mt-5 d-flex justify-content-center">
+          <a href="#" class="btn btn-primary">Get Service </a>
+        </div>
+      </div>
+    </div>
+    <div class="row my-4" id="plc">
+      <div class="col-lg-6 col-md-12 col-12 doc-col space-0  ">
+        <div class="shadow bg-light h-100">
+          <p class="text-center text-white fs-2 bg-primary py-3 lh-1">₹ 999
+            <span class=" fs-6 text-light"><s class="mx-1 text-light">₹1,299 </s><br>(Exclude GST)</span></p>
+          <div class=" req px-3 pb-3 ">
+            <h3 class="text-info">Proprietorship</h3>
+            <p>A proprietorship is a type of business owned and operated by one individual. It's the simplest
+              form of business structure, where the owner has full control and responsibility. Profits and
+              losses are personal, and the business is not separate from the owner for legal or tax purposes.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12 col-12 px-3 doc-col  space-0">
+        <div class="shadow bg-light h-100">
+          <p class="text-center  bg-primary  text-white fs-3 py-1">Documents Needed</p>
+          <div class="req px-4">
+            <ol class="my-3 p-3 pt-0 ">
+              <li>PAN Card.</li>
+              <li>Aadhar card and Voter ID / Passport / Driving License.</li>
+              <li>Telephone Bill / Electricity Bill / Bank Account Statement.</li>
+              <li>Passport size photograph.</li>
+              <li>Business Address Proofs.</li>
+              <li>NOC or No Objection Certificate.</li>
+              <li>Rental Agreement.</li>
+              <li>Foreign nationals or NRIs must apostille or notarize director documentation.</li>
+            </ol>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-lg-12 col-md-12 col-12">
+        
+        <div class="getsrc-btn mt-5 d-flex justify-content-center">
+          <a href="#" class="btn btn-primary">Get Service </a>
+        </div>
+      </div>
+    </div>
+    <div class="row my-4" id="pc">
+      <div class="col-lg-6 col-md-12 col-12 doc-col space-0  ">
+        <div class="shadow bg-light h-100">
+          <p class="text-center text-white fs-2 bg-primary py-3 lh-1">₹ 999
+            <span class=" fs-6 text-light"><s class="mx-1 text-light">₹1,299 </s><br>(Exclude GST)</span></p>
+          <div class=" req px-3 pb-3 ">
+            <h3 class="text-info">Proprietorship</h3>
+            <p>A proprietorship is a type of business owned and operated by one individual. It's the simplest
+              form of business structure, where the owner has full control and responsibility. Profits and
+              losses are personal, and the business is not separate from the owner for legal or tax purposes.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12 col-12 px-3 doc-col  space-0">
+        <div class="shadow bg-light h-100">
+          <p class="text-center  bg-primary  text-white fs-3 py-1">Documents Needed</p>
+          <div class="req px-4">
+            <ol class="my-3 p-3 pt-0 ">
+              <li>PAN Card.</li>
+              <li>Aadhar card and Voter ID / Passport / Driving License.</li>
+              <li>Telephone Bill / Electricity Bill / Bank Account Statement.</li>
+              <li>Passport size photograph.</li>
+              <li>Business Address Proofs.</li>
+              <li>NOC or No Objection Certificate.</li>
+              <li>Rental Agreement.</li>
+              <li>Foreign nationals or NRIs must apostille or notarize director documentation.</li>
+            </ol>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-lg-12 col-md-12 col-12">
+        
+        <div class="getsrc-btn mt-5 d-flex justify-content-center">
+          <a href="#" class="btn btn-primary">Get Service </a>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
+  </div>
+</section>
   <!-- Contact form section -->
   <section class="contact_form py-5">
     <div class="container">
@@ -528,8 +582,17 @@
         header.classList.remove('scrolled');
       }
     });
-  </script>
+    function scrollToSection(sectionId) {
+      var $targetSection = $('#' + sectionId);
 
+      if ($targetSection.length) {
+        var offset = $targetSection.offset().top - $('.navbar').height();
+
+        $('html, body').animate({ scrollTop: offset }, 10, 'swing');
+      }
+    }
+  </script>
+  <script src="../assets/javascripts/script.js"></script>
 </body>
 
 </html>

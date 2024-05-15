@@ -58,3 +58,32 @@ window.addEventListener('resize', handleScroll);
 
 // Initial check on page load
 handleScroll();
+
+function activeDeactive(params, params1) {
+    document.addEventListener('DOMContentLoaded', function() {
+        const items = document.querySelectorAll('.' + params);
+        const items1 = document.querySelectorAll('.' + params1);
+        
+        items1.forEach((item, index) => {
+            item.addEventListener('click', function() {
+                // Remove 'activecontent' class from all items
+                items.forEach(item => {
+                    item.classList.remove('activecontent');
+                });
+
+                // Remove 'active-header' class from all items1 (header items)
+                items1.forEach(item => {
+                    item.classList.remove('active-header');
+                });
+
+                // Add 'active-header' class to the clicked header item
+                this.classList.add('active-header');
+                
+                // Add 'activecontent' class to corresponding content item based on index
+                items[index].classList.add('activecontent');
+            });
+        });
+    });
+}
+
+activeDeactive('content-1','side-header');
