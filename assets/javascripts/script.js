@@ -1,11 +1,11 @@
 window.onload = function () {
     var loader = document.getElementById("loader");
-    // Show the loader by removing the hidden attribute
+    
     loader.removeAttribute("hidden");
 
-    // Hide the loader after 3 seconds (adjust as needed)
+  
     setTimeout(function () {
-      // Hide the loader by adding the hidden attribute
+    
       loader.setAttribute("hidden", true);
     }, 1000); // 3000 milliseconds = 3 seconds
   };

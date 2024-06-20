@@ -74,6 +74,7 @@ button ,.btn-secondary{
 .btn-secondary {
     text-align: center;
     border-radius: 5px;
+    border: 1px solid #fff !important;
 }
 
 
@@ -81,7 +82,7 @@ button ,.btn-secondary{
     transition: 0.3s ease-in-out;
 }
 
-.nav-item a , ul li ,  ol li{
+.nav-item a , ul li {
     color: #024F7C !important;
 }
  /* ol li {
@@ -183,8 +184,6 @@ h1 {
     right: auto;
 }
 .navbar-nav  {
-    height: 80px;
-    align-items: flex-end;
 }
 #header a img {
     width: 100%;
@@ -426,9 +425,8 @@ p {
     background-color: var(--btn-hover) !important;
 }
 .form-control {
-  background: transparent !important;
+  background: var(--body-color) !important;
   border: none;
-  border-bottom: 1px solid #fff; 
   color: var(--white-content);
 }
 .form-control:focus {
@@ -610,3 +608,7 @@ p {
     transform: scale(1.1);
     border-color: var(--white-content) !important;
  }
+ .properatorship {
+	background-image:  radial-gradient(#444CF7 1px, transparent 1px), radial-gradient(#444CF7 1px, #E5E5F7 1px);
+	background-size: 50px 50px;
+	background-position: 0 0,100px 100px; }

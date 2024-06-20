@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Description of the webpage">
+  <meta name="keywords" content="keyword1, keyword2, keyword3">
+  <meta name="author" content="Author Name">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="GST Registrations & Filings | Starfilings">
+  <meta property="og:description"
+    content="Seamless GST registration and filings services ensure hassle-free compliance for businesses. Our expert team manages the entire process, from registration to regular filings, easing your tax obligations. We streamline document submission and keep you updated on deadlines, ensuring smooth operations. Focus on your business while we handle GST compliance efficiently. Benefit from accurate filings and avoid penalties with our comprehensive GST services">
+  <meta property="og:image" content="./assets/static/images/logo.png">
+  <meta property="og:url" content="/">
+  <!-- Title of the page -->
+  <title>GST Registrations & Filings | Starfilings</title>
+
+  <!--  Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Custom Css -->
+  <link rel="stylesheet" href="assets/stylesheets/style.css">
+  <link rel="stylesheet" href="assets/stylesheets/media/animation.css">
+  <link rel="stylesheet" href="assets/stylesheets/media/media.css">
+
+  <!-- Font Awesome Icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+
+</head>
+
+<body>
+  <div class="loader-wrapper" id="loader">
+    <div class="loader"></div>
+    <div class="sub-loader">
+      <img src="assets/static/images/star_logo.png" alt="">
+    </div>
+  </div>
+  <!--header-->
+  <section class="header">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light text-light p-2  fixed-top" id='header'>
+        <div class="container">
+          <a class="navbar-brand text-light fs-2 text-left" href="/"><img
+              src="assets/static/images/STAR_FILING-LOGO.png" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-white"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  text-right ms-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="/starfilings/startup.html" id="navbarDropdown" role="button"
+                  aria-expanded="false">
+                  Startup
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Proprietorship</a></li>
+                  <li><a class="dropdown-item" href="#">Partnership</a></li>
+                  <li><a class="dropdown-item" href="#">One Person Company (OPC)</a></li>
+                  <li><a class="dropdown-item" href="#">Limited Liability Partnership</a></li>
+                  <li><a class="dropdown-item" href="#">Private Limited Company</a></li>
+                  <li><a class="dropdown-item" href="#">Public Company</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link  dropdown-toggle" href="./starfilings/gst_registrations.html" id="navbarDropdown"
+                  role="button" aria-expanded="false">
+                  GST
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#" onclick="scrollToSection('gst-register-sec')">GST
+                      Registration</a></li>
+                  <li><a class="dropdown-item" href="#">GST Amendments</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="scrollToSection('gst-return')">GST Return Filing</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">GST LUT Filings</a></li>
+                  <li><a class="dropdown-item" href="#">GST Revocation</a></li>
+                  <li><a class="dropdown-item" href="#">GST Surrender</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="scrollToSection('gst-return')">GST Final Return</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#" onclick="scrollToSection('gst-return')">GST Annual Returns (GSTR
+                      9 & GSTR 9C)</a></li>
+                  <li><a class="dropdown-item" href="#">GST Audit</a></li>
+                  <li><a class="dropdown-item" href="#">GST Notice Response & Appeals</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link  dropdown-toggle" href="../starfilings/income-tax.html" id="navbarDropdown"
+                  role="button" aria-expanded="false">
+                  Income Tax
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">TDS Refunds</a></li>
+                  <li><a class="dropdown-item" href="#">ITR-1 Return Filing</a></li>
+                  <li><a class="dropdown-item" href="#">ITR-2 Return Filing</a></li>
+                  <li><a class="dropdown-item" href="#">ITR-3 Return Filing</a></li>
+                  <li><a class="dropdown-item" href="#">ITR-4 Return Filing</a></li>
+                  <li><a class="dropdown-item" href="#">ITR-5 Return Filing</a></li>
+                  <li><a class="dropdown-item" href="#">ITR-6 Return Filing</a></li>
+                  <li><a class="dropdown-item" href="#">ITR-7 Return Filing</a></li>
+                  <li><a class="dropdown-item" href="#">ITR-8 Return Filing</a></li>
+                  <li><a class="dropdown-item" href="#">TDS-Return Filing & Form 16</a></li>
+                  <li><a class="dropdown-item" href="#">Income Tax Notice Response & Appeals</a></li>
+                  <li><a class="dropdown-item" href="#">Tax Audit</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link  dropdown-toggle" href="/registration.html" id="navbarDropdown" role="button"
+                  aria-expanded="false">
+                  Registration & Filings
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">GST Registration</a></li>
+                  <li><a class="dropdown-item" href="#">PF & ESI Registration</a></li>
+                  <li><a class="dropdown-item" href="#">MSME & Udyam Registration</a></li>
+                  <li><a class="dropdown-item" href="#">FSSAI Registrations</a></li>
+                  <li><a class="dropdown-item" href="#">Import & Export Code</a></li>
+                  <li><a class="dropdown-item" href="#">Digital Signature</a></li>
+                  <li><a class="dropdown-item" href="#">ISO Registration</a></li>
+                  <li><a class="dropdown-item" href="#">Trademark & Copyright Registration</a></li>
+                  <li><a class="dropdown-item" href="#">Trust Registration</a></li>
+                  <li><a class="dropdown-item" href="#">NGO Registration</a></li>
+                  <li><a class="dropdown-item" href="#">Society Registration</a></li>
+                  <li><a class="dropdown-item" href="#">80G Registration</a></li>
+                  <li><a class="dropdown-item" href="#">Professional Tax Registration</a></li>
+                  <li><a class="dropdown-item" href="#">Shop & Establishment</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" aria-expanded="false">
+                  Accounting & Compliance
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Annual Compliance of Pvt Ltd</a></li>
+                  <li><a class="dropdown-item" href="#">Annual Compliance of LLP</a></li>
+                  <li><a class="dropdown-item" href="#">MCA Compliance for Pvt & LLP</a></li>
+                  <li><a class="dropdown-item" href="#">Audit Compliance for Pvt & LLP</a></li>
+                  <li><a class="dropdown-item" href="#">Winding up Companies</a></li>
+                  <li><a class="dropdown-item" href="#">Company Accountant</a></li>
+                  <li><a class="dropdown-item" href="#">Payroll & Book Keeping</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" aria-expanded="false">
+                  Certfication Preparations
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Net Worth Certificate </a></li>
+                  <li><a class="dropdown-item" href="#">Turnover Certificate </a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" aria-expanded="false">
+                  Loan Assistance
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Personal Loans</a></li>
+                  <li><a class="dropdown-item" href="#">Mudra Loan (Pradhan Mantri MUDRA Yojana)</a></li>
+                  <li><a class="dropdown-item" href="#">MSME Loans & Subsidy Claiming</a></li>
+                  <li><a class="dropdown-item" href="#">Business Loans</a></li>
+                  <li><a class="dropdown-item" href="#">Home Loans</a></li>
+                  <li><a class="dropdown-item" href="#">Mortgage Loan</a></li>
+                  <li><a class="dropdown-item" href="#">Vehicle Loans</a></li>
+                  <li><a class="dropdown-item" href="#">Consult with Loan Experts</a></li>
+                </ul>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </section>
+
+  <!-- Main content starts -->
+
+  <!-- Hero Section -->
+  <section class="hero mt-5">
+    <div class="position-relative w-100 hero-pic h-100 mt-5 py-5">
+      <div class="text-white  hero-text">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-lg-12 col-12 pt-3 align-self-center w-75 mx-auto text-center">
+              <span class="text-uppercase text-light fs-3 text-center">Star filings</span>
+              <h1 class="mb-4 mt-2 display-4 font-weight-bold"><span>Partnership</span>
+              </h1>
+              <div class="mt-4">
+                <a href="#" class="btn text-white mt-2 mt-sm-0 btn btn-primary bg-primary border border-0">Contact
+                  Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="properatorship py-3">
+    <div class="container">
+      <div class="row d-flex justify-content-between px-0">
+        <div class="col-lg-12 col-md-12 col-12">
+          <div class="row my-4 " id="Partnership">
+            <div class="col-lg-7 col-md-12 col-12 doc-col space-0  ">
+              <div class=" h-100">
+                <div class="bg-light shadow req p-3 ">
+                  <h3>Partnership</h3>
+                  <p>A Partnership is a type of business owned and operated by one individual. It's the simplest
+                    form of business structure, where the owner has full control and responsibility. Profits and
+                    losses are personal, and the business is not separate from the owner for legal or tax purposes.
+                  </p>
+                </div>
+                <div class="col-lg-5 col-md-6 col-12 my-4 mx-auto px-0">
+                  <div class="w-100 shadow">
+                    <div class="badge-area-show">
+                      <div class="bagde-flag-wrap">
+                        <a href="#" class="bagde-flag bg-secondary"> Monthly </a>
+                      </div>
+                    </div>
+                    <p class=" fs-4 bg-primary text-white  shadow w-100 text-center lh-1 py-3">₹ 999
+                      <span class=" fs-6 text-light"><s class="mx-1 text-light">₹3,699 </s><br>(Exclude GST)</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="w-100">
+                  <p class="text-center  bg-primary  text-white fs-3 py-1">Documents Needed</p>
+                  <div class="req px-4 bg-light p-1">
+                    <ol class="my-3 p-3 pt-0 ">
+                      <li>PAN Card.</li>
+                      <li>Aadhar card and Voter ID / Passport / Driving License.</li>
+                      <li>Telephone Bill / Electricity Bill / Bank Account Statement.</li>
+                      <li>Passport size photograph.</li>
+                      <li>Business Address Proofs.</li>
+                      <li>NOC or No Objection Certificate.</li>
+                      <li>Rental Agreement.</li>
+                      <li>Foreign nationals or NRIs must apostille or notarize director documentation.</li>
+                    </ol>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-lg-5 col-md-6 py-2">
+              <div class="form-group bg-primary mx-auto px-2 py-3 ">
+                <h2 class="text-center text-decoration-underline">Contact Us</h2>
+                <form class="w-75 mx-auto">
+                  <div class="mb-3">
+                    <label for="name" class="form-label text-light">Name</label>
+                    <input type="text" class="form-control " id="text" aria-describedby="text">
+                  </div>
+                  <div class="mb-3">
+                    <label for="phone" class="form-label text-light">Phone</label>
+                    <input type="phone" class="form-control " id="phone" aria-describedby="phone">
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label text-light">Email address</label>
+                    <input type="email" class="form-control " id="Email1" aria-describedby="email">
+                  </div>
+                  <div class="mb-3">
+                    <label for="message" class="form-label text-light">Message</label>
+                    <textarea name="message" id="" cols="30" rows="5" class=" form-control "></textarea>
+                  </div>
+                  <div class="mb-3 shadow ">
+                    <button type="submit" class="btn btn-secondary w-100 p-2">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-12">
+
+              <div class="getsrc-btn mt-5 d-flex justify-content-center">
+                <a href="#" class="btn btn-primary ">Get Service </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact form section -->
+  <section class="contact_form py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="fs-1 text-center">Contact Us</h2>
+        </div>
+      </div>
+      <div class="row my-3">
+        <div class="col-lg-6 col-md-6 py-2">
+          <div class="contact_details">
+            <p class="text-light">
+              <i class="fa fa-location-dot"></i> Address Line goes here
+            </p>
+            <p class="text-light">
+              <i class="fa fa-location-dot"></i> 0987654312
+            </p>
+            <p class="text-light">
+              <i class="fa fa-location-dot"></i> example@gmail.com
+            </p>
+            <p class="text-light">
+              <i class="fa fa-location-dot"></i> www.starfilings.com
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 py-2">
+          <div class="contact_details">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.06820974935!2d80.24406067454656!3d12.967487114969463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d000d02efef%3A0x4720bc3fb2def923!2sSTAR%20FILINGS!5e0!3m2!1sen!2sin!4v1718909228743!5m2!1sen!2sin"
+              width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Main content ends -->
+
+  <!-- footer -->
+  <section class="footer py-3">
+    <footer>
+      <div class="container pt-3">
+        <div class="col-12">
+          <p class="text-light text-center">
+            Copyright @2024 <span class="fw-bold">Star Filings </span>All rights reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <script>
+    window.onload = function () {
+      var loader = document.getElementById("loader");
+      // Show the loader by removing the hidden attribute
+      loader.removeAttribute("hidden");
+
+      // Hide the loader after 3 seconds (adjust as needed)
+      setTimeout(function () {
+        // Hide the loader by adding the hidden attribute
+        loader.setAttribute("hidden", true);
+      }, 3000); // 3000 milliseconds = 3 seconds
+    };
+
+  </script>
+  <script>
+    window.addEventListener('scroll', function () {
+      var header = document.getElementById('header');
+      if (window.scrollY > 50) { // Adjust 50 as needed to determine scroll threshold
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+    function scrollToSection(sectionId) {
+      var $targetSection = $('#' + sectionId);
+
+      if ($targetSection.length) {
+        var offset = $targetSection.offset().top - $('.navbar').height();
+
+        $('html, body').animate({ scrollTop: offset }, 10, 'swing');
+      }
+    }
+  </script>
+  <script src="../assets/javascripts/script.js"></script>
+</body>
+
+</html>
