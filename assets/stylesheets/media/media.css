@@ -84,4 +84,8 @@
     .form-control {
         width:  100% !important;
     }
+    
+    .properatorship .col-lg-5 {
+        width: 75% !important;
+    }
 }
