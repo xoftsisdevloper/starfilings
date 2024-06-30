@@ -88,21 +88,13 @@ function activeDeactive(params, params1) {
 
 activeDeactive('content-1','side-header');
 
-$(document).ready(function() {
-  $(document).on('click', '.dropdown-toggle', function(event) {
-      event.preventDefault();
+$(document).on('click', '.dropdown-toggle::after', function(event) {
+  event.preventDefault();
 
-      if ($(window).width() <= 768) {
-          var $dropdownMenu = $(this).siblings('.dropdown-menu');
-          $('.dropdown-menu').not($dropdownMenu).css('display', 'none !important');
-          $dropdownMenu.toggle();
-      }
-  });
-  $(document).on('click', function(event) {
-      if (!$(event.target).closest('.dropdown-toggle').length) {
-          $('.dropdown-menu').css('display', 'none');
-      }
-  });
+  if ($(window).width() <= 768 || $(window).width() < 980) {
+      var $dropdownMenu = $(this).siblings('.dropdown-menu');
+      $('.dropdown-menu').not($dropdownMenu).css('display', 'none !important');
+      $dropdownMenu.toggle();
+  }
 });
-
 
