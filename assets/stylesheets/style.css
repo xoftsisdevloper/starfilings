@@ -324,7 +324,7 @@ p {
 .providing-gst {
     box-shadow: 1px 1px 5px #0000009a;
     border-bottom: 5px solid var(--content-color);
-    height: 150px;
+    height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
