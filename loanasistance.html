@@ -55,142 +55,185 @@
     <!--header-->
     <section class="header">
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light text-light p-2  fixed-top" id='header'>
+            <nav class="navbar navbar-expand-lg navbar-light text-light p-0  fixed-top" id='header'>
                 <div class="container">
                     <a class="navbar-brand text-light fs-2 text-left" href="/"><img
-                            src="assets/static/images/STAR_FILING-LOGO.png" alt="logo"></a>
+                            src="./assets/static/images/STAR_FILING-LOGO.png" alt="logo"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon text-white"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav  text-right ms-auto">
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="navbar-nav  text-right ms-auto my-auto ">
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="/starfilings/startup.html" id="navbarDropdown"
+                                <a class="nav-link dropdown-toggle" href="startup.html" id="navbarDropdown"
                                     role="button" aria-expanded="false">
                                     Startup
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Proprietorship</a></li>
-                                    <li><a class="dropdown-item" href="#">Partnership</a></li>
-                                    <li><a class="dropdown-item" href="#">One Person Company (OPC)</a></li>
-                                    <li><a class="dropdown-item" href="#">Limited Liability Partnership</a></li>
-                                    <li><a class="dropdown-item" href="#">Private Limited Company</a></li>
-                                    <li><a class="dropdown-item" href="#">Public Company</a></li>
+                                    <li><a class="dropdown-item" href="startup.html#properatorship">Proprietorship</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="startup.html#partnership">Partnership</a></li>
+                                    <li><a class="dropdown-item" href="startup.html#opc">One Person Company (OPC)</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="startup.html#llp">Limited Liability
+                                            Partnership</a></li>
+                                    <li><a class="dropdown-item" href="startup.html#plc">Private Limited Company</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="startup.html#pc">Public Company</a></li>
                                 </ul>
                             </li>
 
                             <li class="nav-item dropdown">
-                                <a class="nav-link  dropdown-toggle" href="./starfilings/gst_registrations.html"
-                                    id="navbarDropdown" role="button" aria-expanded="false">
+                                <a class="nav-link  dropdown-toggle" href="gst_registrations.html" id="navbarDropdown"
+                                    role="button" aria-expanded="false">
                                     GST
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#"
-                                            onclick="scrollToSection('gst-register-sec')">GST
-                                            Registration</a></li>
-                                    <li><a class="dropdown-item" href="#">GST Amendments</a></li>
-                                    <li><a class="dropdown-item" href="#" onclick="scrollToSection('gst-return')">GST
-                                            Return Filing</a>
+                                    <li><a class="dropdown-item" href="gst_registrations.html#gstr">GST Registration</a>
                                     </li>
-                                    <li><a class="dropdown-item" href="#">GST LUT Filings</a></li>
-                                    <li><a class="dropdown-item" href="#">GST Revocation</a></li>
-                                    <li><a class="dropdown-item" href="#">GST Surrender</a></li>
-                                    <li><a class="dropdown-item" href="#" onclick="scrollToSection('gst-return')">GST
-                                            Final Return</a>
+                                    <li><a class="dropdown-item" href="gst_registrations.html#gsta">GST Amendments</a>
                                     </li>
-                                    <li><a class="dropdown-item" href="#" onclick="scrollToSection('gst-return')">GST
-                                            Annual Returns (GSTR
-                                            9 & GSTR 9C)</a></li>
-                                    <li><a class="dropdown-item" href="#">GST Audit</a></li>
-                                    <li><a class="dropdown-item" href="#">GST Notice Response & Appeals</a></li>
+                                    <li><a class="dropdown-item" href="gst_registrations.html#gst-file">GST Return
+                                            Filing</a></li>
+                                    <li><a class="dropdown-item" href="gst_registrations.html#gstlut-file">GST LUT
+                                            Filings</a></li>
+                                    <li><a class="dropdown-item" href="gst_registrations.html#gstrevocation">GST
+                                            Revocation</a></li>
+                                    <li><a class="dropdown-item" href="gst_registrations.html#gst-surrendar">GST
+                                            Surrender</a></li>
+                                    <li><a class="dropdown-item" href="gst_registrations.html#gst-fr">GST Final
+                                            Return</a></li>
+                                    <li><a class="dropdown-item" href="gst_registrations.html#gst-ar">GST Annual Returns
+                                            (GSTR 9 & GSTR 9C)</a></li>
+                                    <li><a class="dropdown-item" href="gst_registrations.html#gst-audit">GST Audit</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="gst_registrations.html#gst-notice">GST Notice
+                                            Response & Appeals</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link  dropdown-toggle" href="../starfilings/income-tax.html"
-                                    id="navbarDropdown" role="button" aria-expanded="false">
+                                <a class="nav-link  dropdown-toggle" href="income_tax.html" id="navbarDropdown"
+                                    role="button" aria-expanded="false">
                                     Income Tax
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">TDS Refunds</a></li>
-                                    <li><a class="dropdown-item" href="#">ITR-1 Return Filing</a></li>
-                                    <li><a class="dropdown-item" href="#">ITR-2 Return Filing</a></li>
-                                    <li><a class="dropdown-item" href="#">ITR-3 Return Filing</a></li>
-                                    <li><a class="dropdown-item" href="#">ITR-4 Return Filing</a></li>
-                                    <li><a class="dropdown-item" href="#">ITR-5 Return Filing</a></li>
-                                    <li><a class="dropdown-item" href="#">ITR-6 Return Filing</a></li>
-                                    <li><a class="dropdown-item" href="#">ITR-7 Return 7ling</a></li>
-                                    <li><a class="dropdown-item" href="#">ITR-8 Return Filing</a></li>
-                                    <li><a class="dropdown-item" href="#">TDS-Return Filing & Form 16</a></li>
-                                    <li><a class="dropdown-item" href="#">Income Tax Notice Response & Appeals</a></li>
-                                    <li><a class="dropdown-item" href="#">Tax Audit</a></li>
+                                    <li><a class="dropdown-item" href="income_tax.html#tds-refund">TDS Refunds</a></li>
+                                    <li><a class="dropdown-item" href="income_tax.html#itr-1">ITR-1 Return Filing</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="income_tax.html#itr-2">ITR-2 Return Filing</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="income_tax.html#itr-3">ITR-3 Return Filing</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="income_tax.html#itr-4">ITR-4 Return Filing</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="income_tax.html#itr-5">ITR-5 Return Filing</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="income_tax.html#itr-6">ITR-6 Return Filing</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="income_tax.html#itr-7">ITR-7 Return Filing</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="income_tax.html#itr-8">ITR-8 Return Filing</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="income_tax.html#tds_return">TDS-Return Filing &
+                                            Form 16</a></li>
+                                    <li><a class="dropdown-item" href="income_tax.html#tax_notice">Income Tax Notice
+                                            Response & Appeals</a></li>
+                                    <li><a class="dropdown-item" href="income_tax.html#tax_audit">Tax Audit</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link  dropdown-toggle" href="/registration.html" id="navbarDropdown"
+                                <a class="nav-link  dropdown-toggle" href="registration.html" id="navbarDropdown"
                                     role="button" aria-expanded="false">
                                     Registration & Filings
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">GST Registration</a></li>
-                                    <li><a class="dropdown-item" href="#">PF & ESI Registration</a></li>
-                                    <li><a class="dropdown-item" href="#">MSME & Udyam Registration</a></li>
-                                    <li><a class="dropdown-item" href="#">FSSAI Registrations</a></li>
-                                    <li><a class="dropdown-item" href="#">Import & Export Code</a></li>
-                                    <li><a class="dropdown-item" href="#">Digital Signa5ure</a></li>
-                                    <li><a class="dropdown-item" href="#">ISO Registration</a></li>
-                                    <li><a class="dropdown-item" href="#">Trademark & Copyright Registration</a></li>
-                                    <li><a class="dropdown-item" href="#">Trust Registration</a></li>
-                                    <li><a class="dropdown-item" href="#">NGO Registration</a></li>
-                                    <li><a class="dropdown-item" href="#">Society Registration</a></li>
-                                    <li><a class="dropdown-item" href="#">80G Registration</a></li>
-                                    <li><a class="dropdown-item" href="#">Professional Tax Registration</a></li>
-                                    <li><a class="dropdown-item" href="#">Shop & Establishment</a></li>
+                                    <li><a class="dropdown-item" href="registration.html#gst_reg">GST Registration</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="registration.html#pf_esi_reg">PF & ESI
+                                            Registration</a></li>
+                                    <li><a class="dropdown-item" href="registration.html#msme_udayam_reg">MSME & Udyam
+                                            Registration</a></li>
+                                    <li><a class="dropdown-item" href="registration.html#fssai_reg">FSSAI
+                                            Registrations</a></li>
+                                    <li><a class="dropdown-item" href="registration.html#imp&exp_code">Import & Export
+                                            Code</a></li>
+                                    <li><a class="dropdown-item" href="registration.html#ds">Digital Signature</a></li>
+                                    <li><a class="dropdown-item" href="registration.html#iso_reg">ISO Registration</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="registration.html#trede&copyright">Trademark &
+                                            Copyright Registration</a></li>
+                                    <li><a class="dropdown-item" href="registration.html#trust_reg">Trust
+                                            Registration</a></li>
+                                    <li><a class="dropdown-item" href="registration.html#ngo_reg">NGO Registration</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="registration.html#society_reg">Society
+                                            Registration</a></li>
+                                    <li><a class="dropdown-item" href="registration.html#80g_reg">80G Registration</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="registration.html#pr_tax_reg">Professional Tax
+                                            Registration</a></li>
+                                    <li><a class="dropdown-item" href="registration.html#shop_establishment">Shop &
+                                            Establishment</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="accounting&complaince.html"
+                                    id="navbarDropdown" role="button" aria-expanded="false">
                                     Accounting & Compliance
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Annual Compliance of Pvt Ltd</a></li>
-                                    <li><a class="dropdown-item" href="#">Annual Compliance of LLP</a></li>
-                                    <li><a class="dropdown-item" href="#">MCA Compliance for Pvt & LLP</a></li>
-                                    <li><a class="dropdown-item" href="#">Audit Compliance for Pvt & LLP</a></li>
-                                    <li><a class="dropdown-item" href="#">Winding up Companies</a></li>
-                                    <li><a class="dropdown-item" href="#">Company Accountant</a></li>
-                                    <li><a class="dropdown-item" href="#">Payroll & Book Keeping</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="accounting&complaince.html#annual_compliance_ptd">Annual Compliance of
+                                            Pvt Ltd</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="accounting&complaince.html#annual_compliance_llp">Annual Compliance of
+                                            LLP</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="accounting&complaince.html#annual_compliance_mca_ptd">MCA Compliance
+                                            for Pvt & LLP</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="accounting&complaince.html#annual_compliance_audit">Audit Compliance
+                                            for Pvt & LLP</a></li>
+                                    <li><a class="dropdown-item" href="accounting&complaince.html#WUC">Winding up
+                                            Companies</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="accounting&complaince.html#company_assitant">Company Accountant</a>
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="accounting&complaince.html#payrol_booking">Payroll & Book Keeping</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="accounting&complaince.html#NWC">Net Worth
+                                            Certificate </a></li>
+                                    <li><a class="dropdown-item" href="accounting&complaince.html#TC">Turnover
+                                            Certificate </a></li>
                                 </ul>
                             </li>
 
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    aria-expanded="false">
-                                    Certfication Preparations
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Net Worth Certificate </a></li>
-                                    <li><a class="dropdown-item" href="#">Turnover Certificate </a></li>
-                                </ul>
-                            </li>
-
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    aria-expanded="false">
+                                <a class="nav-link dropdown-toggle text-decoration-underline" href="loanasistance.html" id="navbarDropdown"
+                                    role="button" aria-expanded="false">
                                     Loan Assistance
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Personal Loans</a></li>
-                                    <li><a class="dropdown-item" href="#">Mudra Loan (Pradhan Mantri MUDRA Yojana)</a>
+                                    <li><a class="dropdown-item" onclick="scrollToSection('personal_loans')">Personal
+                                            Loans</a></li>
+                                    <li><a class="dropdown-item" onclick="scrollToSection('mudra_loans')">Mudra Loan
+                                            (Pradhan Mantri MUDRA Yojana)</a></li>
+                                    <li><a class="dropdown-item" onclick="scrollToSection('msme_loans')">MSME Loans &
+                                            Subsidy Claiming</a></li>
+                                    <li><a class="dropdown-item" onclick="scrollToSection('business_loans')">Business
+                                            Loans</a></li>
+                                    <li><a class="dropdown-item" onclick="scrollToSection('home_loans')">Home Loans</a>
                                     </li>
-                                    <li><a class="dropdown-item" href="#">MSME Loans & Subsidy Claiming</a></li>
-                                    <li><a class="dropdown-item" href="#">Business Loans</a></li>
-                                    <li><a class="dropdown-item" href="#">Home Loans</a></li>
-                                    <li><a class="dropdown-item" href="#">Mortgage Loan</a></li>
-                                    <li><a class="dropdown-item" href="#">Vehicle Loans</a></li>
-                                    <li><a class="dropdown-item" href="#">Consult with Loan Experts</a></li>
+                                    <li><a class="dropdown-item" onclick="scrollToSection('mortgage_loans')">Mortgage
+                                            Loan</a></li>
+                                    <li><a class="dropdown-item" onclick="scrollToSection('vehicle_loans')">Vehicle
+                                            Loans</a></li>
+                                    <li><a class="dropdown-item" onclick="scrollToSection('consulations')">Consult with
+                                            Loan Experts</a></li>
+
                                 </ul>
                             </li>
 
@@ -200,7 +243,6 @@
             </nav>
         </header>
     </section>
-
     <!-- Main content starts -->
 
     <!-- Hero Section -->
@@ -211,13 +253,10 @@
                     <div class="row mt-3 pb-3 pt-md-5 pt-lg-0">
                         <div class="col-md-6 col-lg-6 col-12 pt-3 align-self-center  mx-auto text-center">
                             <span class="text-uppercase text-light fs-3 text-center">Star filings</span>
-                            <h1 class="mb-4 mt-2 display-4 font-weight-bold"><span>Proprietorship</span>
+                            <h1 class="mb-4 mt-2 display-4 font-weight-bold"><span>
+                                    Loan Assistance
+                                </span>
                             </h1>
-                            <div class="mt-4">
-                                <a href="#"
-                                    class="btn text-white mt-2 mt-sm-0 btn btn-primary bg-primary border border-0">Contact
-                                    Us</a>
-                            </div>
                         </div>
                         <div class="col-lg-4  col-md-6 py-2 pt-4 pt-lg-0 pt-md-0 align-self-center">
                             <div class="form-group bg-primary mx-auto px-2 py-3 ">
@@ -253,124 +292,119 @@
     </section>
     <section class="service py-4 space-1">
         <div class="container space-1">
-          <div class="row space-1">
-            <div class="col-12 space-1">
-              <h2 class="fs-1 text-center space-1">Our Services</h2>
+            <div class="row space-1">
+                <div class="col-12 space-1">
+                    <h2 class="fs-1 text-center space-1">Our Services</h2>
+                </div>
             </div>
-          </div>
         </div>
         <div class="container mb-3">
-    
-          <div class="row ">
-            <div class="col-lg-12">
-              <h4 class="fs-4 mob-center text-center my-3">Providing GST Services</h4>
-              <div class="row">
-                <div class="col-lg-2 col-md-5 col-12 lh-2 providing-gst">
-                  <div class="badge-area-show-1">
-                    <div class="bagde-flag-wrap-1">
-                      <a href="#" class="bagde-flag-1 "> 1 </a>
+
+            <div class="row ">
+                <div class="col-lg-12">
+                    <h4 class="fs-4 mob-center text-center my-3">Loan Assistance Services</h4>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-2 col-md-5 col-12 lh-2 providing-gst">
+                            <div class="badge-area-show-1">
+                                <div class="bagde-flag-wrap-1">
+                                    <a href="#" class="bagde-flag-1 "> 1 </a>
+                                </div>
+                            </div>
+                            <a href="#" onclick="scrollToSection('personal_loans')">
+                                <p>Personal
+                                    Loans</p>
+                            </a>
+
+                        </div>
+                        <div class="col-lg-2 col-md-5 col-12 lh-2 providing-gst">
+                            <div class="badge-area-show-1">
+                                <div class="bagde-flag-wrap-1">
+                                    <a href="#" class="bagde-flag-1 "> 2 </a>
+                                </div>
+                            </div>
+                            <a href="#" onclick="scrollToSection('mudra_loans')">
+                                <p>Mudra Loan
+                                    (Pradhan Mantri MUDRA Yojana)</p>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-5 col-12 lh-2 providing-gst">
+                            <div class="badge-area-show-1">
+                                <div class="bagde-flag-wrap-1">
+                                    <a href="#" class="bagde-flag-1 "> 3 </a>
+                                </div>
+                            </div>
+                            <p onclick="scrollToSection('msme_loans')">
+                                MSME Loans &
+                                Subsidy Claiming
+                            </p>
+                        </div>
+                        <div class="col-lg-2 col-md-5 col-12 lh-2 providing-gst">
+                            <div class="badge-area-show-1">
+                                <div class="bagde-flag-wrap-1">
+                                    <a href="#" class="bagde-flag-1 "> 4 </a>
+                                </div>
+                            </div>
+                            <p onclick="scrollToSection('business_loans')">
+                                Business
+                                Loans
+                            </p>
+                        </div>
+                        <div class="col-lg-2 col-md-5 col-12 lh-2 providing-gst">
+                            <div class="badge-area-show-1">
+                                <div class="bagde-flag-wrap-1">
+                                    <a href="#" class="bagde-flag-1 "> 5 </a>
+                                </div>
+                            </div>
+                            <p onclick="scrollToSection('home_loans')">
+                                Home Loans
+                            </p>
+                        </div>
+                        <div class="col-lg-2 col-md-5 col-12 lh-2 providing-gst">
+                            <div class="badge-area-show-1">
+                                <div class="bagde-flag-wrap-1">
+                                    <a href="#" class="bagde-flag-1 "> 6 </a>
+                                </div>
+                            </div>
+                            <p onclick="scrollToSection('mortgage_loans')">Mortage Loans</p>
+                        </div>
+                        <div class="col-lg-2 col-md-5 col-12 lh-2 providing-gst">
+                            <div class="badge-area-show-1">
+                                <div class="bagde-flag-wrap-1">
+                                    <a href="#" class="bagde-flag-1 "> 7 </a>
+                                </div>
+                            </div>
+                            <p onclick="scrollToSection('vehicle_loans')">Vehicle Loans</p>
+                        </div>
+                        <div class="col-lg-2 col-md-5 col-12 lh-2 providing-gst">
+                            <div class="badge-area-show-1">
+                                <div class="bagde-flag-wrap-1">
+                                    <a href="#" class="bagde-flag-1 "> 8 </a>
+                                </div>
+                            </div>
+                            <p onclick="scrollToSection('consultations')">Consult with
+                                Loan Experts</p>
+                        </div>
+
                     </div>
-                  </div>
-                  <a href="#" onclick="scrollToSection('gst-register')">
-                    <p>GST Registration</p>
-                  </a>
-    
+
                 </div>
-                <div class="col-lg-2 col-md-5 col-12 lh-2 providing-gst">
-                  <div class="badge-area-show-1">
-                    <div class="bagde-flag-wrap-1">
-                      <a href="#" class="bagde-flag-1 "> 2 </a>
-                    </div>
-                  </div>
-                  <a href="#" onclick="scrollToSection('esi_pf-register')">
-                    <p>GST Amendments</p>
-                  </a>
-                </div>
-                <div class="col-lg-2 col-md-5 col-12 lh-2 providing-gst">
-                  <div class="badge-area-show-1">
-                    <div class="bagde-flag-wrap-1">
-                      <a href="#" class="bagde-flag-1 "> 3 </a>
-                    </div>
-                  </div>
-                  <p>GST Return Filing</p>
-                </div>
-                <div class="col-lg-2 col-md-5 col-12 lh-2 providing-gst">
-                  <div class="badge-area-show-1">
-                    <div class="bagde-flag-wrap-1">
-                      <a href="#" class="bagde-flag-1 "> 4 </a>
-                    </div>
-                  </div>
-                  <p>GST LUT Filings</p>
-                </div>
-                <div class="col-lg-2 col-md-5 col-12 lh-2 providing-gst">
-                  <div class="badge-area-show-1">
-                    <div class="bagde-flag-wrap-1">
-                      <a href="#" class="bagde-flag-1 "> 5 </a>
-                    </div>
-                  </div>
-                  <p>GST Revocation</p>
-                </div>
-                <div class="col-lg-2 col-md-5 col-12 lh-2 providing-gst">
-                  <div class="badge-area-show-1">
-                    <div class="bagde-flag-wrap-1">
-                      <a href="#" class="bagde-flag-1 "> 6 </a>
-                    </div>
-                  </div>
-                  <p>GST Surrender</p>
-                </div>
-                <div class="col-lg-2 col-md-5 col-12 lh-2 providing-gst">
-                  <div class="badge-area-show-1">
-                    <div class="bagde-flag-wrap-1">
-                      <a href="#" class="bagde-flag-1 "> 7 </a>
-                    </div>
-                  </div>
-                  <p>GST Final Return</p>
-                </div>
-                <div class="col-lg-2 col-md-5 col-12 lh-2 providing-gst">
-                  <div class="badge-area-show-1">
-                    <div class="bagde-flag-wrap-1">
-                      <a href="#" class="bagde-flag-1 "> 8 </a>
-                    </div>
-                  </div>
-                  <p>GST Annual Returns (GSTR 9 & GSTR 9C)</p>
-                </div>
-                <div class="col-lg-2 col-md-5 col-12 lh-2 providing-gst">
-                  <div class="badge-area-show-1">
-                    <div class="bagde-flag-wrap-1">
-                      <a href="#" class="bagde-flag-1 "> 9 </a>
-                    </div>
-                  </div>
-                  <p>GST Audit</p>
-                </div>
-                <div class="col-lg-2 col-md-5 col-12 lh-2 providing-gst">
-                  <div class="badge-area-show-1">
-                    <div class="bagde-flag-wrap-1">
-                      <a href="#" class="bagde-flag-1 "> 10 </a>
-                    </div>
-                  </div>
-                  <p>GST Notice Response & Appeals</p>
-                </div>
-              </div>
-              
             </div>
-          </div>
-      </section>
+    </section>
     <section class="properatorship py-3" id="properatorship">
         <div class="container">
             <div class="row  px-0">
-                <div class="col-lg-12 col-md-12 col-12" id="properatorship">
-                    <div class="row my-4 justify-content-between" id="proprietorship">
+                <div class="col-lg-12 col-md-12 col-12" id="personal_loans">
+                    <div class="row my-4 justify-content-between">
                         <div class="col-lg-7 col-md-7 col-12 doc-col space-0  ">
                             <div class=" h-100">
                                 <div class="bg-light shadow req p-3 ">
-                                    <h3 class="text-uppercase">Proprietorship</h3>
-                                    
-                                    <p>A proprietorship is a type of business owned and operated by one individual. It's
-                                        the simplest
-                                        form of business structure, where the owner has full control and responsibility.
-                                        Profits and
-                                        losses are personal, and the business is not separate from the owner for legal
-                                        or tax purposes.
+                                    <h3 class="text-uppercase">Personal Loans</h3>
+
+                                    <p>Personal loans are unsecured loans offered by financial institutions that can be
+                                        used for various purposes, such as consolidating debt, funding home
+                                        improvements, or covering unexpected expenses. Unlike secured loans, personal
+                                        loans do not require collateral, making them accessible to a wide range of
+                                        borrowers.
                                     </p>
 
                                 </div>
@@ -391,12 +425,14 @@
                                 </p>
                             </div>
                             <div class="clps-docs">
-                                
-                                <p class="text-center  bg-primary  text-white fs-5 py-2 px-4 d-flex align-items-center justify-content-between" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                    <a class="text-white " >
-                                        Documents Needed 
-                                      </a>
-                                      <i class="fa-solid fa-circle-chevron-down "></i>
+
+                                <p class="text-center  bg-primary  text-white fs-5 py-2 px-4 d-flex align-items-center justify-content-between"
+                                    data-bs-toggle="collapse" href="#collapseExample" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    <a class="text-white ">
+                                        Documents Needed
+                                    </a>
+                                    <i class="fa-solid fa-circle-chevron-down "></i>
                                 </p>
                                 <div class="req px-4 bg-light p-1 collapse collapse-horizontal" id="collapseExample">
                                     <ol class="mt-0 p-3 pt-0 ">
@@ -414,22 +450,20 @@
                             </div>
 
                         </div>
-                        
+
                     </div>
                 </div>
-                <div class="col-lg-12 col-md-12 col-12" id="properatorship">
-                    <div class="row my-4 justify-content-between" id="proprietorship">
+                <div class="col-lg-12 col-md-12 col-12" id="mudra_loans">
+                    <div class="row my-4 justify-content-between">
                         <div class="col-lg-7 col-md-7 col-12 doc-col space-0  ">
                             <div class=" h-100">
                                 <div class="bg-light shadow req p-3 ">
-                                    <h3 class="text-uppercase">Proprietorship</h3>
-                                    
-                                    <p>A proprietorship is a type of business owned and operated by one individual. It's
-                                        the simplest
-                                        form of business structure, where the owner has full control and responsibility.
-                                        Profits and
-                                        losses are personal, and the business is not separate from the owner for legal
-                                        or tax purposes.
+                                    <h3 class="text-uppercase">Mudra Loan (Pradhan Mantri MUDRA Yogana)</h3>
+
+                                    <p>Mudra loans, offered under the Pradhan Mantri Mudra Yojana (PMMY) in India, aim
+                                        to provide financial support to micro and small enterprises. Launched by the
+                                        government, this initiative focuses on empowering small business owners by
+                                        offering loans up to ₹10 lakhs without collateral.
                                     </p>
 
                                 </div>
@@ -450,12 +484,14 @@
                                 </p>
                             </div>
                             <div class="clps-docs">
-                                
-                                <p class="text-center  bg-primary  text-white fs-5 py-2 px-4 d-flex align-items-center justify-content-between" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                    <a class="text-white " >
-                                        Documents Needed 
-                                      </a>
-                                      <i class="fa-solid fa-circle-chevron-down "></i>
+
+                                <p class="text-center  bg-primary  text-white fs-5 py-2 px-4 d-flex align-items-center justify-content-between"
+                                    data-bs-toggle="collapse" href="#collapseExample" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    <a class="text-white ">
+                                        Documents Needed
+                                    </a>
+                                    <i class="fa-solid fa-circle-chevron-down "></i>
                                 </p>
                                 <div class="req px-4 bg-light p-1 collapse collapse-horizontal" id="collapseExample">
                                     <ol class="mt-0 p-3 pt-0 ">
@@ -473,22 +509,22 @@
                             </div>
 
                         </div>
-                        
+
                     </div>
                 </div>
-                <div class="col-lg-12 col-md-12 col-12" id="properatorship">
-                    <div class="row my-4 justify-content-between" id="proprietorship">
+                <div class="col-lg-12 col-md-12 col-12" id="msme_loans">
+                    <div class="row my-4 justify-content-between" id="MSME">
                         <div class="col-lg-7 col-md-7 col-12 doc-col space-0  ">
                             <div class=" h-100">
                                 <div class="bg-light shadow req p-3 ">
-                                    <h3 class="text-uppercase">Proprietorship</h3>
-                                    
-                                    <p>A proprietorship is a type of business owned and operated by one individual. It's
-                                        the simplest
-                                        form of business structure, where the owner has full control and responsibility.
-                                        Profits and
-                                        losses are personal, and the business is not separate from the owner for legal
-                                        or tax purposes.
+                                    <h3 class="text-uppercase">MSME Loans & subsidy claiming</h3>
+
+                                    <p>Micro, Small, and Medium Enterprises (MSMEs) play a vital role in the economy,
+                                        and accessing loans and subsidies is crucial for their growth. MSME loans are
+                                        financial products specifically designed to meet the needs of these businesses,
+                                        providing funds for working capital, expansion, or equipment purchases. These
+                                        loans often have favorable terms, such as lower interest rates and flexible
+                                        repayment options, making them accessible to smaller enterprises.
                                     </p>
 
                                 </div>
@@ -509,12 +545,14 @@
                                 </p>
                             </div>
                             <div class="clps-docs">
-                                
-                                <p class="text-center  bg-primary  text-white fs-5 py-2 px-4 d-flex align-items-center justify-content-between" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                    <a class="text-white " >
-                                        Documents Needed 
-                                      </a>
-                                      <i class="fa-solid fa-circle-chevron-down "></i>
+
+                                <p class="text-center  bg-primary  text-white fs-5 py-2 px-4 d-flex align-items-center justify-content-between"
+                                    data-bs-toggle="collapse" href="#collapseExample" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    <a class="text-white ">
+                                        Documents Needed
+                                    </a>
+                                    <i class="fa-solid fa-circle-chevron-down "></i>
                                 </p>
                                 <div class="req px-4 bg-light p-1 collapse collapse-horizontal" id="collapseExample">
                                     <ol class="mt-0 p-3 pt-0 ">
@@ -532,22 +570,20 @@
                             </div>
 
                         </div>
-                        
+
                     </div>
                 </div>
-                <div class="col-lg-12 col-md-12 col-12" id="properatorship">
-                    <div class="row my-4 justify-content-between" id="proprietorship">
+                <div class="col-lg-12 col-md-12 col-12" id="business_loans">
+                    <div class="row my-4 justify-content-between" id="business">
                         <div class="col-lg-7 col-md-7 col-12 doc-col space-0  ">
                             <div class=" h-100">
                                 <div class="bg-light shadow req p-3 ">
-                                    <h3 class="text-uppercase">Proprietorship</h3>
-                                    
-                                    <p>A proprietorship is a type of business owned and operated by one individual. It's
-                                        the simplest
-                                        form of business structure, where the owner has full control and responsibility.
-                                        Profits and
-                                        losses are personal, and the business is not separate from the owner for legal
-                                        or tax purposes.
+                                    <h3 class="text-uppercase">Business Loans</h3>
+
+                                    <p>Business loans are financial products designed to help businesses fund
+                                        operations, expansion, or other needs. These loans can come from banks, credit
+                                        unions, or alternative lenders and vary in terms of interest rates, repayment
+                                        periods, and eligibility criteria.
                                     </p>
 
                                 </div>
@@ -568,12 +604,14 @@
                                 </p>
                             </div>
                             <div class="clps-docs">
-                                
-                                <p class="text-center  bg-primary  text-white fs-5 py-2 px-4 d-flex align-items-center justify-content-between" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                    <a class="text-white " >
-                                        Documents Needed 
-                                      </a>
-                                      <i class="fa-solid fa-circle-chevron-down "></i>
+
+                                <p class="text-center  bg-primary  text-white fs-5 py-2 px-4 d-flex align-items-center justify-content-between"
+                                    data-bs-toggle="collapse" href="#collapseExample" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    <a class="text-white ">
+                                        Documents Needed
+                                    </a>
+                                    <i class="fa-solid fa-circle-chevron-down "></i>
                                 </p>
                                 <div class="req px-4 bg-light p-1 collapse collapse-horizontal" id="collapseExample">
                                     <ol class="mt-0 p-3 pt-0 ">
@@ -591,22 +629,21 @@
                             </div>
 
                         </div>
-                        
+
                     </div>
                 </div>
-                <div class="col-lg-12 col-md-12 col-12" id="properatorship">
-                    <div class="row my-4 justify-content-between" id="proprietorship">
+                <div class="col-lg-12 col-md-12 col-12" id="home_loans">
+                    <div class="row my-4 justify-content-between" id="home">
                         <div class="col-lg-7 col-md-7 col-12 doc-col space-0  ">
                             <div class=" h-100">
                                 <div class="bg-light shadow req p-3 ">
-                                    <h3 class="text-uppercase">Proprietorship</h3>
-                                    
-                                    <p>A proprietorship is a type of business owned and operated by one individual. It's
-                                        the simplest
-                                        form of business structure, where the owner has full control and responsibility.
-                                        Profits and
-                                        losses are personal, and the business is not separate from the owner for legal
-                                        or tax purposes.
+                                    <h3 class="text-uppercase">Home Loans</h3>
+
+                                    <p>Home loans, also known as mortgages, are financial products that enable
+                                        individuals to purchase real estate. These loans are typically provided by
+                                        banks, credit unions, or other financial institutions and are secured by the
+                                        property being purchased. Home loans involve borrowing a sum of money to buy a
+                                        home, with the property itself serving as collateral for the loan.
                                     </p>
 
                                 </div>
@@ -627,12 +664,14 @@
                                 </p>
                             </div>
                             <div class="clps-docs">
-                                
-                                <p class="text-center  bg-primary  text-white fs-5 py-2 px-4 d-flex align-items-center justify-content-between" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                    <a class="text-white " >
-                                        Documents Needed 
-                                      </a>
-                                      <i class="fa-solid fa-circle-chevron-down "></i>
+
+                                <p class="text-center  bg-primary  text-white fs-5 py-2 px-4 d-flex align-items-center justify-content-between"
+                                    data-bs-toggle="collapse" href="#collapseExample" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    <a class="text-white ">
+                                        Documents Needed
+                                    </a>
+                                    <i class="fa-solid fa-circle-chevron-down "></i>
                                 </p>
                                 <div class="req px-4 bg-light p-1 collapse collapse-horizontal" id="collapseExample">
                                     <ol class="mt-0 p-3 pt-0 ">
@@ -650,22 +689,24 @@
                             </div>
 
                         </div>
-                        
+
                     </div>
                 </div>
-                <div class="col-lg-12 col-md-12 col-12" id="properatorship">
-                    <div class="row my-4 justify-content-between" id="proprietorship">
+                <div class="col-lg-12 col-md-12 col-12" id="mortgage_loans">
+                    <div class="row my-4 justify-content-between" id="Mortgage">
                         <div class="col-lg-7 col-md-7 col-12 doc-col space-0  ">
                             <div class=" h-100">
                                 <div class="bg-light shadow req p-3 ">
-                                    <h3 class="text-uppercase">Proprietorship</h3>
-                                    
-                                    <p>A proprietorship is a type of business owned and operated by one individual. It's
-                                        the simplest
-                                        form of business structure, where the owner has full control and responsibility.
-                                        Profits and
-                                        losses are personal, and the business is not separate from the owner for legal
-                                        or tax purposes.
+                                    <h3 class="text-uppercase">Mortgage Loan</h3>
+
+                                    <p>Mortgage loans are financial instruments used by individuals and businesses to
+                                        purchase real estate while spreading the cost over an extended period. These
+                                        loans are secured by the property being purchased, serving as collateral that
+                                        reduces risk for lenders and typically allows borrowers to access larger amounts
+                                        of capital than unsecured loans. Mortgage loans come in various types, including
+                                        fixed-rate mortgages where interest rates remain constant throughout the loan
+                                        term, and adjustable-rate mortgages where rates fluctuate based on market
+                                        conditions.
                                     </p>
 
                                 </div>
@@ -686,12 +727,14 @@
                                 </p>
                             </div>
                             <div class="clps-docs">
-                                
-                                <p class="text-center  bg-primary  text-white fs-5 py-2 px-4 d-flex align-items-center justify-content-between" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                    <a class="text-white " >
-                                        Documents Needed 
-                                      </a>
-                                      <i class="fa-solid fa-circle-chevron-down "></i>
+
+                                <p class="text-center  bg-primary  text-white fs-5 py-2 px-4 d-flex align-items-center justify-content-between"
+                                    data-bs-toggle="collapse" href="#collapseExample" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    <a class="text-white ">
+                                        Documents Needed
+                                    </a>
+                                    <i class="fa-solid fa-circle-chevron-down "></i>
                                 </p>
                                 <div class="req px-4 bg-light p-1 collapse collapse-horizontal" id="collapseExample">
                                     <ol class="mt-0 p-3 pt-0 ">
@@ -709,22 +752,20 @@
                             </div>
 
                         </div>
-                        
+
                     </div>
                 </div>
-                <div class="col-lg-12 col-md-12 col-12" id="properatorship">
-                    <div class="row my-4 justify-content-between" id="proprietorship">
+                <div class="col-lg-12 col-md-12 col-12" id="vehicle_loans">
+                    <div class="row my-4 justify-content-between" id="Vehicle">
                         <div class="col-lg-7 col-md-7 col-12 doc-col space-0  ">
                             <div class=" h-100">
                                 <div class="bg-light shadow req p-3 ">
-                                    <h3 class="text-uppercase">Proprietorship</h3>
-                                    
-                                    <p>A proprietorship is a type of business owned and operated by one individual. It's
-                                        the simplest
-                                        form of business structure, where the owner has full control and responsibility.
-                                        Profits and
-                                        losses are personal, and the business is not separate from the owner for legal
-                                        or tax purposes.
+                                    <h3 class="text-uppercase">Vehicle Loans</h3>
+
+                                    <p>Vehicle loans are financial products designed to help individuals purchase
+                                        automobiles without paying the full cost upfront. These loans are typically
+                                        offered by banks, credit unions, and other financial institutions, providing
+                                        borrowers with funds to buy new or used vehicles.
                                     </p>
 
                                 </div>
@@ -745,12 +786,14 @@
                                 </p>
                             </div>
                             <div class="clps-docs">
-                                
-                                <p class="text-center  bg-primary  text-white fs-5 py-2 px-4 d-flex align-items-center justify-content-between" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                    <a class="text-white " >
-                                        Documents Needed 
-                                      </a>
-                                      <i class="fa-solid fa-circle-chevron-down "></i>
+
+                                <p class="text-center  bg-primary  text-white fs-5 py-2 px-4 d-flex align-items-center justify-content-between"
+                                    data-bs-toggle="collapse" href="#collapseExample" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    <a class="text-white ">
+                                        Documents Needed
+                                    </a>
+                                    <i class="fa-solid fa-circle-chevron-down "></i>
                                 </p>
                                 <div class="req px-4 bg-light p-1 collapse collapse-horizontal" id="collapseExample">
                                     <ol class="mt-0 p-3 pt-0 ">
@@ -768,7 +811,69 @@
                             </div>
 
                         </div>
-                        
+
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-12" id="consultations">
+                    <div class="row my-4 justify-content-between" id="Consult">
+                        <div class="col-lg-7 col-md-7 col-12 doc-col space-0  ">
+                            <div class=" h-100">
+                                <div class="bg-light shadow req p-3 ">
+                                    <h3 class="text-uppercase">Consult with Loan Experts</h3>
+
+                                    <p>Consulting with loan experts can be crucial when navigating financial decisions.
+                                        These professionals offer tailored advice on borrowing options, interest rates,
+                                        and repayment terms, helping individuals and businesses make informed choices.
+                                        Loan experts assess financial circumstances, creditworthiness, and goals to
+                                        recommend suitable loan products that align with clients' needs. They provide
+                                        insights into various loan types, such as mortgages, personal loans, and
+                                        business loans, outlining the advantages and risks associated with each option.
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-5 col-12 my-4 align-self-center">
+                            <div class="shadow mx-auto prc-badge">
+                                <div class="badge-area-show">
+                                    <div class="bagde-flag-wrap">
+                                        <a href="#" class="bagde-flag bg-secondary"> Monthly </a>
+                                    </div>
+                                </div>
+                                <p class=" fs-4 bg-primary text-white  shadow w-100 text-center lh-1 py-3">₹ 999
+                                    <span class=" fs-6 text-light"><s class="mx-1 text-light">₹3,699
+                                        </s><br>(Exclude GST)</span>
+                                </p>
+                            </div>
+                            <div class="clps-docs">
+
+                                <p class="text-center  bg-primary  text-white fs-5 py-2 px-4 d-flex align-items-center justify-content-between"
+                                    data-bs-toggle="collapse" href="#collapseExample" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    <a class="text-white ">
+                                        Documents Needed
+                                    </a>
+                                    <i class="fa-solid fa-circle-chevron-down "></i>
+                                </p>
+                                <div class="req px-4 bg-light p-1 collapse collapse-horizontal" id="collapseExample">
+                                    <ol class="mt-0 p-3 pt-0 ">
+                                        <li>PAN Card.</li>
+                                        <li>Aadhar card and Voter ID / Passport / Driving License.</li>
+                                        <li>Telephone Bill / Electricity Bill / Bank Account Statement.</li>
+                                        <li>Passport size photograph.</li>
+                                        <li>Business Address Proofs.</li>
+                                        <li>NOC or No Objection Certificate.</li>
+                                        <li>Rental Agreement.</li>
+                                        <li>Foreign nationals or NRIs must apostille or notarize director documentation.
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+
+                        </div>
+
                     </div>
                 </div>
                 <div class="col-lg-12 col-md-12 col-12">
@@ -861,7 +966,7 @@
                 $('html, body').animate({ scrollTop: offset }, 10, 'swing');
             }
         }
-        $(document).on('click', '.clps-docs > p', function() {
+        $(document).on('click', '.clps-docs > p', function () {
             if ($(this).attr('aria-expanded') === 'true') {
                 $('.prc-badge').hide();
                 $(this).find('i').removeClass('fa-circle-chevron-down').addClass('fa-circle-chevron-up');
@@ -870,7 +975,7 @@
                 $(this).find('i').removeClass('fa-circle-chevron-up').addClass('fa-circle-chevron-down');
             }
         });
-        
+
     </script>
     <script src="../assets/javascripts/script.js"></script>
 </body>

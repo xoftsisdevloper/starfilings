@@ -1,104 +1,149 @@
-
 @media screen and (max-width:768px) {
     body {
         overflow-x: hidden;
     }
+
     .container {
         width: 95% !important;
     }
+
     .src {
         width: 60%;
     }
+
     .standard {
         transform: scale(0.9) !important;
     }
-    .home-price .card-body, .yearly-pkg .card .card-body {
+
+    .home-price .card-body,
+    .yearly-pkg .card .card-body {
         height: max-content !important;
     }
+
     .mob-center {
         text-align: center !important;
     }
+
     .btn-primary {
         width: 50%;
     }
-    .space-0{
+
+    .space-0 {
         padding-inline: 0px !important;
         margin-block-end: 3%;
         margin-inline: auto;
     }
-    .space-1{
+
+    .space-1 {
         padding: 0px !important;
         margin-block-end: 1%;
     }
-    .flip-box{
+
+    .flip-box {
         margin: 0 auto !important;
         width: 90%;
     }
+
     .navbar-brand {
         width: 75%;
-    } 
-    h1,.display-4 {
+    }
+
+    h1,
+    .display-4 {
         font-size: 35px !important;
         line-height: 3rem !important;
     }
+
     h2 {
         font-size: 30px !important;
     }
+
     .form-control {
-        width:  100% !important;
+        width: 100% !important;
     }
-    
+
     .properatorship .col-lg-5 {
         width: 75% !important;
     }
+
     .providing-gst {
-        width: 80%!important;
-        margin: 20px  auto;
+        width: 80% !important;
+        margin: 20px auto;
     }
+
+    .dropdown-menu {
+        text-decoration: none !important;
+        text-underline-offset: 8px !important;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: none;
+
+    }
+    
 }
 
-@media screen and (min-width: 980px) and (max-width:1280px){
+@media screen and (min-width: 980px) and (max-width:1280px) {
     body {
         overflow-x: hidden;
     }
+
     .container {
         width: 90% !important;
     }
-    .pricing-table{
+
+    .pricing-table {
         margin-bottom: 30px;
     }
+
     .element-hover {
-      transform: scale(1);
-      transition: 0.3s;
-    } 
+        transform: scale(1);
+        transition: 0.3s;
+    }
+
     .home-price-column {
         padding-block: 20px;
     }
-    .home-price-column .card  .card-body {
+
+    .home-price-column .card .card-body {
         height: max-content !important;
     }
+
     .standard {
         transform: scale(0.9);
     }
+
     .yearly-pkg .card .card-body {
         height: 530px !important;
     }
+
     .src {
         width: 80%;
     }
-    .space-0{
+
+    .space-0 {
         padding-inline: 0px !important;
         margin: 5px;
     }
-    .space-1{
+
+    .space-1 {
         padding: 0px !important;
         margin-block: 5px;
     }
+
     .providing-gst {
         margin: 0px !important;
         height: 150px;
     }
+
     #header a img {
         width: 50% !important;
     }
+
+    .dropdown-menu {
+        text-decoration: none !important;
+        text-underline-offset: 8px !important;
+    }
+
+
 }

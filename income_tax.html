@@ -55,142 +55,187 @@
     <!--header-->
     <section class="header">
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light text-light p-2  fixed-top" id='header'>
+            <nav class="navbar navbar-expand-lg navbar-light text-light p-0  fixed-top" id='header'>
                 <div class="container">
                     <a class="navbar-brand text-light fs-2 text-left" href="/"><img
-                            src="assets/static/images/STAR_FILING-LOGO.png" alt="logo"></a>
+                            src="./assets/static/images/STAR_FILING-LOGO.png" alt="logo"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon text-white"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav  text-right ms-auto">
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="navbar-nav  text-right ms-auto my-auto ">
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="/starfilings/startup.html" id="navbarDropdown"
+                                <a class="nav-link dropdown-toggle" href="startup.html" id="navbarDropdown"
                                     role="button" aria-expanded="false">
                                     Startup
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Proprietorship</a></li>
-                                    <li><a class="dropdown-item" href="#">Partnership</a></li>
-                                    <li><a class="dropdown-item" href="#">One Person Company (OPC)</a></li>
-                                    <li><a class="dropdown-item" href="#">Limited Liability Partnership</a></li>
-                                    <li><a class="dropdown-item" href="#">Private Limited Company</a></li>
-                                    <li><a class="dropdown-item" href="#">Public Company</a></li>
+                                    <li><a class="dropdown-item" href="startup.html#properatorship">Proprietorship</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="startup.html#partnership">Partnership</a></li>
+                                    <li><a class="dropdown-item" href="startup.html#opc">One Person Company (OPC)</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="startup.html#llp">Limited Liability
+                                            Partnership</a></li>
+                                    <li><a class="dropdown-item" href="startup.html#plc">Private Limited Company</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="startup.html#pc">Public Company</a></li>
                                 </ul>
                             </li>
 
                             <li class="nav-item dropdown">
-                                <a class="nav-link  dropdown-toggle" href="./starfilings/gst_registrations.html"
-                                    id="navbarDropdown" role="button" aria-expanded="false">
+                                <a class="nav-link  dropdown-toggle" href="gst_registrations.html" id="navbarDropdown"
+                                    role="button" aria-expanded="false">
                                     GST
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#"
-                                            onclick="scrollToSection('gst-register-sec')">GST
-                                            Registration</a></li>
-                                    <li><a class="dropdown-item" href="#">GST Amendments</a></li>
-                                    <li><a class="dropdown-item" href="#" onclick="scrollToSection('gst-return')">GST
-                                            Return Filing</a>
+                                    <li><a class="dropdown-item" href="gst_registrations.html#gstr">GST Registration</a>
                                     </li>
-                                    <li><a class="dropdown-item" href="#">GST LUT Filings</a></li>
-                                    <li><a class="dropdown-item" href="#">GST Revocation</a></li>
-                                    <li><a class="dropdown-item" href="#">GST Surrender</a></li>
-                                    <li><a class="dropdown-item" href="#" onclick="scrollToSection('gst-return')">GST
-                                            Final Return</a>
+                                    <li><a class="dropdown-item" href="gst_registrations.html#gsta">GST Amendments</a>
                                     </li>
-                                    <li><a class="dropdown-item" href="#" onclick="scrollToSection('gst-return')">GST
-                                            Annual Returns (GSTR
-                                            9 & GSTR 9C)</a></li>
-                                    <li><a class="dropdown-item" href="#">GST Audit</a></li>
-                                    <li><a class="dropdown-item" href="#">GST Notice Response & Appeals</a></li>
+                                    <li><a class="dropdown-item" href="gst_registrations.html#gst-file">GST Return
+                                            Filing</a></li>
+                                    <li><a class="dropdown-item" href="gst_registrations.html#gstlut-file">GST LUT
+                                            Filings</a></li>
+                                    <li><a class="dropdown-item" href="gst_registrations.html#gstrevocation">GST
+                                            Revocation</a></li>
+                                    <li><a class="dropdown-item" href="gst_registrations.html#gst-surrendar">GST
+                                            Surrender</a></li>
+                                    <li><a class="dropdown-item" href="gst_registrations.html#gst-fr">GST Final
+                                            Return</a></li>
+                                    <li><a class="dropdown-item" href="gst_registrations.html#gst-ar">GST Annual Returns
+                                            (GSTR 9 & GSTR 9C)</a></li>
+                                    <li><a class="dropdown-item" href="gst_registrations.html#gst-audit">GST Audit</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="gst_registrations.html#gst-notice">GST Notice
+                                            Response & Appeals</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link  dropdown-toggle" href="../starfilings/income-tax.html"
-                                    id="navbarDropdown" role="button" aria-expanded="false">
+                                <a class="nav-link  dropdown-toggle text-decoration-underline" href="income_tax.html" id="navbarDropdown"
+                                    role="button" aria-expanded="false">
                                     Income Tax
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">TDS Refunds</a></li>
-                                    <li><a class="dropdown-item" href="#">ITR-1 Return Filing</a></li>
-                                    <li><a class="dropdown-item" href="#">ITR-2 Return Filing</a></li>
-                                    <li><a class="dropdown-item" href="#">ITR-3 Return Filing</a></li>
-                                    <li><a class="dropdown-item" href="#">ITR-4 Return Filing</a></li>
-                                    <li><a class="dropdown-item" href="#">ITR-5 Return Filing</a></li>
-                                    <li><a class="dropdown-item" href="#">ITR-6 Return Filing</a></li>
-                                    <li><a class="dropdown-item" href="#">ITR-7 Return 7ling</a></li>
-                                    <li><a class="dropdown-item" href="#">ITR-8 Return Filing</a></li>
-                                    <li><a class="dropdown-item" href="#">TDS-Return Filing & Form 16</a></li>
-                                    <li><a class="dropdown-item" href="#">Income Tax Notice Response & Appeals</a></li>
-                                    <li><a class="dropdown-item" href="#">Tax Audit</a></li>
+                                    <li><a class="dropdown-item" onclick="scrollToSection('tds-refund')">TDS Refunds</a>
+                                    </li>
+                                    <li><a class="dropdown-item" onclick="scrollToSection('itr-1')">ITR-1 Return
+                                            Filing</a></li>
+                                    <li><a class="dropdown-item" onclick="scrollToSection('itr-2')">ITR-2 Return
+                                            Filing</a></li>
+                                    <li><a class="dropdown-item" onclick="scrollToSection('itr-3')">ITR-3 Return
+                                            Filing</a></li>
+                                    <li><a class="dropdown-item" onclick="scrollToSection('itr-4')">ITR-4 Return
+                                            Filing</a></li>
+                                    <li><a class="dropdown-item" onclick="scrollToSection('itr-5')">ITR-5 Return
+                                            Filing</a></li>
+                                    <li><a class="dropdown-item" onclick="scrollToSection('itr-6')">ITR-6 Return
+                                            Filing</a></li>
+                                    <li><a class="dropdown-item" onclick="scrollToSection('itr-7')">ITR-7 Return
+                                            Filing</a></li>
+                                    <li><a class="dropdown-item" onclick="scrollToSection('itr-8')">ITR-8 Return
+                                            Filing</a></li>
+                                    <li><a class="dropdown-item" onclick="scrollToSection('tds_return')">TDS-Return
+                                            Filing & Form 16</a></li>
+                                    <li><a class="dropdown-item" onclick="scrollToSection('tax_notice')">Income Tax
+                                            Notice Response & Appeals</a></li>
+                                    <li><a class="dropdown-item" onclick="scrollToSection('tax_audit')">Tax Audit</a>
+                                    </li>
+
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link  dropdown-toggle" href="/registration.html" id="navbarDropdown"
+                                <a class="nav-link  dropdown-toggle" href="registration.html" id="navbarDropdown"
                                     role="button" aria-expanded="false">
                                     Registration & Filings
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">GST Registration</a></li>
-                                    <li><a class="dropdown-item" href="#">PF & ESI Registration</a></li>
-                                    <li><a class="dropdown-item" href="#">MSME & Udyam Registration</a></li>
-                                    <li><a class="dropdown-item" href="#">FSSAI Registrations</a></li>
-                                    <li><a class="dropdown-item" href="#">Import & Export Code</a></li>
-                                    <li><a class="dropdown-item" href="#">Digital Signa5ure</a></li>
-                                    <li><a class="dropdown-item" href="#">ISO Registration</a></li>
-                                    <li><a class="dropdown-item" href="#">Trademark & Copyright Registration</a></li>
-                                    <li><a class="dropdown-item" href="#">Trust Registration</a></li>
-                                    <li><a class="dropdown-item" href="#">NGO Registration</a></li>
-                                    <li><a class="dropdown-item" href="#">Society Registration</a></li>
-                                    <li><a class="dropdown-item" href="#">80G Registration</a></li>
-                                    <li><a class="dropdown-item" href="#">Professional Tax Registration</a></li>
-                                    <li><a class="dropdown-item" href="#">Shop & Establishment</a></li>
+                                    <li><a class="dropdown-item" href="registration.html#gst_reg">GST Registration</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="registration.html#pf_esi_reg">PF & ESI
+                                            Registration</a></li>
+                                    <li><a class="dropdown-item" href="registration.html#msme_udayam_reg">MSME & Udyam
+                                            Registration</a></li>
+                                    <li><a class="dropdown-item" href="registration.html#fssai_reg">FSSAI
+                                            Registrations</a></li>
+                                    <li><a class="dropdown-item" href="registration.html#imp&exp_code">Import & Export
+                                            Code</a></li>
+                                    <li><a class="dropdown-item" href="registration.html#ds">Digital Signature</a></li>
+                                    <li><a class="dropdown-item" href="registration.html#iso_reg">ISO Registration</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="registration.html#trede&copyright">Trademark &
+                                            Copyright Registration</a></li>
+                                    <li><a class="dropdown-item" href="registration.html#trust_reg">Trust
+                                            Registration</a></li>
+                                    <li><a class="dropdown-item" href="registration.html#ngo_reg">NGO Registration</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="registration.html#society_reg">Society
+                                            Registration</a></li>
+                                    <li><a class="dropdown-item" href="registration.html#80g_reg">80G Registration</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="registration.html#pr_tax_reg">Professional Tax
+                                            Registration</a></li>
+                                    <li><a class="dropdown-item" href="registration.html#shop_establishment">Shop &
+                                            Establishment</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="accounting&complaince.html"
+                                    id="navbarDropdown" role="button" aria-expanded="false">
                                     Accounting & Compliance
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Annual Compliance of Pvt Ltd</a></li>
-                                    <li><a class="dropdown-item" href="#">Annual Compliance of LLP</a></li>
-                                    <li><a class="dropdown-item" href="#">MCA Compliance for Pvt & LLP</a></li>
-                                    <li><a class="dropdown-item" href="#">Audit Compliance for Pvt & LLP</a></li>
-                                    <li><a class="dropdown-item" href="#">Winding up Companies</a></li>
-                                    <li><a class="dropdown-item" href="#">Company Accountant</a></li>
-                                    <li><a class="dropdown-item" href="#">Payroll & Book Keeping</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="accounting&complaince.html#annual_compliance_ptd">Annual Compliance of
+                                            Pvt Ltd</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="accounting&complaince.html#annual_compliance_llp">Annual Compliance of
+                                            LLP</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="accounting&complaince.html#annual_compliance_mca_ptd">MCA Compliance
+                                            for Pvt & LLP</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="accounting&complaince.html#annual_compliance_audit">Audit Compliance
+                                            for Pvt & LLP</a></li>
+                                    <li><a class="dropdown-item" href="accounting&complaince.html#WUC">Winding up
+                                            Companies</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="accounting&complaince.html#company_assitant">Company Accountant</a>
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="accounting&complaince.html#payrol_booking">Payroll & Book Keeping</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="accounting&complaince.html#NWC">Net Worth
+                                            Certificate </a></li>
+                                    <li><a class="dropdown-item" href="accounting&complaince.html#TC">Turnover
+                                            Certificate </a></li>
                                 </ul>
                             </li>
 
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    aria-expanded="false">
-                                    Certfication Preparations
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Net Worth Certificate </a></li>
-                                    <li><a class="dropdown-item" href="#">Turnover Certificate </a></li>
-                                </ul>
-                            </li>
-
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="loanasistance.html" id="navbarDropdown"
+                                    role="button" aria-expanded="false">
                                     Loan Assistance
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Personal Loans</a></li>
-                                    <li><a class="dropdown-item" href="#">Mudra Loan (Pradhan Mantri MUDRA Yojana)</a>
+                                    <li><a class="dropdown-item" href="loanasistance.html#personal_loans">Personal
+                                            Loans</a></li>
+                                    <li><a class="dropdown-item" href="loanasistance.html#mudra_loans">Mudra Loan
+                                            (Pradhan Mantri MUDRA Yojana)</a></li>
+                                    <li><a class="dropdown-item" href="loanasistance.html#msme_loans">MSME Loans &
+                                            Subsidy Claiming</a></li>
+                                    <li><a class="dropdown-item" href="loanasistance.html#business_loans">Business
+                                            Loans</a></li>
+                                    <li><a class="dropdown-item" href="loanasistance.html#home_loans">Home Loans</a>
                                     </li>
-                                    <li><a class="dropdown-item" href="#">MSME Loans & Subsidy Claiming</a></li>
-                                    <li><a class="dropdown-item" href="#">Business Loans</a></li>
-                                    <li><a class="dropdown-item" href="#">Home Loans</a></li>
-                                    <li><a class="dropdown-item" href="#">Mortgage Loan</a></li>
-                                    <li><a class="dropdown-item" href="#">Vehicle Loans</a></li>
-                                    <li><a class="dropdown-item" href="#">Consult with Loan Experts</a></li>
+                                    <li><a class="dropdown-item" href="loanasistance.html#mortgae_loans">Mortgage
+                                            Loan</a></li>
+                                    <li><a class="dropdown-item" href="loanasistance.html#vehicle_loans">Vehicle
+                                            Loans</a></li>
+                                    <li><a class="dropdown-item" href="loanasistance.html#consulations">Consult with
+                                            Loan Experts</a></li>
                                 </ul>
                             </li>
 
@@ -211,7 +256,7 @@
                     <div class="row mt-3 pb-3 pt-md-5 pt-lg-0">
                         <div class="col-md-6 col-lg-6 col-12 pt-3 align-self-center  mx-auto text-center">
                             <span class="text-uppercase text-light fs-3 text-center">Star filings</span>
-                            <h1 class="mb-4 mt-2 display-4 font-weight-bold"><span>Proprietorship</span>
+                            <h1 class="mb-4 mt-2 display-4 font-weight-bold"><span>Income Tax Registration</span>
                             </h1>
                             <div class="mt-4">
                                 <a href="#"
@@ -253,124 +298,130 @@
     </section>
     <section class="service py-4 space-1">
         <div class="container space-1">
-          <div class="row space-1">
-            <div class="col-12 space-1">
-              <h2 class="fs-1 text-center space-1">Our Services</h2>
+            <div class="row space-1">
+                <div class="col-12 space-1">
+                    <h2 class="fs-1 text-center space-1">Loan Assistance Services</h2>
+                </div>
+
             </div>
-          </div>
         </div>
         <div class="container mb-3">
-    
-          <div class="row ">
-            <div class="col-lg-12">
-              <h4 class="fs-4 mob-center text-center my-3">Providing GST Services</h4>
-              <div class="row">
+
+            <div class="row">
                 <div class="col-lg-2 col-md-5 col-12 lh-2 providing-gst">
-                  <div class="badge-area-show-1">
-                    <div class="bagde-flag-wrap-1">
-                      <a href="#" class="bagde-flag-1 "> 1 </a>
+                    <div class="badge-area-show-1">
+                        <div class="bagde-flag-wrap-1">
+                            <a href="#" class="bagde-flag-1"> 1 </a>
+                        </div>
                     </div>
-                  </div>
-                  <a href="#" onclick="scrollToSection('gst-register')">
-                    <p>GST Registration</p>
-                  </a>
-    
+                    <p onclick="scrollToSection('tds-refund')">TDS Refunds</p>
                 </div>
                 <div class="col-lg-2 col-md-5 col-12 lh-2 providing-gst">
-                  <div class="badge-area-show-1">
-                    <div class="bagde-flag-wrap-1">
-                      <a href="#" class="bagde-flag-1 "> 2 </a>
+                    <div class="badge-area-show-1">
+                        <div class="bagde-flag-wrap-1">
+                            <a href="#" class="bagde-flag-1"> 2 </a>
+                        </div>
                     </div>
-                  </div>
-                  <a href="#" onclick="scrollToSection('esi_pf-register')">
-                    <p>GST Amendments</p>
-                  </a>
+                    <p onclick="scrollToSection('itr-1')">ITR-1 Return Filing</p>
                 </div>
                 <div class="col-lg-2 col-md-5 col-12 lh-2 providing-gst">
-                  <div class="badge-area-show-1">
-                    <div class="bagde-flag-wrap-1">
-                      <a href="#" class="bagde-flag-1 "> 3 </a>
+                    <div class="badge-area-show-1">
+                        <div class="bagde-flag-wrap-1">
+                            <a href="#" class="bagde-flag-1"> 3 </a>
+                        </div>
                     </div>
-                  </div>
-                  <p>GST Return Filing</p>
+                    <p onclick="scrollToSection('itr-2')">ITR-2 Return Filing</p>
                 </div>
                 <div class="col-lg-2 col-md-5 col-12 lh-2 providing-gst">
-                  <div class="badge-area-show-1">
-                    <div class="bagde-flag-wrap-1">
-                      <a href="#" class="bagde-flag-1 "> 4 </a>
+                    <div class="badge-area-show-1">
+                        <div class="bagde-flag-wrap-1">
+                            <a href="#" class="bagde-flag-1"> 4 </a>
+                        </div>
                     </div>
-                  </div>
-                  <p>GST LUT Filings</p>
+                    <p onclick="scrollToSection('itr-3')">ITR-3 Return Filing</p>
                 </div>
                 <div class="col-lg-2 col-md-5 col-12 lh-2 providing-gst">
-                  <div class="badge-area-show-1">
-                    <div class="bagde-flag-wrap-1">
-                      <a href="#" class="bagde-flag-1 "> 5 </a>
+                    <div class="badge-area-show-1">
+                        <div class="bagde-flag-wrap-1">
+                            <a href="#" class="bagde-flag-1"> 5 </a>
+                        </div>
                     </div>
-                  </div>
-                  <p>GST Revocation</p>
+                    <p onclick="scrollToSection('itr-4')">ITR-4 Return Filing</p>
                 </div>
                 <div class="col-lg-2 col-md-5 col-12 lh-2 providing-gst">
-                  <div class="badge-area-show-1">
-                    <div class="bagde-flag-wrap-1">
-                      <a href="#" class="bagde-flag-1 "> 6 </a>
+                    <div class="badge-area-show-1">
+                        <div class="bagde-flag-wrap-1">
+                            <a href="#" class="bagde-flag-1"> 6 </a>
+                        </div>
                     </div>
-                  </div>
-                  <p>GST Surrender</p>
+                    <p onclick="scrollToSection('itr-5')">ITR-5 Return Filing</p>
                 </div>
                 <div class="col-lg-2 col-md-5 col-12 lh-2 providing-gst">
-                  <div class="badge-area-show-1">
-                    <div class="bagde-flag-wrap-1">
-                      <a href="#" class="bagde-flag-1 "> 7 </a>
+                    <div class="badge-area-show-1">
+                        <div class="bagde-flag-wrap-1">
+                            <a href="#" class="bagde-flag-1"> 7 </a>
+                        </div>
                     </div>
-                  </div>
-                  <p>GST Final Return</p>
+                    <p onclick="scrollToSection('itr-6')">ITR-6 Return Filing</p>
                 </div>
                 <div class="col-lg-2 col-md-5 col-12 lh-2 providing-gst">
-                  <div class="badge-area-show-1">
-                    <div class="bagde-flag-wrap-1">
-                      <a href="#" class="bagde-flag-1 "> 8 </a>
+                    <div class="badge-area-show-1">
+                        <div class="bagde-flag-wrap-1">
+                            <a href="#" class="bagde-flag-1"> 8 </a>
+                        </div>
                     </div>
-                  </div>
-                  <p>GST Annual Returns (GSTR 9 & GSTR 9C)</p>
+                    <p onclick="scrollToSection('itr-7')">ITR-7 Return Filing</p>
                 </div>
                 <div class="col-lg-2 col-md-5 col-12 lh-2 providing-gst">
-                  <div class="badge-area-show-1">
-                    <div class="bagde-flag-wrap-1">
-                      <a href="#" class="bagde-flag-1 "> 9 </a>
+                    <div class="badge-area-show-1">
+                        <div class="bagde-flag-wrap-1">
+                            <a href="#" class="bagde-flag-1"> 9 </a>
+                        </div>
                     </div>
-                  </div>
-                  <p>GST Audit</p>
+                    <p onclick="scrollToSection('itr-8')">ITR-8 Return Filing</p>
                 </div>
                 <div class="col-lg-2 col-md-5 col-12 lh-2 providing-gst">
-                  <div class="badge-area-show-1">
-                    <div class="bagde-flag-wrap-1">
-                      <a href="#" class="bagde-flag-1 "> 10 </a>
+                    <div class="badge-area-show-1">
+                        <div class="bagde-flag-wrap-1">
+                            <a href="#" class="bagde-flag-1"> 10 </a>
+                        </div>
                     </div>
-                  </div>
-                  <p>GST Notice Response & Appeals</p>
+                    <p onclick="scrollToSection('tds_return')">TDS-Return <br>Filing & Form 16</p>
                 </div>
-              </div>
-              
+                <div class="col-lg-2 col-md-5 col-12 lh-2 providing-gst">
+                    <div class="badge-area-show-1">
+                        <div class="bagde-flag-wrap-1">
+                            <a href="#" class="bagde-flag-1"> 11 </a>
+                        </div>
+                    </div>
+                    <p onclick="scrollToSection('tax_notice')">Income Tax <br>Notice Response & Appeals</p>
+                </div>
+                <div class="col-lg-2 col-md-5 col-12 lh-2 providing-gst">
+                    <div class="badge-area-show-1">
+                        <div class="bagde-flag-wrap-1">
+                            <a href="#" class="bagde-flag-1"> 12 </a>
+                        </div>
+                    </div>
+                    <p onclick="scrollToSection('tax_audit')">Tax Audit</p>
+                </div>
             </div>
-          </div>
-      </section>
+
+    </section>
     <section class="properatorship py-3" id="properatorship">
         <div class="container">
             <div class="row  px-0">
-                <div class="col-lg-12 col-md-12 col-12" id="properatorship">
-                    <div class="row my-4 justify-content-between" id="proprietorship">
+                <div class="col-lg-12 col-md-12 col-12" id="tds-refund">
+                    <div class="row my-4 justify-content-between" id="TDS_refunds">
                         <div class="col-lg-7 col-md-7 col-12 doc-col space-0  ">
                             <div class=" h-100">
                                 <div class="bg-light shadow req p-3 ">
-                                    <h3 class="text-uppercase">Proprietorship</h3>
-                                    
-                                    <p>A proprietorship is a type of business owned and operated by one individual. It's
-                                        the simplest
-                                        form of business structure, where the owner has full control and responsibility.
-                                        Profits and
-                                        losses are personal, and the business is not separate from the owner for legal
-                                        or tax purposes.
+                                    <h3 class="text-uppercase">TDS Refunds</h3>
+
+                                    <p>Tax Deducted at Source (TDS) refunds occur when the tax deducted exceeds the
+                                        actual tax liability of a taxpayer. This often happens due to high withholding
+                                        rates or incorrect estimates of income and deductions. To claim a TDS refund,
+                                        individuals and businesses must file their income tax returns, declaring all
+                                        sources of income and detailing the TDS amounts deducted.
                                     </p>
 
                                 </div>
@@ -391,12 +442,14 @@
                                 </p>
                             </div>
                             <div class="clps-docs">
-                                
-                                <p class="text-center  bg-primary  text-white fs-5 py-2 px-4 d-flex align-items-center justify-content-between" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                    <a class="text-white " >
-                                        Documents Needed 
-                                      </a>
-                                      <i class="fa-solid fa-circle-chevron-down "></i>
+
+                                <p class="text-center  bg-primary  text-white fs-5 py-2 px-4 d-flex align-items-center justify-content-between"
+                                    data-bs-toggle="collapse" href="#collapseExample" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    <a class="text-white ">
+                                        Documents Needed
+                                    </a>
+                                    <i class="fa-solid fa-circle-chevron-down "></i>
                                 </p>
                                 <div class="req px-4 bg-light p-1 collapse collapse-horizontal" id="collapseExample">
                                     <ol class="mt-0 p-3 pt-0 ">
@@ -414,22 +467,22 @@
                             </div>
 
                         </div>
-                        
+
                     </div>
                 </div>
-                <div class="col-lg-12 col-md-12 col-12" id="properatorship">
-                    <div class="row my-4 justify-content-between" id="proprietorship">
+                <div class="col-lg-12 col-md-12 col-12" id="itr-1">
+                    <div class="row my-4 justify-content-between" id="ITR-1 Return_filing">
                         <div class="col-lg-7 col-md-7 col-12 doc-col space-0  ">
                             <div class=" h-100">
                                 <div class="bg-light shadow req p-3 ">
-                                    <h3 class="text-uppercase">Proprietorship</h3>
-                                    
-                                    <p>A proprietorship is a type of business owned and operated by one individual. It's
-                                        the simplest
-                                        form of business structure, where the owner has full control and responsibility.
-                                        Profits and
-                                        losses are personal, and the business is not separate from the owner for legal
-                                        or tax purposes.
+                                    <h3 class="text-uppercase">ITR-1 Return filing</h3>
+
+                                    <p>ITR-1, also known as Sahaj, is an Income Tax Return form used by individual
+                                        taxpayers in India. It is primarily for residents with income up to ₹50 lakh
+                                        from salary, one house property, and other sources like interest. This form
+                                        simplifies the filing process for taxpayers with straightforward income
+                                        structures.
+
                                     </p>
 
                                 </div>
@@ -450,12 +503,14 @@
                                 </p>
                             </div>
                             <div class="clps-docs">
-                                
-                                <p class="text-center  bg-primary  text-white fs-5 py-2 px-4 d-flex align-items-center justify-content-between" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                    <a class="text-white " >
-                                        Documents Needed 
-                                      </a>
-                                      <i class="fa-solid fa-circle-chevron-down "></i>
+
+                                <p class="text-center  bg-primary  text-white fs-5 py-2 px-4 d-flex align-items-center justify-content-between"
+                                    data-bs-toggle="collapse" href="#collapseExample" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    <a class="text-white ">
+                                        Documents Needed
+                                    </a>
+                                    <i class="fa-solid fa-circle-chevron-down "></i>
                                 </p>
                                 <div class="req px-4 bg-light p-1 collapse collapse-horizontal" id="collapseExample">
                                     <ol class="mt-0 p-3 pt-0 ">
@@ -473,22 +528,22 @@
                             </div>
 
                         </div>
-                        
+
                     </div>
                 </div>
-                <div class="col-lg-12 col-md-12 col-12" id="properatorship">
-                    <div class="row my-4 justify-content-between" id="proprietorship">
+                <div class="col-lg-12 col-md-12 col-12" id="itr-2">
+                    <div class="row my-4 justify-content-between" id="ITR-2 Return_filing">
                         <div class="col-lg-7 col-md-7 col-12 doc-col space-0  ">
                             <div class=" h-100">
                                 <div class="bg-light shadow req p-3 ">
-                                    <h3 class="text-uppercase">Proprietorship</h3>
-                                    
-                                    <p>A proprietorship is a type of business owned and operated by one individual. It's
-                                        the simplest
-                                        form of business structure, where the owner has full control and responsibility.
-                                        Profits and
-                                        losses are personal, and the business is not separate from the owner for legal
-                                        or tax purposes.
+                                    <h3 class="text-uppercase">ITR-2 Return filing</h3>
+
+                                    <p>ITR-2 is a tax return form used by individuals and Hindu Undivided Families
+                                        (HUFs) in India who do not have income from business or profession. This form is
+                                        applicable to those earning income from sources like salary, pension, rental
+                                        income from more than one house property, capital gains, and foreign assets or
+                                        income.
+
                                     </p>
 
                                 </div>
@@ -509,12 +564,14 @@
                                 </p>
                             </div>
                             <div class="clps-docs">
-                                
-                                <p class="text-center  bg-primary  text-white fs-5 py-2 px-4 d-flex align-items-center justify-content-between" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                    <a class="text-white " >
-                                        Documents Needed 
-                                      </a>
-                                      <i class="fa-solid fa-circle-chevron-down "></i>
+
+                                <p class="text-center  bg-primary  text-white fs-5 py-2 px-4 d-flex align-items-center justify-content-between"
+                                    data-bs-toggle="collapse" href="#collapseExample" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    <a class="text-white ">
+                                        Documents Needed
+                                    </a>
+                                    <i class="fa-solid fa-circle-chevron-down "></i>
                                 </p>
                                 <div class="req px-4 bg-light p-1 collapse collapse-horizontal" id="collapseExample">
                                     <ol class="mt-0 p-3 pt-0 ">
@@ -532,22 +589,26 @@
                             </div>
 
                         </div>
-                        
+
                     </div>
                 </div>
-                <div class="col-lg-12 col-md-12 col-12" id="properatorship">
-                    <div class="row my-4 justify-content-between" id="proprietorship">
+                <div class="col-lg-12 col-md-12 col-12" id="itr-3">
+                    <div class="row my-4 justify-content-between" id="ITR-3 Return_filing">
                         <div class="col-lg-7 col-md-7 col-12 doc-col space-0  ">
                             <div class=" h-100">
                                 <div class="bg-light shadow req p-3 ">
-                                    <h3 class="text-uppercase">Proprietorship</h3>
-                                    
-                                    <p>A proprietorship is a type of business owned and operated by one individual. It's
-                                        the simplest
-                                        form of business structure, where the owner has full control and responsibility.
-                                        Profits and
-                                        losses are personal, and the business is not separate from the owner for legal
-                                        or tax purposes.
+                                    <h3 class="text-uppercase">ITR-3 Return filing</h3>
+
+                                    <p>The ITR-3 form is used by individuals and Hindu Undivided Families (HUFs) in
+                                        India who have income from business or professional activities. This form is
+                                        suitable for those who operate as a proprietor or are engaged in a profession,
+                                        such as doctors, lawyers, or freelancers. It also covers income from salary,
+                                        house property, and other sources.
+                                        Filing ITR-3 requires detailed information about the income and expenses related
+                                        to the business or profession, ensuring accurate calculation of net taxable
+                                        income. Deductions under various sections of the Income Tax Act can be claimed
+                                        to reduce tax liability. The form also requires details of any audit conducted
+                                        under the Income Tax Act, if applicable.
                                     </p>
 
                                 </div>
@@ -568,12 +629,14 @@
                                 </p>
                             </div>
                             <div class="clps-docs">
-                                
-                                <p class="text-center  bg-primary  text-white fs-5 py-2 px-4 d-flex align-items-center justify-content-between" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                    <a class="text-white " >
-                                        Documents Needed 
-                                      </a>
-                                      <i class="fa-solid fa-circle-chevron-down "></i>
+
+                                <p class="text-center  bg-primary  text-white fs-5 py-2 px-4 d-flex align-items-center justify-content-between"
+                                    data-bs-toggle="collapse" href="#collapseExample" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    <a class="text-white ">
+                                        Documents Needed
+                                    </a>
+                                    <i class="fa-solid fa-circle-chevron-down "></i>
                                 </p>
                                 <div class="req px-4 bg-light p-1 collapse collapse-horizontal" id="collapseExample">
                                     <ol class="mt-0 p-3 pt-0 ">
@@ -591,22 +654,21 @@
                             </div>
 
                         </div>
-                        
+
                     </div>
                 </div>
-                <div class="col-lg-12 col-md-12 col-12" id="properatorship">
-                    <div class="row my-4 justify-content-between" id="proprietorship">
+                <div class="col-lg-12 col-md-12 col-12" id="itr-4">
+                    <div class="row my-4 justify-content-between" id="ITR-4 Return_filing">
                         <div class="col-lg-7 col-md-7 col-12 doc-col space-0  ">
                             <div class=" h-100">
                                 <div class="bg-light shadow req p-3 ">
-                                    <h3 class="text-uppercase">Proprietorship</h3>
-                                    
-                                    <p>A proprietorship is a type of business owned and operated by one individual. It's
-                                        the simplest
-                                        form of business structure, where the owner has full control and responsibility.
-                                        Profits and
-                                        losses are personal, and the business is not separate from the owner for legal
-                                        or tax purposes.
+                                    <h3 class="text-uppercase">ITR-4 Return filing</h3>
+
+                                    <p>ITR-4, also known as Sugam, is an income tax return form in India designed for
+                                        taxpayers who opt for the presumptive taxation scheme under Section 44AD,
+                                        Section 44ADA, or Section 44AE. It primarily caters to small businesses,
+                                        professionals, and individuals with income from a business or profession, along
+                                        with salary, pension, or other income streams.
                                     </p>
 
                                 </div>
@@ -627,12 +689,14 @@
                                 </p>
                             </div>
                             <div class="clps-docs">
-                                
-                                <p class="text-center  bg-primary  text-white fs-5 py-2 px-4 d-flex align-items-center justify-content-between" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                    <a class="text-white " >
-                                        Documents Needed 
-                                      </a>
-                                      <i class="fa-solid fa-circle-chevron-down "></i>
+
+                                <p class="text-center  bg-primary  text-white fs-5 py-2 px-4 d-flex align-items-center justify-content-between"
+                                    data-bs-toggle="collapse" href="#collapseExample" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    <a class="text-white ">
+                                        Documents Needed
+                                    </a>
+                                    <i class="fa-solid fa-circle-chevron-down "></i>
                                 </p>
                                 <div class="req px-4 bg-light p-1 collapse collapse-horizontal" id="collapseExample">
                                     <ol class="mt-0 p-3 pt-0 ">
@@ -650,22 +714,23 @@
                             </div>
 
                         </div>
-                        
+
                     </div>
                 </div>
-                <div class="col-lg-12 col-md-12 col-12" id="properatorship">
-                    <div class="row my-4 justify-content-between" id="proprietorship">
+                <div class="col-lg-12 col-md-12 col-12" id="itr-5">
+                    <div class="row my-4 justify-content-between" id="ITR-5 Return_filing">
                         <div class="col-lg-7 col-md-7 col-12 doc-col space-0  ">
                             <div class=" h-100">
                                 <div class="bg-light shadow req p-3 ">
-                                    <h3 class="text-uppercase">Proprietorship</h3>
-                                    
-                                    <p>A proprietorship is a type of business owned and operated by one individual. It's
-                                        the simplest
-                                        form of business structure, where the owner has full control and responsibility.
-                                        Profits and
-                                        losses are personal, and the business is not separate from the owner for legal
-                                        or tax purposes.
+                                    <h3 class="text-uppercase">ITR-5 Return Filing</h3>
+
+                                    <p>ITR-5 is a specific income tax return form in India designed for firms, LLPs
+                                        (Limited Liability Partnerships), Association of Persons (AOPs), Body of
+                                        Individuals (BOIs), and Artificial Juridical Persons (AJPs) that are not
+                                        required to file their returns using any other form such as ITR-1, ITR-2, ITR-3,
+                                        or ITR-4. It's a comprehensive form that requires detailed financial
+                                        information, including balance sheet, profit and loss account, and other
+                                        financial details.
                                     </p>
 
                                 </div>
@@ -686,12 +751,14 @@
                                 </p>
                             </div>
                             <div class="clps-docs">
-                                
-                                <p class="text-center  bg-primary  text-white fs-5 py-2 px-4 d-flex align-items-center justify-content-between" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                    <a class="text-white " >
-                                        Documents Needed 
-                                      </a>
-                                      <i class="fa-solid fa-circle-chevron-down "></i>
+
+                                <p class="text-center  bg-primary  text-white fs-5 py-2 px-4 d-flex align-items-center justify-content-between"
+                                    data-bs-toggle="collapse" href="#collapseExample" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    <a class="text-white ">
+                                        Documents Needed
+                                    </a>
+                                    <i class="fa-solid fa-circle-chevron-down "></i>
                                 </p>
                                 <div class="req px-4 bg-light p-1 collapse collapse-horizontal" id="collapseExample">
                                     <ol class="mt-0 p-3 pt-0 ">
@@ -709,22 +776,21 @@
                             </div>
 
                         </div>
-                        
+
                     </div>
                 </div>
-                <div class="col-lg-12 col-md-12 col-12" id="properatorship">
-                    <div class="row my-4 justify-content-between" id="proprietorship">
+                <div class="col-lg-12 col-md-12 col-12" id="itr-6">
+                    <div class="row my-4 justify-content-between" id="ITR-6 Return_filing">
                         <div class="col-lg-7 col-md-7 col-12 doc-col space-0  ">
                             <div class=" h-100">
                                 <div class="bg-light shadow req p-3 ">
-                                    <h3 class="text-uppercase">Proprietorship</h3>
-                                    
-                                    <p>A proprietorship is a type of business owned and operated by one individual. It's
-                                        the simplest
-                                        form of business structure, where the owner has full control and responsibility.
-                                        Profits and
-                                        losses are personal, and the business is not separate from the owner for legal
-                                        or tax purposes.
+                                    <h3 class="text-uppercase">ITR-6 Return filing</h3>
+
+                                    <p>ITR-6 is a specific income tax return form in India primarily used by companies,
+                                        other than those claiming exemption under section 11 (income from property held
+                                        for charitable or religious purposes). It is filed with the Income Tax
+                                        Department to report income earned, deductions claimed, and taxes paid by the
+                                        company in a particular financial year.
                                     </p>
 
                                 </div>
@@ -745,12 +811,14 @@
                                 </p>
                             </div>
                             <div class="clps-docs">
-                                
-                                <p class="text-center  bg-primary  text-white fs-5 py-2 px-4 d-flex align-items-center justify-content-between" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                    <a class="text-white " >
-                                        Documents Needed 
-                                      </a>
-                                      <i class="fa-solid fa-circle-chevron-down "></i>
+
+                                <p class="text-center  bg-primary  text-white fs-5 py-2 px-4 d-flex align-items-center justify-content-between"
+                                    data-bs-toggle="collapse" href="#collapseExample" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    <a class="text-white ">
+                                        Documents Needed
+                                    </a>
+                                    <i class="fa-solid fa-circle-chevron-down "></i>
                                 </p>
                                 <div class="req px-4 bg-light p-1 collapse collapse-horizontal" id="collapseExample">
                                     <ol class="mt-0 p-3 pt-0 ">
@@ -768,7 +836,314 @@
                             </div>
 
                         </div>
-                        
+
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-12" id="itr-7">
+                    <div class="row my-4 justify-content-between" id="ITR-7 Return_filing">
+                        <div class="col-lg-7 col-md-7 col-12 doc-col space-0  ">
+                            <div class=" h-100">
+                                <div class="bg-light shadow req p-3 ">
+                                    <h3 class="text-uppercase">ITR-7 Return filing</h3>
+
+                                    <p>ITR-7 is the Income Tax Return form required to be filed by persons and companies
+                                        falling under specific categories, such as trusts, political parties,
+                                        institutions, and associations, whose income is derived from property held under
+                                        trust or other legal obligations. This form requires detailed information on
+                                        income, exemptions claimed, and taxes paid by the entity.
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-5 col-12 my-4 align-self-center">
+                            <div class="shadow mx-auto prc-badge">
+                                <div class="badge-area-show">
+                                    <div class="bagde-flag-wrap">
+                                        <a href="#" class="bagde-flag bg-secondary"> Monthly </a>
+                                    </div>
+                                </div>
+                                <p class=" fs-4 bg-primary text-white  shadow w-100 text-center lh-1 py-3">₹ 999
+                                    <span class=" fs-6 text-light"><s class="mx-1 text-light">₹3,699
+                                        </s><br>(Exclude GST)</span>
+                                </p>
+                            </div>
+                            <div class="clps-docs">
+
+                                <p class="text-center  bg-primary  text-white fs-5 py-2 px-4 d-flex align-items-center justify-content-between"
+                                    data-bs-toggle="collapse" href="#collapseExample" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    <a class="text-white ">
+                                        Documents Needed
+                                    </a>
+                                    <i class="fa-solid fa-circle-chevron-down "></i>
+                                </p>
+                                <div class="req px-4 bg-light p-1 collapse collapse-horizontal" id="collapseExample">
+                                    <ol class="mt-0 p-3 pt-0 ">
+                                        <li>PAN Card.</li>
+                                        <li>Aadhar card and Voter ID / Passport / Driving License.</li>
+                                        <li>Telephone Bill / Electricity Bill / Bank Account Statement.</li>
+                                        <li>Passport size photograph.</li>
+                                        <li>Business Address Proofs.</li>
+                                        <li>NOC or No Objection Certificate.</li>
+                                        <li>Rental Agreement.</li>
+                                        <li>Foreign nationals or NRIs must apostille or notarize director documentation.
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-12" id="itr-8">
+                    <div class="row my-4 justify-content-between" id="ITR-8 Return_filing">
+                        <div class="col-lg-7 col-md-7 col-12 doc-col space-0  ">
+                            <div class=" h-100">
+                                <div class="bg-light shadow req p-3 ">
+                                    <h3 class="text-uppercase">ITR-8 Return filing</h3>
+
+                                    <p>ITR-8 is a specific income tax return form used by companies that are required to
+                                        furnish their accounts under the Indian Income Tax Act, 1961. This form is
+                                        applicable to companies claiming exemption under Section 11 (income from
+                                        property held for charitable or religious purposes) or Section 10 (income of
+                                        certain institutions, etc.) of the Income Tax Act.
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-5 col-12 my-4 align-self-center">
+                            <div class="shadow mx-auto prc-badge">
+                                <div class="badge-area-show">
+                                    <div class="bagde-flag-wrap">
+                                        <a href="#" class="bagde-flag bg-secondary"> Monthly </a>
+                                    </div>
+                                </div>
+                                <p class=" fs-4 bg-primary text-white  shadow w-100 text-center lh-1 py-3">₹ 999
+                                    <span class=" fs-6 text-light"><s class="mx-1 text-light">₹3,699
+                                        </s><br>(Exclude GST)</span>
+                                </p>
+                            </div>
+                            <div class="clps-docs">
+
+                                <p class="text-center  bg-primary  text-white fs-5 py-2 px-4 d-flex align-items-center justify-content-between"
+                                    data-bs-toggle="collapse" href="#collapseExample" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    <a class="text-white ">
+                                        Documents Needed
+                                    </a>
+                                    <i class="fa-solid fa-circle-chevron-down "></i>
+                                </p>
+                                <div class="req px-4 bg-light p-1 collapse collapse-horizontal" id="collapseExample">
+                                    <ol class="mt-0 p-3 pt-0 ">
+                                        <li>PAN Card.</li>
+                                        <li>Aadhar card and Voter ID / Passport / Driving License.</li>
+                                        <li>Telephone Bill / Electricity Bill / Bank Account Statement.</li>
+                                        <li>Passport size photograph.</li>
+                                        <li>Business Address Proofs.</li>
+                                        <li>NOC or No Objection Certificate.</li>
+                                        <li>Rental Agreement.</li>
+                                        <li>Foreign nationals or NRIs must apostille or notarize director documentation.
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-12" id="tds_return">
+                    <div class="row my-4 justify-content-between" id="TDS-Return_filing & form-16">
+                        <div class="col-lg-7 col-md-7 col-12 doc-col space-0  ">
+                            <div class=" h-100">
+                                <div class="bg-light shadow req p-3 ">
+                                    <h3 class="text-uppercase">TDS-Return filing & form-16</h3>
+
+                                    <p>TDS (Tax Deducted at Source) return filing and Form 16 issuance are critical
+                                        aspects of tax compliance for businesses and employers in India. TDS return
+                                        filing involves submitting details of TDS deducted and deposited to the Income
+                                        Tax Department periodically, usually quarterly. This process ensures that taxes
+                                        deducted from various payments like salaries, interest, rent, etc., are
+                                        correctly accounted for and remitted to the government.
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-5 col-12 my-4 align-self-center">
+                            <div class="shadow mx-auto prc-badge">
+                                <div class="badge-area-show">
+                                    <div class="bagde-flag-wrap">
+                                        <a href="#" class="bagde-flag bg-secondary"> Monthly </a>
+                                    </div>
+                                </div>
+                                <p class=" fs-4 bg-primary text-white  shadow w-100 text-center lh-1 py-3">₹ 999
+                                    <span class=" fs-6 text-light"><s class="mx-1 text-light">₹3,699
+                                        </s><br>(Exclude GST)</span>
+                                </p>
+                            </div>
+                            <div class="clps-docs">
+
+                                <p class="text-center  bg-primary  text-white fs-5 py-2 px-4 d-flex align-items-center justify-content-between"
+                                    data-bs-toggle="collapse" href="#collapseExample" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    <a class="text-white ">
+                                        Documents Needed
+                                    </a>
+                                    <i class="fa-solid fa-circle-chevron-down "></i>
+                                </p>
+                                <div class="req px-4 bg-light p-1 collapse collapse-horizontal" id="collapseExample">
+                                    <ol class="mt-0 p-3 pt-0 ">
+                                        <li>PAN Card.</li>
+                                        <li>Aadhar card and Voter ID / Passport / Driving License.</li>
+                                        <li>Telephone Bill / Electricity Bill / Bank Account Statement.</li>
+                                        <li>Passport size photograph.</li>
+                                        <li>Business Address Proofs.</li>
+                                        <li>NOC or No Objection Certificate.</li>
+                                        <li>Rental Agreement.</li>
+                                        <li>Foreign nationals or NRIs must apostille or notarize director documentation.
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-12" id="tax_notice">
+                    <div class="row my-4 justify-content-between" id="response & appeals">
+                        <div class="col-lg-7 col-md-7 col-12 doc-col space-0  ">
+                            <div class=" h-100">
+                                <div class="bg-light shadow req p-3 ">
+                                    <h3 class="text-uppercase">Income tax notice response & appeals</h3>
+
+                                    <p>Responding to income tax notices and navigating appeals processes are critical
+                                        for individuals and businesses alike. When a taxpayer receives an income tax
+                                        notice, it typically outlines specific concerns or discrepancies found in their
+                                        tax returns or financial disclosures. Prompt and accurate responses are
+                                        essential to address these issues effectively.
+                                        The response process involves gathering relevant documents, analyzing the notice
+                                        details, and preparing a comprehensive reply that addresses each point raised by
+                                        the tax authorities. This may include providing clarifications, submitting
+                                        additional information, or correcting errors in tax filings.
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-5 col-12 my-4 align-self-center">
+                            <div class="shadow mx-auto prc-badge">
+                                <div class="badge-area-show">
+                                    <div class="bagde-flag-wrap">
+                                        <a href="#" class="bagde-flag bg-secondary"> Monthly </a>
+                                    </div>
+                                </div>
+                                <p class=" fs-4 bg-primary text-white  shadow w-100 text-center lh-1 py-3">₹ 999
+                                    <span class=" fs-6 text-light"><s class="mx-1 text-light">₹3,699
+                                        </s><br>(Exclude GST)</span>
+                                </p>
+                            </div>
+                            <div class="clps-docs">
+
+                                <p class="text-center  bg-primary  text-white fs-5 py-2 px-4 d-flex align-items-center justify-content-between"
+                                    data-bs-toggle="collapse" href="#collapseExample" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    <a class="text-white ">
+                                        Documents Needed
+                                    </a>
+                                    <i class="fa-solid fa-circle-chevron-down "></i>
+                                </p>
+                                <div class="req px-4 bg-light p-1 collapse collapse-horizontal" id="collapseExample">
+                                    <ol class="mt-0 p-3 pt-0 ">
+                                        <li>PAN Card.</li>
+                                        <li>Aadhar card and Voter ID / Passport / Driving License.</li>
+                                        <li>Telephone Bill / Electricity Bill / Bank Account Statement.</li>
+                                        <li>Passport size photograph.</li>
+                                        <li>Business Address Proofs.</li>
+                                        <li>NOC or No Objection Certificate.</li>
+                                        <li>Rental Agreement.</li>
+                                        <li>Foreign nationals or NRIs must apostille or notarize director documentation.
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-12" id="tax_audit">
+                    <div class="row my-4 justify-content-between" id="tax_audit">
+                        <div class="col-lg-7 col-md-7 col-12 doc-col space-0  ">
+                            <div class=" h-100">
+                                <div class="bg-light shadow req p-3 ">
+                                    <h3 class="text-uppercase">Tax Audit</h3>
+
+                                    <p>A tax audit is a detailed examination of an individual's or company's financial
+                                        records and tax returns by tax authorities to verify compliance with tax laws.
+                                        Typically initiated when discrepancies or anomalies are suspected, audits can be
+                                        random or targeted based on specific criteria like high deductions or unusual
+                                        transactions. During a tax audit, auditors scrutinize income statements, expense
+                                        records, deductions claimed, and supporting documentation. They may also
+                                        interview key personnel to clarify financial transactions.
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-5 col-12 my-4 align-self-center">
+                            <div class="shadow mx-auto prc-badge">
+                                <div class="badge-area-show">
+                                    <div class="bagde-flag-wrap">
+                                        <a href="#" class="bagde-flag bg-secondary"> Monthly </a>
+                                    </div>
+                                </div>
+                                <p class=" fs-4 bg-primary text-white  shadow w-100 text-center lh-1 py-3">₹ 999
+                                    <span class=" fs-6 text-light"><s class="mx-1 text-light">₹3,699
+                                        </s><br>(Exclude GST)</span>
+                                </p>
+                            </div>
+                            <div class="clps-docs">
+
+                                <p class="text-center  bg-primary  text-white fs-5 py-2 px-4 d-flex align-items-center justify-content-between"
+                                    data-bs-toggle="collapse" href="#collapseExample" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                                    <a class="text-white ">
+                                        Documents Needed
+                                    </a>
+                                    <i class="fa-solid fa-circle-chevron-down "></i>
+                                </p>
+                                <div class="req px-4 bg-light p-1 collapse collapse-horizontal" id="collapseExample">
+                                    <ol class="mt-0 p-3 pt-0 ">
+                                        <li>PAN Card.</li>
+                                        <li>Aadhar card and Voter ID / Passport / Driving License.</li>
+                                        <li>Telephone Bill / Electricity Bill / Bank Account Statement.</li>
+                                        <li>Passport size photograph.</li>
+                                        <li>Business Address Proofs.</li>
+                                        <li>NOC or No Objection Certificate.</li>
+                                        <li>Rental Agreement.</li>
+                                        <li>Foreign nationals or NRIs must apostille or notarize director documentation.
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+
+                        </div>
+
                     </div>
                 </div>
                 <div class="col-lg-12 col-md-12 col-12">
@@ -861,7 +1236,7 @@
                 $('html, body').animate({ scrollTop: offset }, 10, 'swing');
             }
         }
-        $(document).on('click', '.clps-docs > p', function() {
+        $(document).on('click', '.clps-docs > p', function () {
             if ($(this).attr('aria-expanded') === 'true') {
                 $('.prc-badge').hide();
                 $(this).find('i').removeClass('fa-circle-chevron-down').addClass('fa-circle-chevron-up');
@@ -870,7 +1245,7 @@
                 $(this).find('i').removeClass('fa-circle-chevron-up').addClass('fa-circle-chevron-down');
             }
         });
-        
+
     </script>
     <script src="../assets/javascripts/script.js"></script>
 </body>

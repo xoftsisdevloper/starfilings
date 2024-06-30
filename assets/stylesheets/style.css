@@ -161,20 +161,29 @@ h1 {
     color: var(--white-content) !important;
 }
 
-.dropdown:hover .dropdown-menu {
-    display: block;
-    left: auto !important;
-    right: 0 !important;
-}
+
 
 
 
 .dropdown {
     position: relative;
     display: inline-block;
+    transition: 0.5s ease-in-out !important;
+}
+
+.dropdown a:not(ul li a) {
+    text-decoration: underline ;
+    text-underline-offset: 8px !important; 
+    
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    left: auto !important;
+    right: 0 !important;
 }
 
 .dropdown-menu {
+    border-left: 5px solid var(--btn-hover) !important;
     display: none;
     position: absolute;
     min-width: 160px;
@@ -186,7 +195,7 @@ h1 {
 .navbar-nav  {
 }
 #header a img {
-    width: 100%;
+    width: 65%;
     height:100%;
 }
 
@@ -333,6 +342,7 @@ p {
     border-radius:30px ;
     position: relative;
     overflow: hidden;
+    
 
 }
 .providing-gst p {
@@ -345,6 +355,8 @@ p {
     text-wrap: wrap;
     transition: 0.3s ease-in-out;
     animation: expand 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    cursor: pointer;
+    line-height: 1.5rem !important;
 
 }
 .providing-gst:hover {
@@ -612,4 +624,8 @@ p {
 	background-image:  radial-gradient(#444CF7 1px, transparent 1px), radial-gradient(#444CF7 1px, #E5E5F7 1px);
 	background-size: 50px 50px;
 	background-position: 0 0,100px 100px; 
+}
+
+.text-decoration-underline {
+    text-underline-offset: 8px !important;
 }

@@ -55,134 +55,136 @@
   <!--header-->
   <section class="header">
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light text-light p-2  fixed-top" id='header'>
+      <nav class="navbar navbar-expand-lg navbar-light text-light p-0  fixed-top" id='header'>
         <div class="container">
           <a class="navbar-brand text-light fs-2 text-left" href="/"><img
-              src="assets/static/images/STAR_FILING-LOGO.png" alt="logo"></a>
+              src="./assets/static/images/STAR_FILING-LOGO.png" alt="logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon text-white"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav  text-right ms-auto">
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav  text-right ms-auto my-auto ">
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="/starfilings/startup.html" id="navbarDropdown" role="button"
+                <a class="nav-link dropdown-toggle" href="startup.html" id="navbarDropdown" role="button"
                   aria-expanded="false">
                   Startup
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Proprietorship</a></li>
-                  <li><a class="dropdown-item" href="#">Partnership</a></li>
-                  <li><a class="dropdown-item" href="#">One Person Company (OPC)</a></li>
-                  <li><a class="dropdown-item" href="#">Limited Liability Partnership</a></li>
-                  <li><a class="dropdown-item" href="#">Private Limited Company</a></li>
-                  <li><a class="dropdown-item" href="#">Public Company</a></li>
+                  <li><a class="dropdown-item" href="startup.html#properatorship">Proprietorship</a></li>
+                  <li><a class="dropdown-item" href="startup.html#partnership">Partnership</a></li>
+                  <li><a class="dropdown-item" href="startup.html#opc">One Person Company (OPC)</a></li>
+                  <li><a class="dropdown-item" href="startup.html#llp">Limited Liability Partnership</a></li>
+                  <li><a class="dropdown-item" href="startup.html#plc">Private Limited Company</a></li>
+                  <li><a class="dropdown-item" href="startup.html#pc">Public Company</a></li>
                 </ul>
               </li>
 
               <li class="nav-item dropdown">
-                <a class="nav-link  dropdown-toggle" href="./starfilings/gst_registrations.html" id="navbarDropdown"
-                  role="button" aria-expanded="false">
+                <a class="nav-link  dropdown-toggle text-decoration-underline" href="gst_registrations.html" id="navbarDropdown" role="button"
+                  aria-expanded="false">
                   GST
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#" onclick="scrollToSection('gst-register-sec')">GST
-                      Registration</a></li>
-                  <li><a class="dropdown-item" href="#">GST Amendments</a></li>
-                  <li><a class="dropdown-item" href="#" onclick="scrollToSection('gst-return')">GST Return Filing</a>
-                  </li>
-                  <li><a class="dropdown-item" href="#">GST LUT Filings</a></li>
-                  <li><a class="dropdown-item" href="#">GST Revocation</a></li>
-                  <li><a class="dropdown-item" href="#">GST Surrender</a></li>
-                  <li><a class="dropdown-item" href="#" onclick="scrollToSection('gst-return')">GST Final Return</a>
-                  </li>
-                  <li><a class="dropdown-item" href="#" onclick="scrollToSection('gst-return')">GST Annual Returns (GSTR
-                      9 & GSTR 9C)</a></li>
-                  <li><a class="dropdown-item" href="#">GST Audit</a></li>
-                  <li><a class="dropdown-item" href="#">GST Notice Response & Appeals</a></li>
+                  <li><a class="dropdown-item" onclick="scrollToSection('gstr')">GST Registration</a></li>
+                  <li><a class="dropdown-item" onclick="scrollToSection('gsta')">GST Amendments</a></li>
+                  <li><a class="dropdown-item" onclick="scrollToSection('gst-file')">GST Return Filing</a></li>
+                  <li><a class="dropdown-item" onclick="scrollToSection('gstlut-file')">GST LUT Filings</a></li>
+                  <li><a class="dropdown-item" onclick="scrollToSection('gstrevocation')">GST Revocation</a></li>
+                  <li><a class="dropdown-item" onclick="scrollToSection('gst-surrendar')">GST Surrender</a></li>
+                  <li><a class="dropdown-item" onclick="scrollToSection('gst-fr')">GST Final Return</a></li>
+                  <li><a class="dropdown-item" onclick="scrollToSection('gst-ar')">GST Annual Returns (GSTR 9 & GSTR 9C)</a></li>
+                  <li><a class="dropdown-item" onclick="scrollToSection('gst-audit')">GST Audit</a></li>
+                  <li><a class="dropdown-item" onclick="scrollToSection('gst-notice')">GST Notice Response & Appeals</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link  dropdown-toggle" href="../starfilings/income-tax.html" id="navbarDropdown"
-                  role="button" aria-expanded="false">
+                <a class="nav-link  dropdown-toggle" href="income_tax.html" id="navbarDropdown" role="button"
+                  aria-expanded="false">
                   Income Tax
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">TDS Refunds</a></li>
-                  <li><a class="dropdown-item" href="#">ITR-1 Return Filing</a></li>
-                  <li><a class="dropdown-item" href="#">ITR-2 Return Filing</a></li>
-                  <li><a class="dropdown-item" href="#">ITR-3 Return Filing</a></li>
-                  <li><a class="dropdown-item" href="#">ITR-4 Return Filing</a></li>
-                  <li><a class="dropdown-item" href="#">ITR-5 Return Filing</a></li>
-                  <li><a class="dropdown-item" href="#">ITR-6 Return Filing</a></li>
-                  <li><a class="dropdown-item" href="#">ITR-7 Return Filing</a></li>
-                  <li><a class="dropdown-item" href="#">ITR-8 Return Filing</a></li>
-                  <li><a class="dropdown-item" href="#">TDS-Return Filing & Form 16</a></li>
-                  <li><a class="dropdown-item" href="#">Income Tax Notice Response & Appeals</a></li>
-                  <li><a class="dropdown-item" href="#">Tax Audit</a></li>
+                  <li><a class="dropdown-item" href="income_tax.html#tds-refund">TDS Refunds</a></li>
+                  <li><a class="dropdown-item" href="income_tax.html#itr-1">ITR-1 Return Filing</a></li>
+                  <li><a class="dropdown-item" href="income_tax.html#itr-2">ITR-2 Return Filing</a></li>
+                  <li><a class="dropdown-item" href="income_tax.html#itr-3">ITR-3 Return Filing</a></li>
+                  <li><a class="dropdown-item" href="income_tax.html#itr-4">ITR-4 Return Filing</a></li>
+                  <li><a class="dropdown-item" href="income_tax.html#itr-5">ITR-5 Return Filing</a></li>
+                  <li><a class="dropdown-item" href="income_tax.html#itr-6">ITR-6 Return Filing</a></li>
+                  <li><a class="dropdown-item" href="income_tax.html#itr-7">ITR-7 Return Filing</a></li>
+                  <li><a class="dropdown-item" href="income_tax.html#itr-8">ITR-8 Return Filing</a></li>
+                  <li><a class="dropdown-item" href="income_tax.html#tds_return">TDS-Return Filing & Form 16</a></li>
+                  <li><a class="dropdown-item" href="income_tax.html#tax_notice">Income Tax Notice Response &
+                      Appeals</a></li>
+                  <li><a class="dropdown-item" href="income_tax.html#tax_audit">Tax Audit</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link  dropdown-toggle" href="/registration.html" id="navbarDropdown" role="button"
+                <a class="nav-link  dropdown-toggle" href="registration.html" id="navbarDropdown" role="button"
                   aria-expanded="false">
                   Registration & Filings
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">GST Registration</a></li>
-                  <li><a class="dropdown-item" href="#">PF & ESI Registration</a></li>
-                  <li><a class="dropdown-item" href="#">MSME & Udyam Registration</a></li>
-                  <li><a class="dropdown-item" href="#">FSSAI Registrations</a></li>
-                  <li><a class="dropdown-item" href="#">Import & Export Code</a></li>
-                  <li><a class="dropdown-item" href="#">Digital Signature</a></li>
-                  <li><a class="dropdown-item" href="#">ISO Registration</a></li>
-                  <li><a class="dropdown-item" href="#">Trademark & Copyright Registration</a></li>
-                  <li><a class="dropdown-item" href="#">Trust Registration</a></li>
-                  <li><a class="dropdown-item" href="#">NGO Registration</a></li>
-                  <li><a class="dropdown-item" href="#">Society Registration</a></li>
-                  <li><a class="dropdown-item" href="#">80G Registration</a></li>
-                  <li><a class="dropdown-item" href="#">Professional Tax Registration</a></li>
-                  <li><a class="dropdown-item" href="#">Shop & Establishment</a></li>
+                  <li><a class="dropdown-item" href="registration.html#gst_reg">GST Registration</a></li>
+                  <li><a class="dropdown-item" href="registration.html#pf_esi_reg">PF & ESI Registration</a></li>
+                  <li><a class="dropdown-item" href="registration.html#msme_udayam_reg">MSME & Udyam Registration</a>
+                  </li>
+                  <li><a class="dropdown-item" href="registration.html#fssai_reg">FSSAI Registrations</a></li>
+                  <li><a class="dropdown-item" href="registration.html#imp&exp_code">Import & Export Code</a></li>
+                  <li><a class="dropdown-item" href="registration.html#ds">Digital Signature</a></li>
+                  <li><a class="dropdown-item" href="registration.html#iso_reg">ISO Registration</a></li>
+                  <li><a class="dropdown-item" href="registration.html#trede&copyright">Trademark & Copyright
+                      Registration</a></li>
+                  <li><a class="dropdown-item" href="registration.html#trust_reg">Trust Registration</a></li>
+                  <li><a class="dropdown-item" href="registration.html#ngo_reg">NGO Registration</a></li>
+                  <li><a class="dropdown-item" href="registration.html#society_reg">Society Registration</a></li>
+                  <li><a class="dropdown-item" href="registration.html#80g_reg">80G Registration</a></li>
+                  <li><a class="dropdown-item" href="registration.html#pr_tax_reg">Professional Tax Registration</a>
+                  </li>
+                  <li><a class="dropdown-item" href="registration.html#shop_establishment">Shop & Establishment</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="accounting&complaince.html" id="navbarDropdown" role="button"
+                  aria-expanded="false">
                   Accounting & Compliance
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Annual Compliance of Pvt Ltd</a></li>
-                  <li><a class="dropdown-item" href="#">Annual Compliance of LLP</a></li>
-                  <li><a class="dropdown-item" href="#">MCA Compliance for Pvt & LLP</a></li>
-                  <li><a class="dropdown-item" href="#">Audit Compliance for Pvt & LLP</a></li>
-                  <li><a class="dropdown-item" href="#">Winding up Companies</a></li>
-                  <li><a class="dropdown-item" href="#">Company Accountant</a></li>
-                  <li><a class="dropdown-item" href="#">Payroll & Book Keeping</a></li>
+                  <li><a class="dropdown-item" href="accounting&complaince.html#annual_compliance_ptd">Annual Compliance
+                      of Pvt Ltd</a></li>
+                  <li><a class="dropdown-item" href="accounting&complaince.html#annual_compliance_llp">Annual Compliance
+                      of LLP</a></li>
+                  <li><a class="dropdown-item" href="accounting&complaince.html#annual_compliance_mca_ptd">MCA
+                      Compliance for Pvt & LLP</a></li>
+                  <li><a class="dropdown-item" href="accounting&complaince.html#annual_compliance_audit">Audit
+                      Compliance for Pvt & LLP</a></li>
+                  <li><a class="dropdown-item" href="accounting&complaince.html#WUC">Winding up Companies</a></li>
+                  <li><a class="dropdown-item" href="accounting&complaince.html#company_assitant">Company Accountant</a>
+                  </li>
+                  <li><a class="dropdown-item" href="accounting&complaince.html#payrol_booking">Payroll & Book
+                      Keeping</a></li>
+                  <li><a class="dropdown-item" href="accounting&complaince.html#NWC">Net Worth Certificate </a></li>
+                  <li><a class="dropdown-item" href="accounting&complaince.html#TC">Turnover Certificate </a></li>
                 </ul>
               </li>
 
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" aria-expanded="false">
-                  Certfication Preparations
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Net Worth Certificate </a></li>
-                  <li><a class="dropdown-item" href="#">Turnover Certificate </a></li>
-                </ul>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="loanasistance.html" id="navbarDropdown" role="button"
+                  aria-expanded="false">
                   Loan Assistance
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Personal Loans</a></li>
-                  <li><a class="dropdown-item" href="#">Mudra Loan (Pradhan Mantri MUDRA Yojana)</a></li>
-                  <li><a class="dropdown-item" href="#">MSME Loans & Subsidy Claiming</a></li>
-                  <li><a class="dropdown-item" href="#">Business Loans</a></li>
-                  <li><a class="dropdown-item" href="#">Home Loans</a></li>
-                  <li><a class="dropdown-item" href="#">Mortgage Loan</a></li>
-                  <li><a class="dropdown-item" href="#">Vehicle Loans</a></li>
-                  <li><a class="dropdown-item" href="#">Consult with Loan Experts</a></li>
+                  <li><a class="dropdown-item" href="loanasistance.html#personal_loans">Personal Loans</a></li>
+                  <li><a class="dropdown-item" href="loanasistance.html#mudra_loans">Mudra Loan (Pradhan Mantri MUDRA
+                      Yojana)</a></li>
+                  <li><a class="dropdown-item" href="loanasistance.html#msme_loans">MSME Loans & Subsidy Claiming</a>
+                  </li>
+                  <li><a class="dropdown-item" href="loanasistance.html#business_loans">Business Loans</a></li>
+                  <li><a class="dropdown-item" href="loanasistance.html#home_loans">Home Loans</a></li>
+                  <li><a class="dropdown-item" href="loanasistance.html#mortgae_loans">Mortgage Loan</a></li>
+                  <li><a class="dropdown-item" href="loanasistance.html#vehicle_loans">Vehicle Loans</a></li>
+                  <li><a class="dropdown-item" href="loanasistance.html#consulations">Consult with Loan Experts</a></li>
                 </ul>
               </li>
 
@@ -219,178 +221,306 @@
   </section>
 
   <!-- Service Section -->
-  <section class="service py-4 space-1">
-    <div class="container space-1">
-      <div class="row space-1">
-        <div class="col-12 space-1">
-          <h2 class="fs-1 text-center space-1">Our Services</h2>
+  <section class="py-4 bg-primary" id='service-list'>
+    <div class="container">
+      <div class="row ">
+        <div class="col-lg-12">
+          <h2 class="text-white text-center text-decoration-underline">Gst Services</h2>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 mt-2">
+          <ul class="title-ul">
+            <li class="active-header my-2 p-2 text-white side-header">GST Registration</li>
+            <li class="my-2 p-2 text-white side-header">GST Amendments</li>
+            <li class="my-2 p-2 text-white side-header">Return Filing</li>
+            <li class="my-2 p-2 text-white side-header">GST LUT Filings</li>
+            <li class="my-2 p-2 text-white side-header">GST Revocation</li>
+            <li class="my-2 p-2 text-white side-header">GST Surrender</li>
+            <li class="my-2 p-2 text-white side-header">Final Return</li>
+            <li class="my-2 p-2 text-white side-header">Annual Returns (GSTR 9 & GSTR 9C)</li>
+            <li class="my-2 p-2 text-white side-header">GST Audit</li>
+            <li class="my-2 p-2 text-white side-header">GST Notice Response & Appeals</li>
+          </ul>
+        </div>
+        <div class="col-lg-6 col-md-6 col-12 align-self-center mx-auto">
+          <div class="content-container">
+            <div class="content-1 bg-light a px-5 py-3">
+              <div class="head-with-price d-flex justify-content-between ">
+                <div class="align-self-center my-2">
+                  <h3 class="text-center ">
+                    GST Registration
+                  </h3>
+                </div>
+                <div class="align-self-center">
+                  <div class="d-flex justify-content-between align-items-center align-self-center">
+                    <p class="fw-bold mb-0 mx-2">Price</p>
+                    <p class="mb-0">:</p>
+                    <p class=" mb-0 mx-2 text-secondary fw-bolder">Rs.4,999</p>
+                  </div>
+                </div>
+              </div>
+              <p>
+                GST registration is the process of enrolling a business under the Goods and Services Tax (GST) system in
+                India. This registration enables businesses to collect and remit GST to the government. It is mandatory
+                for businesses whose turnover exceeds the threshold limit set by authorities. The registration process
+                involves submitting required documents and details online through the GST portal to obtain a unique
+                GSTIN (Goods and Services Tax Identification Number).
+              <p>
+                <a class="btn" href="#rqd">
+                  Required Docs
+                </a>
+              </p>
+              </p>
+            </div>
+            <div class="content-1 bg-light a px-5 py-3">
+              <div class="head-with-price d-flex justify-content-between ">
+                <div class="align-self-center my-2">
+                  <h3 class="text-center ">
+                    GST Amendments
+                  </h3>
+                </div>
+                <div class="align-self-center">
+                  <div class="d-flex justify-content-between align-items-center align-self-center">
+                    <p class="fw-bold mb-0 mx-2">Price</p>
+                    <p class="mb-0">:</p>
+                    <p class=" mb-0 mx-2 text-secondary fw-bolder">Rs.4,999</p>
+                  </div>
+                </div>
+              </div>
+              <p>
+                GST Amendments refer to changes or modifications made to the details provided during the GST
+                registration process. Under the Goods and Services Tax (GST) regime in many countries, businesses are
+                required to register and periodically update their information to ensure compliance with tax laws.
+                Amendments may be necessary due to changes in business operations, ownership, or other relevant details.
+              <p>
+                <a class="btn" href="#rqd">
+                  Required Docs
+                </a>
+              </p>
+              </p>
+            </div>
+            <div class="content-1 bg-light a px-5 py-3 activecontent">
+              <div class="head-with-price d-flex justify-content-between ">
+                <div class="align-self-center my-2">
+                  <h3 class="text-center ">
+                    GST Return Filing
+                  </h3>
+                </div>
+                <div class="align-self-center">
+                  <div class="d-flex justify-content-between align-items-center align-self-center">
+                    <p class="fw-bold mb-0 mx-2">Price</p>
+                    <p class="mb-0">:</p>
+                    <p class=" mb-0 mx-2 text-secondary fw-bolder">Rs.4,999</p>
+                  </div>
+                </div>
+              </div>
+              <p>
+                GST Return Filing is the process where businesses registered under the Goods and Services Tax (GST)
+                regime are required to file periodic returns containing details of their sales, purchases, and tax paid.
+                This process is crucial for tax compliance and involves submitting various GST returns based on the
+                nature of business and turnover.
+              <p>
+                <a class="btn" href="#rqd">
+                  Required Docs
+                </a>
+              </p>
+              </p>
+            </div>
+            <div class="content-1 bg-light a px-5 py-3">
+              <div class="head-with-price d-flex justify-content-between ">
+                <div class="align-self-center my-2">
+                  <h3 class="text-center ">
+                    GST LUT (Letter of Undertaking) Filings
+                  </h3>
+                </div>
+                <div class="align-self-center">
+                  <div class="d-flex justify-content-between align-items-center align-self-center">
+                    <p class="fw-bold mb-0 mx-2">Price</p>
+                    <p class="mb-0">:</p>
+                    <p class=" mb-0 mx-2 text-secondary fw-bolder">Rs.4,999</p>
+                  </div>
+                </div>
+              </div>
+              <p>
+                Under the Goods and Services Tax (GST) regime, the GST LUT (Letter of Undertaking) is a document that
+                exporters can file to supply goods or services without paying Integrated Goods and Services Tax (IGST)
+              <p>
+                <a class="btn" href="#rqd">
+                  Required Docs
+                </a>
+              </p>
+              </p>
+            </div>
+            <div class="content-1 bg-light a px-5 py-3">
+              <div class="head-with-price d-flex justify-content-between ">
+                <div class="align-self-center my-2">
+                  <h3 class="text-center ">
+                    GST Revocation
+                  </h3>
+                </div>
+                <div class="align-self-center">
+                  <div class="d-flex justify-content-between align-items-center align-self-center">
+                    <p class="fw-bold mb-0 mx-2">Price</p>
+                    <p class="mb-0">:</p>
+                    <p class=" mb-0 mx-2 text-secondary fw-bolder">Rs.4,999</p>
+                  </div>
+                </div>
+              </div>
+              <p>
+                GST Revocation refers to the process of cancelling or revoking the Goods and Services Tax (GST)
+                registration of a taxpayer. This can happen due to various reasons, and understanding the process is
+                crucial for businesses under the GST regime.
+              <p>
+                <a class="btn" href="#rqd">
+                  Required Docs
+                </a>
+              </p>
+              </p>
+            </div>
+            <div class="content-1 bg-light a px-5 py-3">
+              <div class="head-with-price d-flex justify-content-between ">
+                <div class="align-self-center my-2">
+                  <h3 class="text-center ">
+                    GST Surrender
+                  </h3>
+                </div>
+                <div class="align-self-center">
+                  <div class="d-flex justify-content-between align-items-center align-self-center">
+                    <p class="fw-bold mb-0 mx-2">Price</p>
+                    <p class="mb-0">:</p>
+                    <p class=" mb-0 mx-2 text-secondary fw-bolder">Rs.4,999</p>
+                  </div>
+                </div>
+              </div>
+              <p>
+                GST Surrender refers to the voluntary cancellation or surrender of Goods and Services Tax (GST)
+                registration by a taxpayer. This process allows businesses to cease their GST registration when they no
+                longer meet the criteria or wish to discontinue their taxable activities.
+              <p>
+                <a class="btn" href="#rqd">
+                  Required Docs
+                </a>
+              </p>
+              </p>
+            </div>
+            <div class="content-1 bg-light a px-5 py-3">
+              <div class="head-with-price d-flex justify-content-between ">
+                <div class="align-self-center my-2">
+                  <h3 class="text-center ">
+
+                    GST Final Return
+                  </h3>
+                </div>
+                <div class="align-self-center">
+                  <div class="d-flex justify-content-between align-items-center align-self-center">
+                    <p class="fw-bold mb-0 mx-2">Price</p>
+                    <p class="mb-0">:</p>
+                    <p class=" mb-0 mx-2 text-secondary fw-bolder">Rs.4,999</p>
+                  </div>
+                </div>
+              </div>
+              <p>
+                GST Final Return is a crucial document that taxpayers must file when they decide to cancel or surrender
+                their GST registration. It summarizes the taxpayer's tax liability and input tax credit adjustments up
+                to the date of cessation of taxable activities, ensuring compliance with GST regulations and legal
+                closure of GST obligations.
+              <p>
+                <a class="btn" href="#rqd">
+                  Required Docs
+                </a>
+              </p>
+              </p>
+            </div>
+            <div class="content-1 bg-light a px-5 py-3">
+              <div class="head-with-price d-flex justify-content-between ">
+                <div class="align-self-center my-2">
+                  <h3 class="text-center ">
+                    Annual Returns (GSTR 9 & GSTR 9C)
+                  </h3>
+                </div>
+                <div class="align-self-center">
+                  <div class="d-flex justify-content-between align-items-center align-self-center">
+                    <p class="fw-bold mb-0 mx-2">Price</p>
+                    <p class="mb-0">:</p>
+                    <p class=" mb-0 mx-2 text-secondary fw-bolder">Rs.4,999</p>
+                  </div>
+                </div>
+              </div>
+              <p>
+                Annual Returns GSTR 9 and GSTR 9C are critical documents under the GST regime, helping taxpayers
+                consolidate and reconcile their annual GST transactions. They ensure compliance with GST regulations,
+                provide transparency in tax declarations, and are essential for audit and legal purposes. Taxpayers
+                should ensure timely and accurate filing to avoid penalties and maintain smooth compliance with GST
+                requirements.
+              <p>
+                <a class="btn" href="#rqd">
+                  Required Docs
+                </a>
+              </p>
+              </p>
+            </div>
+            <div class="content-1 bg-light a px-5 py-3">
+              <div class="head-with-price d-flex justify-content-between ">
+                <div class="align-self-center my-2">
+                  <h3 class="text-center ">
+                    GST Audit
+                  </h3>
+                </div>
+                <div class="align-self-center">
+                  <div class="d-flex justify-content-between align-items-center align-self-center">
+                    <p class="fw-bold mb-0 mx-2">Price</p>
+                    <p class="mb-0">:</p>
+                    <p class=" mb-0 mx-2 text-secondary fw-bolder">Rs.4,999</p>
+                  </div>
+                </div>
+              </div>
+              <p>
+                GST Audit is a critical process that verifies the accuracy and compliance of GST filings and
+                transactions by taxpayers. It plays a vital role in ensuring tax transparency, protecting government
+                revenue, and improving overall GST compliance. Taxpayers should maintain accurate records and comply
+                with audit requirements to avoid penalties and legal consequences under the GST regime.
+              <p>
+                <a class="btn" href="#rqd">
+                  Required Docs
+                </a>
+              </p>
+              </p>
+            </div>
+            <div class="content-1 bg-light a px-5 py-3">
+              <div class="head-with-price d-flex justify-content-between ">
+                <div class="align-self-center my-2">
+                  <h3 class="text-center ">
+                    GST Notice Response & Appeals
+                  </h3>
+                </div>
+                <div class="align-self-center">
+                  <div class="d-flex justify-content-between align-items-center align-self-center">
+                    <p class="fw-bold mb-0 mx-2">Price</p>
+                    <p class="mb-0">:</p>
+                    <p class=" mb-0 mx-2 text-secondary fw-bolder">Rs.4,999</p>
+                  </div>
+                </div>
+              </div>
+              <p>
+                Responding to GST notices and filing appeals are critical processes for taxpayers under the GST regime
+                to address compliance issues, resolve disputes, and protect their rights. It is essential to understand
+                the nature of the notice, gather relevant information, and follow the prescribed procedures for
+                effective resolution of issues with GST authorities. Maintaining transparency and compliance with GST
+                laws ensure smooth business operations and minimize legal risks associated with tax disputes.
+              <p>
+                <a class="btn" href="#rqd">
+                  Required Docs
+                </a>
+              </p>
+              </p>
+            </div>
+            <div class="getsrc-btn my-4 d-flex justify-content-center">
+              <a href="#" class=" btn-secondary">Contact Us</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="container mb-3">
-
-      <div class="row ">
-        <div class="col-lg-12">
-          <h4 class="fs-4 mob-center text-center my-3">Providing GST Services</h4>
-          <div class="row">
-            <div class="col-lg-2 col-md-6 col-12 lh-2 providing-gst">
-              <div class="badge-area-show-1">
-                <div class="bagde-flag-wrap-1">
-                  <a href="#" class="bagde-flag-1 "> 1 </a>
-                </div>
-              </div>
-              <a href="#" onclick="scrollToSection('gst-register')">
-                <p>GST Registration</p>
-              </a>
-
-            </div>
-            <div class="col-lg-2 col-md-6 col-12 lh-2 providing-gst">
-              <div class="badge-area-show-1">
-                <div class="bagde-flag-wrap-1">
-                  <a href="#" class="bagde-flag-1 "> 2 </a>
-                </div>
-              </div>
-              <a href="#" onclick="scrollToSection('esi_pf-register')">
-                <p>GST Amendments</p>
-              </a>
-            </div>
-            <div class="col-lg-2 col-md-6 col-12 lh-2 providing-gst">
-              <div class="badge-area-show-1">
-                <div class="bagde-flag-wrap-1">
-                  <a href="#" class="bagde-flag-1 "> 3 </a>
-                </div>
-              </div>
-              <p>GST Return Filing</p>
-            </div>
-            <div class="col-lg-2 col-md-6 col-12 lh-2 providing-gst">
-              <div class="badge-area-show-1">
-                <div class="bagde-flag-wrap-1">
-                  <a href="#" class="bagde-flag-1 "> 4 </a>
-                </div>
-              </div>
-              <p>GST LUT Filings</p>
-            </div>
-            <div class="col-lg-2 col-md-6 col-12 lh-2 providing-gst">
-              <div class="badge-area-show-1">
-                <div class="bagde-flag-wrap-1">
-                  <a href="#" class="bagde-flag-1 "> 5 </a>
-                </div>
-              </div>
-              <p>GST Revocation</p>
-            </div>
-            <div class="col-lg-2 col-md-6 col-12 lh-2 providing-gst">
-              <div class="badge-area-show-1">
-                <div class="bagde-flag-wrap-1">
-                  <a href="#" class="bagde-flag-1 "> 6 </a>
-                </div>
-              </div>
-              <p>GST Surrender</p>
-            </div>
-            <div class="col-lg-2 col-md-6 col-12 lh-2 providing-gst">
-              <div class="badge-area-show-1">
-                <div class="bagde-flag-wrap-1">
-                  <a href="#" class="bagde-flag-1 "> 7 </a>
-                </div>
-              </div>
-              <p>GST Final Return</p>
-            </div>
-            <div class="col-lg-2 col-md-6 col-12 lh-2 providing-gst">
-              <div class="badge-area-show-1">
-                <div class="bagde-flag-wrap-1">
-                  <a href="#" class="bagde-flag-1 "> 8 </a>
-                </div>
-              </div>
-              <p>GST Annual Returns (GSTR 9 & GSTR 9C)</p>
-            </div>
-            <div class="col-lg-2 col-md-6 col-12 lh-2 providing-gst">
-              <div class="badge-area-show-1">
-                <div class="bagde-flag-wrap-1">
-                  <a href="#" class="bagde-flag-1 "> 9 </a>
-                </div>
-              </div>
-              <p>GST Audit</p>
-            </div>
-            <div class="col-lg-2 col-md-6 col-12 lh-2 providing-gst">
-              <div class="badge-area-show-1">
-                <div class="bagde-flag-wrap-1">
-                  <a href="#" class="bagde-flag-1 "> 10 </a>
-                </div>
-              </div>
-              <p>GST Notice Response & Appeals</p>
-            </div>
-          </div>
-          <h4 class="fs-4 my-4 space-1 mob-center text-center" id="rqd"> Documents Needed for GST Registration</h4>
-          <div class="row mt-3 px-3 mx-auto space-0">
-            <div class="col-lg-12 col-md-12 col-12 space-0">
-              <div class="row mt-3 mx-auto space-1 justify-content-center ">
-                <div class="col-lg-4 col-md-12 col-12 px-3 doc-col space-0">
-                  <div class="document shadow">
-                    <p class="text-center text-white fs-3 bg-primary py-1 ">Proprietor</p>
-                    <div class="req px-3">
-
-                      <ol class="my-3 p-3 ">
-                        <li>PAN Card</li>
-                        <li>AADHAR Card</li>
-                        <li>Passport Size Photo</li>
-                        <li>Name & Address Proof</li>
-                        <li>Rental Or Lease Agreement of Business Place</li>
-                        <li>Latest EB Bills of Business Place</li>
-                        <li>Property Tax of Business Place</li>
-                        <li>Name & Address Board of Business Place.</li>
-                      </ol>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-12 col-12 px-3 doc-col  space-0">
-                  <div class="document shadow">
-                    <p class="text-center  bg-primary  text-white fs-3 py-1">Partnership Firm</p>
-                    <div class="req px-3">
-                      <ol class="my-3 p-3">
-                        <li>Partnership Deed</li>
-                        <li>Partnership PAN Card</li>
-                        <li>Rental or Lease Agreement of Business Place</li>
-                        <li>Name & Address Board of Business Place</li>
-                        <li>PAN Card of each Partner</li>
-                        <li>Aadhar Card of each Partner</li>
-                        <li>Passport Size Photo of each Partner</li>
-                        <li>Name & Address Proof of each Partner</li>
-                        <li>Appointment Letter of Authorized Partner</li>
-                      </ol>
-                    </div>
-
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-12 col-12 px-3 doc-col space-0">
-                  <div class="document shadow">
-                    <p class="text-center bg-primary text-light fs-3 py-1">Private Limited /LLP</p>
-                    <div class="req px-3">
-
-                      <ol class="my-3 p-3">
-                        <li>Certificate of Company Incorporation</li>
-                        <li>PAN Card of Company</li>
-                        <li>Memorandum of Association & Articles of Association</li>
-                        <li>Digital Signature Certificate</li>
-                        <li>Rental or Lease Agreement of Business Place</li>
-                        <li>Name & Address Board of Business Place</li>
-                        <li>PAN Card of each Director</li>
-                        <li>Aadhar Card of each Director</li>
-                        <li>Passport Size Photo of each Director</li>
-                        <li>Name & Address Proof of each Director</li>
-                        <li>Appointment Letter of Authorized Signatory</li>
-                      </ol>
-                    </div>
-                  </div>
-                </div>
-                <div class="getsrc-btn mt-5 d-flex justify-content-center">
-                  <a href="#" class="btn btn-primary ">Get Service </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
   </section>
-
 
 
   <!-- Price lists -->
@@ -821,313 +951,7 @@
   </section>
 
   <!-- service list -->
-  <section class="py-4 bg-primary" id='service-list'>
-    <div class="container">
-      <div class="row ">
-        <div class="col-lg-4 col-md-6 col-12">
-          <ul class="title-ul">
-            <li class="active-header my-2 p-2 text-white side-header">GST Registration</li>
-            <li class="my-2 p-2 text-white side-header">GST Amendments</li>
-            <li class="my-2 p-2 text-white side-header">Return Filing</li>
-            <li class="my-2 p-2 text-white side-header">GST LUT Filings</li>
-            <li class="my-2 p-2 text-white side-header">GST Revocation</li>
-            <li class="my-2 p-2 text-white side-header">GST Surrender</li>
-            <li class="my-2 p-2 text-white side-header">Final Return</li>
-            <li class="my-2 p-2 text-white side-header">Annual Returns (GSTR 9 & GSTR 9C)</li>
-            <li class="my-2 p-2 text-white side-header">GST Audit</li>
-            <li class="my-2 p-2 text-white side-header">GST Notice Response & Appeals</li>
-          </ul>
-        </div>
-        <div class="col-lg-6 col-md-6 col-12 align-self-center mx-auto">
-          <div class="content-container">
-            <div class="content-1 bg-light a px-5 py-3">
-              <div class="head-with-price d-flex justify-content-between ">
-                <div class="align-self-center my-2">
-                  <h3 class="text-center ">
-                    GST Registration
-                  </h3>
-                </div>
-                <div class="align-self-center">
-                  <div class="d-flex justify-content-between align-items-center align-self-center">
-                    <p class="fw-bold mb-0 mx-2">Price</p>
-                    <p class="mb-0">:</p>
-                    <p class=" mb-0 mx-2 text-secondary fw-bolder">Rs.4,999</p>
-                  </div>
-                </div>
-              </div>
-              <p>
-                GST registration is the process of enrolling a business under the Goods and Services Tax (GST) system in
-                India. This registration enables businesses to collect and remit GST to the government. It is mandatory
-                for businesses whose turnover exceeds the threshold limit set by authorities. The registration process
-                involves submitting required documents and details online through the GST portal to obtain a unique
-                GSTIN (Goods and Services Tax Identification Number).
-                <p>
-                  <a class="btn" href="#rqd">
-                    Required Docs
-                  </a>
-                </p>
-              </p>
-            </div>
-            <div class="content-1 bg-light a px-5 py-3">
-              <div class="head-with-price d-flex justify-content-between ">
-                <div class="align-self-center my-2">
-                  <h3 class="text-center ">
-                    GST Registration
-                  </h3>
-                </div>
-                <div class="align-self-center">
-                  <div class="d-flex justify-content-between align-items-center align-self-center">
-                    <p class="fw-bold mb-0 mx-2">Price</p>
-                    <p class="mb-0">:</p>
-                    <p class=" mb-0 mx-2 text-secondary fw-bolder">Rs.4,999</p>
-                  </div>
-                </div>
-              </div>
-              <p>
-                GST registration is the process of enrolling a business under the Goods and Services Tax (GST) system in
-                India. This registration enables businesses to collect and remit GST to the government. It is mandatory
-                for businesses whose turnover exceeds the threshold limit set by authorities. The registration process
-                involves submitting required documents and details online through the GST portal to obtain a unique
-                GSTIN (Goods and Services Tax Identification Number).
-                <p>
-                  <a class="btn" href="#rqd">
-                    Required Docs
-                  </a>
-                </p>
-              </p>
-            </div>
-            <div class="content-1 bg-light a px-5 py-3 activecontent">
-              <div class="head-with-price d-flex justify-content-between ">
-                <div class="align-self-center my-2">
-                  <h3 class="text-center ">
-                    GST Amendments
-                  </h3>
-                </div>
-                <div class="align-self-center">
-                  <div class="d-flex justify-content-between align-items-center align-self-center">
-                    <p class="fw-bold mb-0 mx-2">Price</p>
-                    <p class="mb-0">:</p>
-                    <p class=" mb-0 mx-2 text-secondary fw-bolder">Rs.4,999</p>
-                  </div>
-                </div>
-              </div>
-              <p>
-                GST registration is the process of enrolling a business under the Goods and Services Tax (GST) system in
-                India. This registration enables businesses to collect and remit GST to the government. It is mandatory
-                for businesses whose turnover exceeds the threshold limit set by authorities. The registration process
-                involves submitting required documents and details online through the GST portal to obtain a unique
-                GSTIN (Goods and Services Tax Identification Number).
-                <p>
-                  <a class="btn" href="#rqd">
-                    Required Docs
-                  </a>
-                </p>
-              </p>
-            </div>
-            <div class="content-1 bg-light a px-5 py-3">
-              <div class="head-with-price d-flex justify-content-between ">
-                <div class="align-self-center my-2">
-                  <h3 class="text-center ">
-                    GST Registration
-                  </h3>
-                </div>
-                <div class="align-self-center">
-                  <div class="d-flex justify-content-between align-items-center align-self-center">
-                    <p class="fw-bold mb-0 mx-2">Price</p>
-                    <p class="mb-0">:</p>
-                    <p class=" mb-0 mx-2 text-secondary fw-bolder">Rs.4,999</p>
-                  </div>
-                </div>
-              </div>
-              <p>
-                GST registration is the process of enrolling a business under the Goods and Services Tax (GST) system in
-                India. This registration enables businesses to collect and remit GST to the government. It is mandatory
-                for businesses whose turnover exceeds the threshold limit set by authorities. The registration process
-                involves submitting required documents and details online through the GST portal to obtain a unique
-                GSTIN (Goods and Services Tax Identification Number).
-                <p>
-                  <a class="btn" href="#rqd">
-                    Required Docs
-                  </a>
-                </p>
-              </p>
-            </div>
-            <div class="content-1 bg-light a px-5 py-3">
-              <div class="head-with-price d-flex justify-content-between ">
-                <div class="align-self-center my-2">
-                  <h3 class="text-center ">
-                    GST Registration
-                  </h3>
-                </div>
-                <div class="align-self-center">
-                  <div class="d-flex justify-content-between align-items-center align-self-center">
-                    <p class="fw-bold mb-0 mx-2">Price</p>
-                    <p class="mb-0">:</p>
-                    <p class=" mb-0 mx-2 text-secondary fw-bolder">Rs.4,999</p>
-                  </div>
-                </div>
-              </div>
-              <p>
-                GST registration is the process of enrolling a business under the Goods and Services Tax (GST) system in
-                India. This registration enables businesses to collect and remit GST to the government. It is mandatory
-                for businesses whose turnover exceeds the threshold limit set by authorities. The registration process
-                involves submitting required documents and details online through the GST portal to obtain a unique
-                GSTIN (Goods and Services Tax Identification Number).
-                <p>
-                  <a class="btn" href="#rqd">
-                    Required Docs
-                  </a>
-                </p>
-              </p>
-            </div>
-            <div class="content-1 bg-light a px-5 py-3">
-              <div class="head-with-price d-flex justify-content-between ">
-                <div class="align-self-center my-2">
-                  <h3 class="text-center ">
-                    GST Registration
-                  </h3>
-                </div>
-                <div class="align-self-center">
-                  <div class="d-flex justify-content-between align-items-center align-self-center">
-                    <p class="fw-bold mb-0 mx-2">Price</p>
-                    <p class="mb-0">:</p>
-                    <p class=" mb-0 mx-2 text-secondary fw-bolder">Rs.4,999</p>
-                  </div>
-                </div>
-              </div>
-              <p>
-                GST registration is the process of enrolling a business under the Goods and Services Tax (GST) system in
-                India. This registration enables businesses to collect and remit GST to the government. It is mandatory
-                for businesses whose turnover exceeds the threshold limit set by authorities. The registration process
-                involves submitting required documents and details online through the GST portal to obtain a unique
-                GSTIN (Goods and Services Tax Identification Number).
-                <p>
-                  <a class="btn" href="#rqd">
-                    Required Docs
-                  </a>
-                </p>
-              </p>
-            </div>
-            <div class="content-1 bg-light a px-5 py-3">
-              <div class="head-with-price d-flex justify-content-between ">
-                <div class="align-self-center my-2">
-                  <h3 class="text-center ">
-                    GST Registration
-                  </h3>
-                </div>
-                <div class="align-self-center">
-                  <div class="d-flex justify-content-between align-items-center align-self-center">
-                    <p class="fw-bold mb-0 mx-2">Price</p>
-                    <p class="mb-0">:</p>
-                    <p class=" mb-0 mx-2 text-secondary fw-bolder">Rs.4,999</p>
-                  </div>
-                </div>
-              </div>
-              <p>
-                GST registration is the process of enrolling a business under the Goods and Services Tax (GST) system in
-                India. This registration enables businesses to collect and remit GST to the government. It is mandatory
-                for businesses whose turnover exceeds the threshold limit set by authorities. The registration process
-                involves submitting required documents and details online through the GST portal to obtain a unique
-                GSTIN (Goods and Services Tax Identification Number).
-                <p>
-                  <a class="btn" href="#rqd">
-                    Required Docs
-                  </a>
-                </p>
-              </p>
-            </div>
-            <div class="content-1 bg-light a px-5 py-3">
-              <div class="head-with-price d-flex justify-content-between ">
-                <div class="align-self-center my-2">
-                  <h3 class="text-center ">
-                    GST Registration
-                  </h3>
-                </div>
-                <div class="align-self-center">
-                  <div class="d-flex justify-content-between align-items-center align-self-center">
-                    <p class="fw-bold mb-0 mx-2">Price</p>
-                    <p class="mb-0">:</p>
-                    <p class=" mb-0 mx-2 text-secondary fw-bolder">Rs.4,999</p>
-                  </div>
-                </div>
-              </div>
-              <p>
-                GST registration is the process of enrolling a business under the Goods and Services Tax (GST) system in
-                India. This registration enables businesses to collect and remit GST to the government. It is mandatory
-                for businesses whose turnover exceeds the threshold limit set by authorities. The registration process
-                involves submitting required documents and details online through the GST portal to obtain a unique
-                GSTIN (Goods and Services Tax Identification Number).
-                <p>
-                  <a class="btn" href="#rqd">
-                    Required Docs
-                  </a>
-                </p>
-              </p>
-            </div>
-            <div class="content-1 bg-light a px-5 py-3">
-              <div class="head-with-price d-flex justify-content-between ">
-                <div class="align-self-center my-2">
-                  <h3 class="text-center ">
-                    GST Registration
-                  </h3>
-                </div>
-                <div class="align-self-center">
-                  <div class="d-flex justify-content-between align-items-center align-self-center">
-                    <p class="fw-bold mb-0 mx-2">Price</p>
-                    <p class="mb-0">:</p>
-                    <p class=" mb-0 mx-2 text-secondary fw-bolder">Rs.4,999</p>
-                  </div>
-                </div>
-              </div>
-              <p>
-                GST registration is the process of enrolling a business under the Goods and Services Tax (GST) system in
-                India. This registration enables businesses to collect and remit GST to the government. It is mandatory
-                for businesses whose turnover exceeds the threshold limit set by authorities. The registration process
-                involves submitting required documents and details online through the GST portal to obtain a unique
-                GSTIN (Goods and Services Tax Identification Number).
-                <p>
-                  <a class="btn" href="#rqd">
-                    Required Docs
-                  </a>
-                </p>
-              </p>
-            </div>
-            <div class="content-1 bg-light a px-5 py-3">
-              <div class="head-with-price d-flex justify-content-between ">
-                <div class="align-self-center my-2">
-                  <h3 class="text-center ">
-                    GST Registration
-                  </h3>
-                </div>
-                <div class="align-self-center">
-                  <div class="d-flex justify-content-between align-items-center align-self-center">
-                    <p class="fw-bold mb-0 mx-2">Price</p>
-                    <p class="mb-0">:</p>
-                    <p class=" mb-0 mx-2 text-secondary fw-bolder">Rs.4,999</p>
-                  </div>
-                </div>
-              </div>
-              <p>
-                GST registration is the process of enrolling a business under the Goods and Services Tax (GST) system in
-                India. This registration enables businesses to collect and remit GST to the government. It is mandatory
-                for businesses whose turnover exceeds the threshold limit set by authorities. The registration process
-                involves submitting required documents and details online through the GST portal to obtain a unique
-                GSTIN (Goods and Services Tax Identification Number).
-                <p>
-                  <a class="btn" href="#rqd">
-                    Required Docs
-                  </a>
-                </p>
-              </p>
-            </div>
-            <div class="getsrc-btn my-4 d-flex justify-content-center">
-              <a href="#" class=" btn-secondary">Contact Us</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+ 
 
 
   <!-- Contact form section -->
