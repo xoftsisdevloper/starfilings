@@ -8,7 +8,7 @@
     }
 
     .src {
-        width: 60%;
+        width: 80%;
     }
 
     .standard {
@@ -67,8 +67,22 @@
     }
 
     .providing-gst {
-        width: 80% !important;
-        margin: 20px auto;
+        width: 44% !important;
+        padding: 10px 5px;
+        margin:  3%;
+        height: 150px;
+    }
+    .providing-gst .bagde-flag-1  {
+        font-size: 12px;
+        width: 30px;
+        height: 30px;
+        padding-block: 20px;
+        padding-top: 25px;
+        padding-bottom: 15px;
+        margin: 0px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
     }
 
     .dropdown-menu {
